@@ -1,0 +1,4172 @@
+{
+  "schema_version": 3,
+  "library_version": "bannerlord-1.4.8.119303-warsails-1.2.8.119303-r2",
+  "title": "Bannerlord v1.4.8 / War Sails v1.2.8 中文命令库",
+  "target_game_version": "Bannerlord v1.4.8.119303",
+  "target_dlc_version": "War Sails v1.2.8.119303",
+  "source_note": "适用于 Bannerlord v1.4.8.119303 与 War Sails v1.2.8.119303。",
+  "commands": [
+    {
+      "name": "启用作弊模式",
+      "description": "启用官方作弊模式。",
+      "command": "config.cheat_mode 1",
+      "parameters": [],
+      "category": "常用工具",
+      "keywords": [
+        "作弊",
+        "cheat"
+      ],
+      "note": "大多数 campaign.* 命令需要先执行此命令。"
+    },
+    {
+      "name": "关闭作弊模式",
+      "description": "关闭官方作弊模式。",
+      "command": "config.cheat_mode 0",
+      "parameters": [],
+      "category": "常用工具",
+      "keywords": [
+        "作弊",
+        "cheat"
+      ],
+      "note": ""
+    },
+    {
+      "name": "显示当前版本帮助",
+      "description": "显示游戏当前实际注册的控制台命令。",
+      "command": "help",
+      "parameters": [],
+      "category": "常用工具",
+      "keywords": [
+        "帮助",
+        "help"
+      ],
+      "note": "游戏内输出是最终依据。"
+    },
+    {
+      "name": "增加金币",
+      "description": "在战役或沙盒存档中增加金币。",
+      "command": "campaign.add_gold_to_hero {amount}",
+      "parameters": [
+        {
+          "key": "amount",
+          "label": "数量",
+          "default": "100000",
+          "placeholder": "请输入数量",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "经济",
+      "keywords": [
+        "campaign.add_gold_to_hero",
+        "campaign",
+        "Core",
+        "增加金币"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "治疗玩家部队",
+      "description": "在战役或沙盒存档中治疗玩家部队。",
+      "command": "campaign.heal_player_party",
+      "parameters": [],
+      "category": "军队",
+      "keywords": [
+        "campaign.heal_player_party",
+        "campaign",
+        "Core",
+        "治疗玩家部队"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "增加影响力",
+      "description": "在战役或沙盒存档中增加影响力。",
+      "command": "campaign.add_influence {amount}",
+      "parameters": [
+        {
+          "key": "amount",
+          "label": "数量",
+          "default": "100",
+          "placeholder": "请输入数量",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "经济",
+      "keywords": [
+        "campaign.add_influence",
+        "campaign",
+        "Core",
+        "增加影响力"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "增加家族声望",
+      "description": "在战役或沙盒存档中增加家族声望。",
+      "command": "campaign.add_renown_to_clan {clan_name} | {amount}",
+      "parameters": [
+        {
+          "key": "clan_name",
+          "label": "家族名称",
+          "default": "",
+          "placeholder": "请输入家族名称",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "amount",
+          "label": "数量",
+          "default": "500",
+          "placeholder": "请输入数量",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "经济",
+      "keywords": [
+        "campaign.add_renown_to_clan",
+        "campaign",
+        "Core",
+        "增加家族声望"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "增加英雄属性点",
+      "description": "在战役或沙盒存档中增加英雄属性点。",
+      "command": "campaign.add_attribute_points_to_hero {hero_name} | {amount}",
+      "parameters": [
+        {
+          "key": "hero_name",
+          "label": "英雄名称",
+          "default": "main_hero",
+          "placeholder": "请输入英雄名称",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "amount",
+          "label": "数量",
+          "default": "5",
+          "placeholder": "请输入数量",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "角色",
+      "keywords": [
+        "campaign.add_attribute_points_to_hero",
+        "campaign",
+        "Core",
+        "增加英雄属性点"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "增加英雄专精点",
+      "description": "在战役或沙盒存档中增加英雄专精点。",
+      "command": "campaign.add_focus_points_to_hero {hero_name} | {amount}",
+      "parameters": [
+        {
+          "key": "hero_name",
+          "label": "英雄名称",
+          "default": "main_hero",
+          "placeholder": "请输入英雄名称",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "amount",
+          "label": "数量",
+          "default": "5",
+          "placeholder": "请输入数量",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "角色",
+      "keywords": [
+        "campaign.add_focus_points_to_hero",
+        "campaign",
+        "Core",
+        "增加英雄专精点"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "增加英雄技能经验",
+      "description": "在战役或沙盒存档中增加英雄技能经验。",
+      "command": "campaign.add_skill_xp_to_hero {hero_name} | {skill_name} | {amount}",
+      "parameters": [
+        {
+          "key": "hero_name",
+          "label": "英雄名称",
+          "default": "main_hero",
+          "placeholder": "请输入英雄名称",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "skill_name",
+          "label": "技能名称",
+          "default": "Leadership",
+          "placeholder": "请输入技能名称",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "amount",
+          "label": "数量",
+          "default": "1000",
+          "placeholder": "请输入数量",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "角色",
+      "keywords": [
+        "campaign.add_skill_xp_to_hero",
+        "campaign",
+        "Core",
+        "增加英雄技能经验"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。 执行前建议备份存档或确认目标。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "添加士兵",
+      "description": "在战役或沙盒存档中添加士兵。",
+      "command": "campaign.add_troops {troop_id} | {amount} | {party_name}",
+      "parameters": [
+        {
+          "key": "troop_id",
+          "label": "兵种 ID",
+          "default": "imperial_legionary",
+          "placeholder": "请输入兵种 ID",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "amount",
+          "label": "数量",
+          "default": "50",
+          "placeholder": "请输入数量",
+          "type": "number",
+          "required": true
+        },
+        {
+          "key": "party_name",
+          "label": "部队名称（可选）",
+          "default": "",
+          "placeholder": "请输入部队名称（可选）",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "category": "军队",
+      "keywords": [
+        "campaign.add_troops",
+        "campaign",
+        "Core",
+        "添加士兵"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "切换编队速度自动调整",
+      "description": "用于切换编队速度自动调整。",
+      "command": "ai.formation_speed_adjustment_enabled {enabled}",
+      "parameters": [
+        {
+          "key": "enabled",
+          "label": "开关（0/1）",
+          "default": "1",
+          "placeholder": "请输入开关（0/1）",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "战斗任务",
+      "keywords": [
+        "ai.formation_speed_adjustment_enabled",
+        "ai",
+        "Core",
+        "ai.formation_speed_adjustment_enabled"
+      ],
+      "note": "可能只在对应功能或调试场景中生效。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "运行 CPU 性能测试",
+      "description": "用于运行 CPU 性能测试。",
+      "command": "benchmark.cpu_benchmark",
+      "parameters": [],
+      "category": "界面与调试",
+      "keywords": [
+        "benchmark.cpu_benchmark",
+        "benchmark",
+        "CustomBattle",
+        "benchmark.cpu_benchmark"
+      ],
+      "note": "调试命令；可能只在特定界面或开发场景中生效。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.CustomBattle.dll",
+      "source_module": "CustomBattle"
+    },
+    {
+      "name": "启动 CPU 战斗性能测试",
+      "description": "用于启动 CPU 战斗性能测试。",
+      "command": "benchmark.cpu_benchmark_mission",
+      "parameters": [],
+      "category": "界面与调试",
+      "keywords": [
+        "benchmark.cpu_benchmark_mission",
+        "benchmark",
+        "CustomBattle",
+        "benchmark.cpu_benchmark_mission"
+      ],
+      "note": "调试命令；可能只在特定界面或开发场景中生效。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.CustomBattle.dll",
+      "source_module": "CustomBattle"
+    },
+    {
+      "name": "启用玩家王国全部政策",
+      "description": "在战役或沙盒存档中启用玩家王国全部政策。",
+      "command": "campaign.activate_all_policies_for_player_kingdom",
+      "parameters": [],
+      "category": "政治",
+      "keywords": [
+        "campaign.activate_all_policies_for_player_kingdom",
+        "campaign",
+        "Core",
+        "campaign.activate_all_policies_for_player_kingdom"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "提升领地建筑等级",
+      "description": "在战役或沙盒存档中提升领地建筑等级。",
+      "command": "campaign.add_building_level {settlementname} | {building}",
+      "parameters": [
+        {
+          "key": "settlementname",
+          "label": "领地名称",
+          "default": "",
+          "placeholder": "请输入领地名称",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "building",
+          "label": "建筑名称",
+          "default": "",
+          "placeholder": "请输入建筑名称",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "领地",
+      "keywords": [
+        "campaign.add_building_level",
+        "campaign",
+        "Core",
+        "campaign.add_building_level"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "添加锻造材料",
+      "description": "在战役或沙盒存档中添加锻造材料。",
+      "command": "campaign.add_crafting_materials",
+      "parameters": [],
+      "category": "物品与锻造",
+      "keywords": [
+        "campaign.add_crafting_materials",
+        "campaign",
+        "Core",
+        "添加锻造材料"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "修改英雄关系",
+      "description": "在战役或沙盒存档中修改英雄关系。",
+      "command": "campaign.add_hero_relation {heroname} | {otherheroname_optional} | {value}",
+      "parameters": [
+        {
+          "key": "heroname",
+          "label": "英雄名称",
+          "default": "",
+          "placeholder": "请输入英雄名称",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "otherheroname_optional",
+          "label": "另一名英雄名称（可选）",
+          "default": "",
+          "placeholder": "请输入另一名英雄名称（可选）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "value",
+          "label": "数值",
+          "default": "100",
+          "placeholder": "请输入数值",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "角色",
+      "keywords": [
+        "campaign.add_hero_relation",
+        "campaign",
+        "Core",
+        "campaign.add_hero_relation"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "添加物品到玩家部队",
+      "description": "在战役或沙盒存档中添加物品到玩家部队。",
+      "command": "campaign.add_item_to_player_party {item_id} | {modifier_id} | {amount}",
+      "parameters": [
+        {
+          "key": "item_id",
+          "label": "物品 ID",
+          "default": "grain",
+          "placeholder": "请输入物品 ID",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "modifier_id",
+          "label": "物品词缀 ID（可选）",
+          "default": "",
+          "placeholder": "请输入物品词缀 ID（可选）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "amount",
+          "label": "数量",
+          "default": "1",
+          "placeholder": "请输入数量",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "军队",
+      "keywords": [
+        "campaign.add_item_to_player_party",
+        "campaign",
+        "Core",
+        "添加物品"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "增加部队士气",
+      "description": "在战役或沙盒存档中增加部队士气。",
+      "command": "campaign.add_morale_to_party {heroname} | {number}",
+      "parameters": [
+        {
+          "key": "heroname",
+          "label": "英雄名称",
+          "default": "",
+          "placeholder": "请输入英雄名称",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "number",
+          "label": "数量",
+          "default": "100",
+          "placeholder": "请输入数量",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "军队",
+      "keywords": [
+        "campaign.add_morale_to_party",
+        "campaign",
+        "Core",
+        "增加部队士气"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "增加玩家年龄",
+      "description": "在战役或沙盒存档中增加玩家年龄。",
+      "command": "campaign.add_player_age {positivenumber}",
+      "parameters": [
+        {
+          "key": "positivenumber",
+          "label": "增加数量",
+          "default": "100",
+          "placeholder": "请输入增加数量",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "角色",
+      "keywords": [
+        "campaign.add_player_age",
+        "campaign",
+        "Core",
+        "campaign.add_player_age"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "增加要人权势",
+      "description": "在战役或沙盒存档中增加要人权势。",
+      "command": "campaign.add_power_to_notable {heroname} | {number}",
+      "parameters": [
+        {
+          "key": "heroname",
+          "label": "英雄名称",
+          "default": "",
+          "placeholder": "请输入英雄名称",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "number",
+          "label": "数量",
+          "default": "100",
+          "placeholder": "请输入数量",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "经济",
+      "keywords": [
+        "campaign.add_power_to_notable",
+        "campaign",
+        "Core",
+        "campaign.add_power_to_notable"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "添加俘虏到部队",
+      "description": "在战役或沙盒存档中添加俘虏到部队。",
+      "command": "campaign.add_prisoner_to_party {prisonername} | {capturername}",
+      "parameters": [
+        {
+          "key": "prisonername",
+          "label": "俘虏名称",
+          "default": "",
+          "placeholder": "请输入俘虏名称",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "capturername",
+          "label": "俘虏持有者名称",
+          "default": "",
+          "placeholder": "请输入俘虏持有者名称",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "军队",
+      "keywords": [
+        "campaign.add_prisoner_to_party",
+        "campaign",
+        "Core",
+        "campaign.add_prisoner_to_party"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "增加主角支持者",
+      "description": "在战役或沙盒存档中增加主角支持者。",
+      "command": "campaign.add_supporters_for_main_hero {number}",
+      "parameters": [
+        {
+          "key": "number",
+          "label": "数量",
+          "default": "100",
+          "placeholder": "请输入数量",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "经济",
+      "keywords": [
+        "campaign.add_supporters_for_main_hero",
+        "campaign",
+        "Core",
+        "campaign.add_supporters_for_main_hero"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "增加俘虏经验",
+      "description": "在战役或沙盒存档中增加俘虏经验。",
+      "command": "campaign.add_xp_to_player_party_prisoners {amount}",
+      "parameters": [
+        {
+          "key": "amount",
+          "label": "数量",
+          "default": "100",
+          "placeholder": "请输入数量",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "军队",
+      "keywords": [
+        "campaign.add_xp_to_player_party_prisoners",
+        "campaign",
+        "Core",
+        "增加俘虏经验"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "增加部队士兵经验",
+      "description": "在战役或沙盒存档中增加部队士兵经验。",
+      "command": "campaign.add_xp_to_player_party_troops {amount}",
+      "parameters": [
+        {
+          "key": "amount",
+          "label": "数量",
+          "default": "100",
+          "placeholder": "请输入数量",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "军队",
+      "keywords": [
+        "campaign.add_xp_to_player_party_troops",
+        "campaign",
+        "Core",
+        "增加部队士兵经验"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "补满军团凝聚力",
+      "description": "在战役或沙盒存档中补满军团凝聚力。",
+      "command": "campaign.boost_cohesion_of_army {army_leader}",
+      "parameters": [
+        {
+          "key": "army_leader",
+          "label": "军团领袖名称",
+          "default": "",
+          "placeholder": "请输入军团领袖名称",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "军队",
+      "keywords": [
+        "campaign.boost_cohesion_of_army",
+        "campaign",
+        "Core",
+        "campaign.boost_cohesion_of_army"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "取消指定任务",
+      "description": "在战役或沙盒存档中取消指定任务。",
+      "command": "campaign.cancel_quest {quest_name}",
+      "parameters": [
+        {
+          "key": "quest_name",
+          "label": "任务名称",
+          "default": "",
+          "placeholder": "请输入任务名称",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "任务与事件",
+      "keywords": [
+        "campaign.cancel_quest",
+        "campaign",
+        "Core",
+        "campaign.cancel_quest"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "清空领地守军",
+      "description": "在战役或沙盒存档中清空领地守军。",
+      "command": "campaign.clear_settlement_defense {settlementname}",
+      "parameters": [
+        {
+          "key": "settlementname",
+          "label": "领地名称",
+          "default": "",
+          "placeholder": "请输入领地名称",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "领地",
+      "keywords": [
+        "campaign.clear_settlement_defense",
+        "campaign",
+        "Core",
+        "campaign.clear_settlement_defense"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。 执行前建议备份存档或确认目标。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "让玩家角色怀孕生子",
+      "description": "在战役或沙盒存档中让玩家角色怀孕生子。",
+      "command": "campaign.conceive_child",
+      "parameters": [],
+      "category": "角色",
+      "keywords": [
+        "campaign.conceive_child",
+        "campaign",
+        "Core",
+        "怀孕生子"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "创建家族",
+      "description": "在战役或沙盒存档中创建家族。",
+      "command": "campaign.create_clan {kingdomname}",
+      "parameters": [
+        {
+          "key": "kingdomname",
+          "label": "王国名称",
+          "default": "",
+          "placeholder": "请输入王国名称",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "政治",
+      "keywords": [
+        "campaign.create_clan",
+        "campaign",
+        "Core",
+        "campaign.create_clan"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "创建玩家王国",
+      "description": "在战役或沙盒存档中创建玩家王国。",
+      "command": "campaign.create_player_kingdom",
+      "parameters": [],
+      "category": "政治",
+      "keywords": [
+        "campaign.create_player_kingdom",
+        "campaign",
+        "Core",
+        "创建玩家王国"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "让两个势力议和",
+      "description": "在战役或沙盒存档中让两个势力议和。",
+      "command": "campaign.declare_peace {faction_1} | {faction_2}",
+      "parameters": [
+        {
+          "key": "faction_1",
+          "label": "势力一",
+          "default": "",
+          "placeholder": "请输入势力一",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "faction_2",
+          "label": "势力二",
+          "default": "",
+          "placeholder": "请输入势力二",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "政治",
+      "keywords": [
+        "campaign.declare_peace",
+        "campaign",
+        "Core",
+        "两势力议和"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "让两个势力宣战",
+      "description": "在战役或沙盒存档中让两个势力宣战。",
+      "command": "campaign.declare_war {faction_1} | {faction_2}",
+      "parameters": [
+        {
+          "key": "faction_1",
+          "label": "势力一",
+          "default": "",
+          "placeholder": "请输入势力一",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "faction_2",
+          "label": "势力二",
+          "default": "",
+          "placeholder": "请输入势力二",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "政治",
+      "keywords": [
+        "campaign.declare_war",
+        "campaign",
+        "Core",
+        "两势力宣战"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "导出指定英雄",
+      "description": "在战役或沙盒存档中导出指定英雄。",
+      "command": "campaign.export_hero {filenamewithoutextension} | {nameofhero}",
+      "parameters": [
+        {
+          "key": "filenamewithoutextension",
+          "label": "不含扩展名的文件名",
+          "default": "",
+          "placeholder": "请输入不含扩展名的文件名",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "nameofhero",
+          "label": "英雄名称",
+          "default": "",
+          "placeholder": "请输入英雄名称",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "角色",
+      "keywords": [
+        "campaign.export_hero",
+        "campaign",
+        "Core",
+        "campaign.export_hero"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "导出主角数据",
+      "description": "在战役或沙盒存档中导出主角数据。",
+      "command": "campaign.export_main_hero {filenamewithoutextension}",
+      "parameters": [
+        {
+          "key": "filenamewithoutextension",
+          "label": "不含扩展名的文件名",
+          "default": "",
+          "placeholder": "请输入不含扩展名的文件名",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "角色",
+      "keywords": [
+        "campaign.export_main_hero",
+        "campaign",
+        "Core",
+        "campaign.export_main_hero"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "地图定位英雄",
+      "description": "在战役或沙盒存档中地图定位英雄。",
+      "command": "campaign.focus_hero {heroname}",
+      "parameters": [
+        {
+          "key": "heroname",
+          "label": "英雄名称",
+          "default": "",
+          "placeholder": "请输入英雄名称",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "角色",
+      "keywords": [
+        "campaign.focus_hero",
+        "campaign",
+        "SandBox",
+        "campaign.focus_hero"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "SandBox.View.dll",
+      "source_module": "SandBox"
+    },
+    {
+      "name": "地图定位敌对军团",
+      "description": "在战役或沙盒存档中地图定位敌对军团。",
+      "command": "campaign.focus_hostile_army",
+      "parameters": [],
+      "category": "时间与地图",
+      "keywords": [
+        "campaign.focus_hostile_army",
+        "campaign",
+        "SandBox",
+        "campaign.focus_hostile_army"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "SandBox.View.dll",
+      "source_module": "SandBox"
+    },
+    {
+      "name": "地图定位被占据的藏身处",
+      "description": "在战役或沙盒存档中地图定位被占据的藏身处。",
+      "command": "campaign.focus_infested_hideout {number_of_troops}",
+      "parameters": [
+        {
+          "key": "number_of_troops",
+          "label": "守军数量（可选）",
+          "default": "100",
+          "placeholder": "请输入守军数量（可选）",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "category": "领地",
+      "keywords": [
+        "campaign.focus_infested_hideout",
+        "campaign",
+        "SandBox",
+        "campaign.focus_infested_hideout"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "SandBox.View.dll",
+      "source_module": "SandBox"
+    },
+    {
+      "name": "地图定位事件",
+      "description": "在战役或沙盒存档中地图定位事件。",
+      "command": "campaign.focus_issue {issuename}",
+      "parameters": [
+        {
+          "key": "issuename",
+          "label": "事件名称",
+          "default": "",
+          "placeholder": "请输入事件名称",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "任务与事件",
+      "keywords": [
+        "campaign.focus_issue",
+        "campaign",
+        "SandBox",
+        "campaign.focus_issue"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "SandBox.View.dll",
+      "source_module": "SandBox"
+    },
+    {
+      "name": "地图定位部队",
+      "description": "在战役或沙盒存档中地图定位部队。",
+      "command": "campaign.focus_mobile_party {partyname}",
+      "parameters": [
+        {
+          "key": "partyname",
+          "label": "部队名称",
+          "default": "",
+          "placeholder": "请输入部队名称",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "军队",
+      "keywords": [
+        "campaign.focus_mobile_party",
+        "campaign",
+        "SandBox",
+        "campaign.focus_mobile_party"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "SandBox.View.dll",
+      "source_module": "SandBox"
+    },
+    {
+      "name": "地图定位竞技大会",
+      "description": "在战役或沙盒存档中地图定位竞技大会。",
+      "command": "campaign.focus_tournament",
+      "parameters": [],
+      "category": "任务与事件",
+      "keywords": [
+        "campaign.focus_tournament",
+        "campaign",
+        "SandBox",
+        "campaign.focus_tournament"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "SandBox.View.dll",
+      "source_module": "SandBox"
+    },
+    {
+      "name": "将领地授予王国",
+      "description": "在战役或沙盒存档中将领地授予王国。",
+      "command": "campaign.give_settlement_to_kingdom {settlementname} | {kingdomname}",
+      "parameters": [
+        {
+          "key": "settlementname",
+          "label": "领地名称",
+          "default": "",
+          "placeholder": "请输入领地名称",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "kingdomname",
+          "label": "王国名称",
+          "default": "",
+          "placeholder": "请输入王国名称",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "领地",
+      "keywords": [
+        "campaign.give_settlement_to_kingdom",
+        "campaign",
+        "Core",
+        "将领地授予王国"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "将领地授予玩家",
+      "description": "在战役或沙盒存档中将领地授予玩家。",
+      "command": "campaign.give_settlement_to_player {settlementname_settlementid}",
+      "parameters": [
+        {
+          "key": "settlementname_settlementid",
+          "label": "领地名称或 ID",
+          "default": "",
+          "placeholder": "请输入领地名称或 ID",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "领地",
+      "keywords": [
+        "campaign.give_settlement_to_player",
+        "campaign",
+        "Core",
+        "将领地授予玩家"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "将工坊授予玩家",
+      "description": "在战役或沙盒存档中将工坊授予玩家。",
+      "command": "campaign.give_workshop_to_player {settlementname} | {workshop_name}",
+      "parameters": [
+        {
+          "key": "settlementname",
+          "label": "领地名称",
+          "default": "",
+          "placeholder": "请输入领地名称",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "workshop_name",
+          "label": "工坊名称",
+          "default": "",
+          "placeholder": "请输入工坊名称",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "物品与锻造",
+      "keywords": [
+        "campaign.give_workshop_to_player",
+        "campaign",
+        "Core",
+        "将工坊授予玩家"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "隐藏藏身处",
+      "description": "在战役或沙盒存档中隐藏藏身处。",
+      "command": "campaign.hide_hideouts",
+      "parameters": [],
+      "category": "领地",
+      "keywords": [
+        "campaign.hide_hideouts",
+        "campaign",
+        "Core",
+        "隐藏藏身处"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "隐藏全部领地标记",
+      "description": "在战役或沙盒存档中隐藏全部领地标记。",
+      "command": "campaign.hide_settlements",
+      "parameters": [],
+      "category": "领地",
+      "keywords": [
+        "campaign.hide_settlements",
+        "campaign",
+        "Core",
+        "campaign.hide_settlements"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "导入主角数据",
+      "description": "在战役或沙盒存档中导入主角数据。",
+      "command": "campaign.import_main_hero {filenamewithoutextension}",
+      "parameters": [
+        {
+          "key": "filenamewithoutextension",
+          "label": "不含扩展名的文件名",
+          "default": "",
+          "placeholder": "请输入不含扩展名的文件名",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "角色",
+      "keywords": [
+        "campaign.import_main_hero",
+        "campaign",
+        "Core",
+        "campaign.import_main_hero"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "检查英雄能否与玩家结婚",
+      "description": "在战役或沙盒存档中检查英雄能否与玩家结婚。",
+      "command": "campaign.is_hero_suitable_for_marriage_with_player {heroname}",
+      "parameters": [
+        {
+          "key": "heroname",
+          "label": "英雄名称",
+          "default": "",
+          "placeholder": "请输入英雄名称",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "角色",
+      "keywords": [
+        "campaign.is_hero_suitable_for_marriage_with_player",
+        "campaign",
+        "Core",
+        "campaign.is_hero_suitable_for_marriage_with_player"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "加入王国",
+      "description": "在战役或沙盒存档中加入王国。",
+      "command": "campaign.join_kingdom {kingdomname_firsttwocharactersofkingdomname}",
+      "parameters": [
+        {
+          "key": "kingdomname_firsttwocharactersofkingdomname",
+          "label": "王国名称或名称前两个字符",
+          "default": "",
+          "placeholder": "请输入王国名称或名称前两个字符",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "政治",
+      "keywords": [
+        "campaign.join_kingdom",
+        "campaign",
+        "Core",
+        "加入王国"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "以雇佣兵身份加入王国",
+      "description": "在战役或沙盒存档中以雇佣兵身份加入王国。",
+      "command": "campaign.join_kingdom_as_mercenary {kingdomname_firsttwocharactersofkingdomname}",
+      "parameters": [
+        {
+          "key": "kingdomname_firsttwocharactersofkingdomname",
+          "label": "王国名称或名称前两个字符",
+          "default": "",
+          "placeholder": "请输入王国名称或名称前两个字符",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "政治",
+      "keywords": [
+        "campaign.join_kingdom_as_mercenary",
+        "campaign",
+        "Core",
+        "以雇佣兵身份加入王国"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "遣散伙伴",
+      "description": "在战役或沙盒存档中遣散伙伴。",
+      "command": "campaign.kick_companion {companion_name}",
+      "parameters": [
+        {
+          "key": "companion_name",
+          "label": "伙伴名称、all 或留空",
+          "default": "",
+          "placeholder": "请输入伙伴名称、all 或留空",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "category": "军队",
+      "keywords": [
+        "campaign.kick_companion",
+        "campaign",
+        "Core",
+        "campaign.kick_companion"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "杀死指定英雄",
+      "description": "在战役或沙盒存档中杀死指定英雄。",
+      "command": "campaign.kill_hero {heroname}",
+      "parameters": [
+        {
+          "key": "heroname",
+          "label": "英雄名称",
+          "default": "",
+          "placeholder": "请输入英雄名称",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "角色",
+      "keywords": [
+        "campaign.kill_hero",
+        "campaign",
+        "SandBox",
+        "杀死英雄"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。 执行前建议备份存档或确认目标。",
+      "verified_registration": true,
+      "source_assembly": "SandBox.View.dll",
+      "source_module": "SandBox"
+    },
+    {
+      "name": "成为王国统治者",
+      "description": "在战役或沙盒存档中成为王国统治者。",
+      "command": "campaign.lead_kingdom",
+      "parameters": [],
+      "category": "政治",
+      "keywords": [
+        "campaign.lead_kingdom",
+        "campaign",
+        "Core",
+        "campaign.lead_kingdom"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "让家族成为王国雇佣兵",
+      "description": "在战役或沙盒存档中让家族成为王国雇佣兵。",
+      "command": "campaign.make_clan_mercenary_of_kingdom {clan_name} | {kingdom_name} | {days}",
+      "parameters": [
+        {
+          "key": "clan_name",
+          "label": "家族名称",
+          "default": "",
+          "placeholder": "请输入家族名称",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "kingdom_name",
+          "label": "王国名称",
+          "default": "",
+          "placeholder": "请输入王国名称",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "days",
+          "label": "持续天数",
+          "default": "30",
+          "placeholder": "请输入持续天数",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "政治",
+      "keywords": [
+        "campaign.make_clan_mercenary_of_kingdom",
+        "campaign",
+        "SandBox",
+        "campaign.make_clan_mercenary_of_kingdom"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "SandBox.View.dll",
+      "source_module": "SandBox"
+    },
+    {
+      "name": "让两个王国签订贸易协定",
+      "description": "在战役或沙盒存档中让两个王国签订贸易协定。",
+      "command": "campaign.make_trade_agreement {kingdom1} | {kingdom2}",
+      "parameters": [
+        {
+          "key": "kingdom1",
+          "label": "王国一",
+          "default": "",
+          "placeholder": "请输入王国一",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "kingdom2",
+          "label": "王国二",
+          "default": "",
+          "placeholder": "请输入王国二",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "政治",
+      "keywords": [
+        "campaign.make_trade_agreement",
+        "campaign",
+        "Core",
+        "campaign.make_trade_agreement"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "让两名英雄结婚",
+      "description": "在战役或沙盒存档中让两名英雄结婚。",
+      "command": "campaign.marry_hero_to_hero {heroname} | {heroname_2}",
+      "parameters": [
+        {
+          "key": "heroname",
+          "label": "英雄名称",
+          "default": "",
+          "placeholder": "请输入英雄名称",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "heroname_2",
+          "label": "另一名英雄名称",
+          "default": "",
+          "placeholder": "请输入另一名英雄名称",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "角色",
+      "keywords": [
+        "campaign.marry_hero_to_hero",
+        "campaign",
+        "Core",
+        "campaign.marry_hero_to_hero"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "让玩家与英雄结婚",
+      "description": "在战役或沙盒存档中让玩家与英雄结婚。",
+      "command": "campaign.marry_player_with_hero {heroname}",
+      "parameters": [
+        {
+          "key": "heroname",
+          "label": "英雄名称",
+          "default": "",
+          "placeholder": "请输入英雄名称",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "角色",
+      "keywords": [
+        "campaign.marry_player_with_hero",
+        "campaign",
+        "Core",
+        "与英雄结婚"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "列出全部事件",
+      "description": "在战役或沙盒存档中列出全部事件。",
+      "command": "campaign.print_all_issues",
+      "parameters": [],
+      "category": "任务与事件",
+      "keywords": [
+        "campaign.print_all_issues",
+        "campaign",
+        "Core",
+        "campaign.print_all_issues"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "显示玩家犯罪等级",
+      "description": "在战役或沙盒存档中显示玩家犯罪等级。",
+      "command": "campaign.print_criminal_ratings",
+      "parameters": [],
+      "category": "其他",
+      "keywords": [
+        "campaign.print_criminal_ratings",
+        "campaign",
+        "Core",
+        "campaign.print_criminal_ratings"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "显示游戏统计数据",
+      "description": "在战役或沙盒存档中显示游戏统计数据。",
+      "command": "campaign.print_gameplay_statistics",
+      "parameters": [],
+      "category": "其他",
+      "keywords": [
+        "campaign.print_gameplay_statistics",
+        "campaign",
+        "Core",
+        "campaign.print_gameplay_statistics"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "列出可结婚英雄",
+      "description": "在战役或沙盒存档中列出可结婚英雄。",
+      "command": "campaign.print_heroes_suitable_for_marriage",
+      "parameters": [],
+      "category": "角色",
+      "keywords": [
+        "campaign.print_heroes_suitable_for_marriage",
+        "campaign",
+        "Core",
+        "campaign.print_heroes_suitable_for_marriage"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "显示玩家部队坐标",
+      "description": "在战役或沙盒存档中显示玩家部队坐标。",
+      "command": "campaign.print_player_party_position",
+      "parameters": [],
+      "category": "军队",
+      "keywords": [
+        "campaign.print_player_party_position",
+        "campaign",
+        "Core",
+        "campaign.print_player_party_position"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "显示玩家特性",
+      "description": "在战役或沙盒存档中显示玩家特性。",
+      "command": "campaign.print_player_traits",
+      "parameters": [],
+      "category": "角色",
+      "keywords": [
+        "campaign.print_player_traits",
+        "campaign",
+        "Core",
+        "campaign.print_player_traits"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "显示各势力实力",
+      "description": "在战役或沙盒存档中显示各势力实力。",
+      "command": "campaign.print_strength_of_factions",
+      "parameters": [],
+      "category": "政治",
+      "keywords": [
+        "campaign.print_strength_of_factions",
+        "campaign",
+        "Core",
+        "campaign.print_strength_of_factions"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "显示领主部队实力",
+      "description": "在战役或沙盒存档中显示领主部队实力。",
+      "command": "campaign.print_strength_of_lord_parties",
+      "parameters": [],
+      "category": "其他",
+      "keywords": [
+        "campaign.print_strength_of_lord_parties",
+        "campaign",
+        "Core",
+        "campaign.print_strength_of_lord_parties"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "显示竞技大会",
+      "description": "在战役或沙盒存档中显示竞技大会。",
+      "command": "campaign.print_tournaments",
+      "parameters": [],
+      "category": "任务与事件",
+      "keywords": [
+        "campaign.print_tournaments",
+        "campaign",
+        "Core",
+        "显示竞技大会"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "切换领地叛乱",
+      "description": "在战役或沙盒存档中切换领地叛乱。",
+      "command": "campaign.rebellion_enabled {value_1_0}",
+      "parameters": [
+        {
+          "key": "value_1_0",
+          "label": "开关（1/0）",
+          "default": "",
+          "placeholder": "请输入开关（1/0）",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "政治",
+      "keywords": [
+        "campaign.rebellion_enabled",
+        "campaign",
+        "Core",
+        "campaign.rebellion_enabled"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "清除领地民兵",
+      "description": "在战役或沙盒存档中清除领地民兵。",
+      "command": "campaign.remove_militias_from_settlement {settlementname}",
+      "parameters": [
+        {
+          "key": "settlementname",
+          "label": "领地名称",
+          "default": "",
+          "placeholder": "请输入领地名称",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "领地",
+      "keywords": [
+        "campaign.remove_militias_from_settlement",
+        "campaign",
+        "Core",
+        "campaign.remove_militias_from_settlement"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。 执行前建议备份存档或确认目标。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "统治玩家所属势力",
+      "description": "在战役或沙盒存档中统治玩家所属势力。",
+      "command": "campaign.rule_your_faction",
+      "parameters": [],
+      "category": "政治",
+      "keywords": [
+        "campaign.rule_your_faction",
+        "campaign",
+        "Core",
+        "campaign.rule_your_faction"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "设置全部伙伴技能等级",
+      "description": "在战役或沙盒存档中设置全部伙伴技能等级。",
+      "command": "campaign.set_all_companion_skills {levelvalue}",
+      "parameters": [
+        {
+          "key": "levelvalue",
+          "label": "等级",
+          "default": "100",
+          "placeholder": "请输入等级",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "军队",
+      "keywords": [
+        "campaign.set_all_companion_skills",
+        "campaign",
+        "Core",
+        "campaign.set_all_companion_skills"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。 执行前建议备份存档或确认目标。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "设置全部英雄技能等级",
+      "description": "在战役或沙盒存档中设置全部英雄技能等级。",
+      "command": "campaign.set_all_heroes_skills {levelvalue}",
+      "parameters": [
+        {
+          "key": "levelvalue",
+          "label": "等级",
+          "default": "100",
+          "placeholder": "请输入等级",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "角色",
+      "keywords": [
+        "campaign.set_all_heroes_skills",
+        "campaign",
+        "Core",
+        "campaign.set_all_heroes_skills"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。 执行前建议备份存档或确认目标。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "设置战役速度倍率",
+      "description": "在战役或沙盒存档中设置战役速度倍率。",
+      "command": "campaign.set_campaign_speed_multiplier {positive_speedup_multiplier}",
+      "parameters": [
+        {
+          "key": "positive_speedup_multiplier",
+          "label": "速度倍率",
+          "default": "",
+          "placeholder": "请输入速度倍率",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "时间与地图",
+      "keywords": [
+        "campaign.set_campaign_speed_multiplier",
+        "campaign",
+        "Core",
+        "设置战役速度倍率"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "设置家族文化",
+      "description": "在战役或沙盒存档中设置家族文化。",
+      "command": "campaign.set_clan_culture {clanname} | {culturename}",
+      "parameters": [
+        {
+          "key": "clanname",
+          "label": "家族名称",
+          "default": "",
+          "placeholder": "请输入家族名称",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "culturename",
+          "label": "文化名称",
+          "default": "",
+          "placeholder": "请输入文化名称",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "政治",
+      "keywords": [
+        "campaign.set_clan_culture",
+        "campaign",
+        "Core",
+        "campaign.set_clan_culture"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "设置领地食物",
+      "description": "在战役或沙盒存档中设置领地食物。",
+      "command": "campaign.set_food_of_settlement {settlementname_settlementid} | {value}",
+      "parameters": [
+        {
+          "key": "settlementname_settlementid",
+          "label": "领地名称或 ID",
+          "default": "",
+          "placeholder": "请输入领地名称或 ID",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "value",
+          "label": "数值",
+          "default": "100",
+          "placeholder": "请输入数值",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "领地",
+      "keywords": [
+        "campaign.set_food_of_settlement",
+        "campaign",
+        "Core",
+        "campaign.set_food_of_settlement"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "设置村庄户数",
+      "description": "在战役或沙盒存档中设置村庄户数。",
+      "command": "campaign.set_hearth_of_settlement {settlementname_settlementid} | {value}",
+      "parameters": [
+        {
+          "key": "settlementname_settlementid",
+          "label": "领地名称或 ID",
+          "default": "",
+          "placeholder": "请输入领地名称或 ID",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "value",
+          "label": "数值",
+          "default": "100",
+          "placeholder": "请输入数值",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "领地",
+      "keywords": [
+        "campaign.set_hearth_of_settlement",
+        "campaign",
+        "Core",
+        "campaign.set_hearth_of_settlement"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "设置英雄锻造体力",
+      "description": "在战役或沙盒存档中设置英雄锻造体力。",
+      "command": "campaign.set_hero_crafting_stamina {heroname} | {stamina}",
+      "parameters": [
+        {
+          "key": "heroname",
+          "label": "英雄名称",
+          "default": "",
+          "placeholder": "请输入英雄名称",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "stamina",
+          "label": "锻造体力",
+          "default": "100",
+          "placeholder": "请输入锻造体力",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "物品与锻造",
+      "keywords": [
+        "campaign.set_hero_crafting_stamina",
+        "campaign",
+        "Core",
+        "campaign.set_hero_crafting_stamina"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "设置英雄文化",
+      "description": "在战役或沙盒存档中设置英雄文化。",
+      "command": "campaign.set_hero_culture {heroname} | {culturename}",
+      "parameters": [
+        {
+          "key": "heroname",
+          "label": "英雄名称",
+          "default": "",
+          "placeholder": "请输入英雄名称",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "culturename",
+          "label": "文化名称",
+          "default": "",
+          "placeholder": "请输入文化名称",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "角色",
+      "keywords": [
+        "campaign.set_hero_culture",
+        "campaign",
+        "Core",
+        "campaign.set_hero_culture"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "设置英雄特性",
+      "description": "在战役或沙盒存档中设置英雄特性。",
+      "command": "campaign.set_hero_trait {heroname} | {trait} | {value}",
+      "parameters": [
+        {
+          "key": "heroname",
+          "label": "英雄名称",
+          "default": "",
+          "placeholder": "请输入英雄名称",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "trait",
+          "label": "特性名称",
+          "default": "",
+          "placeholder": "请输入特性名称",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "value",
+          "label": "数值",
+          "default": "100",
+          "placeholder": "请输入数值",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "角色",
+      "keywords": [
+        "campaign.set_hero_trait",
+        "campaign",
+        "Core",
+        "campaign.set_hero_trait"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "设置领地忠诚度",
+      "description": "在战役或沙盒存档中设置领地忠诚度。",
+      "command": "campaign.set_loyalty_of_settlement {settlementname} | {loyalty}",
+      "parameters": [
+        {
+          "key": "settlementname",
+          "label": "领地名称",
+          "default": "",
+          "placeholder": "请输入领地名称",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "loyalty",
+          "label": "忠诚度",
+          "default": "",
+          "placeholder": "请输入忠诚度",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "领地",
+      "keywords": [
+        "campaign.set_loyalty_of_settlement",
+        "campaign",
+        "Core",
+        "campaign.set_loyalty_of_settlement"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "切换玩家部队可被攻击状态",
+      "description": "在战役或沙盒存档中切换玩家部队可被攻击状态。",
+      "command": "campaign.set_main_party_attackable {value_1_0}",
+      "parameters": [
+        {
+          "key": "value_1_0",
+          "label": "开关（1/0）",
+          "default": "",
+          "placeholder": "请输入开关（1/0）",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "军队",
+      "keywords": [
+        "campaign.set_main_party_attackable",
+        "campaign",
+        "Core",
+        "campaign.set_main_party_attackable"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "设置领地民兵数量",
+      "description": "在战役或沙盒存档中设置领地民兵数量。",
+      "command": "campaign.set_militia_of_settlement {settlementname_settlementid} | {value}",
+      "parameters": [
+        {
+          "key": "settlementname_settlementid",
+          "label": "领地名称或 ID",
+          "default": "",
+          "placeholder": "请输入领地名称或 ID",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "value",
+          "label": "数值",
+          "default": "100",
+          "placeholder": "请输入数值",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "领地",
+      "keywords": [
+        "campaign.set_militia_of_settlement",
+        "campaign",
+        "Core",
+        "campaign.set_militia_of_settlement"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "切换地图部队可见状态",
+      "description": "在战役或沙盒存档中切换地图部队可见状态。",
+      "command": "campaign.set_parties_visible {value_1_0}",
+      "parameters": [
+        {
+          "key": "value_1_0",
+          "label": "开关（1/0）",
+          "default": "",
+          "placeholder": "请输入开关（1/0）",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "时间与地图",
+      "keywords": [
+        "campaign.set_parties_visible",
+        "campaign",
+        "Core",
+        "campaign.set_parties_visible"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "设置玩家特性",
+      "description": "在战役或沙盒存档中设置玩家特性。",
+      "command": "campaign.set_player_trait {trait} | {number}",
+      "parameters": [
+        {
+          "key": "trait",
+          "label": "特性名称",
+          "default": "",
+          "placeholder": "请输入特性名称",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "number",
+          "label": "数量",
+          "default": "100",
+          "placeholder": "请输入数量",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "角色",
+      "keywords": [
+        "campaign.set_player_trait",
+        "campaign",
+        "Core",
+        "campaign.set_player_trait"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "设置领地繁荣度",
+      "description": "在战役或沙盒存档中设置领地繁荣度。",
+      "command": "campaign.set_prosperity_of_settlement {settlementname_settlementid} | {value}",
+      "parameters": [
+        {
+          "key": "settlementname_settlementid",
+          "label": "领地名称或 ID",
+          "default": "",
+          "placeholder": "请输入领地名称或 ID",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "value",
+          "label": "数值",
+          "default": "100",
+          "placeholder": "请输入数值",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "领地",
+      "keywords": [
+        "campaign.set_prosperity_of_settlement",
+        "campaign",
+        "Core",
+        "campaign.set_prosperity_of_settlement"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "设置领地治安",
+      "description": "在战役或沙盒存档中设置领地治安。",
+      "command": "campaign.set_security_of_settlement {settlementname_settlementid} | {value}",
+      "parameters": [
+        {
+          "key": "settlementname_settlementid",
+          "label": "领地名称或 ID",
+          "default": "",
+          "placeholder": "请输入领地名称或 ID",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "value",
+          "label": "数值",
+          "default": "100",
+          "placeholder": "请输入数值",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "领地",
+      "keywords": [
+        "campaign.set_security_of_settlement",
+        "campaign",
+        "Core",
+        "campaign.set_security_of_settlement"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "设置全部伙伴的指定技能",
+      "description": "在战役或沙盒存档中设置全部伙伴的指定技能。",
+      "command": "campaign.set_skill_of_all_companions {skillname} | {levelvalue}",
+      "parameters": [
+        {
+          "key": "skillname",
+          "label": "技能名称",
+          "default": "",
+          "placeholder": "请输入技能名称",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "levelvalue",
+          "label": "等级",
+          "default": "100",
+          "placeholder": "请输入等级",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "军队",
+      "keywords": [
+        "campaign.set_skill_of_all_companions",
+        "campaign",
+        "Core",
+        "campaign.set_skill_of_all_companions"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。 执行前建议备份存档或确认目标。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "设置玩家技能等级",
+      "description": "在战役或沙盒存档中设置玩家技能等级。",
+      "command": "campaign.set_skill_player {skillname} | {levelvalue}",
+      "parameters": [
+        {
+          "key": "skillname",
+          "label": "技能名称",
+          "default": "",
+          "placeholder": "请输入技能名称",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "levelvalue",
+          "label": "等级",
+          "default": "100",
+          "placeholder": "请输入等级",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "角色",
+      "keywords": [
+        "campaign.set_skill_player",
+        "campaign",
+        "Core",
+        "campaign.set_skill_player"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。 执行前建议备份存档或确认目标。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "设置指定英雄全部技能",
+      "description": "在战役或沙盒存档中设置指定英雄全部技能。",
+      "command": "campaign.set_skills_of_hero {heroname} | {level}",
+      "parameters": [
+        {
+          "key": "heroname",
+          "label": "英雄名称",
+          "default": "",
+          "placeholder": "请输入英雄名称",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "level",
+          "label": "等级",
+          "default": "100",
+          "placeholder": "请输入等级",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "角色",
+      "keywords": [
+        "campaign.set_skills_of_hero",
+        "campaign",
+        "Core",
+        "campaign.set_skills_of_hero"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。 执行前建议备份存档或确认目标。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "显示战役性能下降信息",
+      "description": "在战役或沙盒存档中显示战役性能下降信息。",
+      "command": "campaign.show_drop_off {arguments}",
+      "parameters": [
+        {
+          "key": "arguments",
+          "label": "命令参数（可选）",
+          "default": "",
+          "placeholder": "请输入命令参数（可选）",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "category": "War Sails 航海",
+      "keywords": [
+        "campaign.show_drop_off",
+        "campaign",
+        "NavalDLC",
+        "campaign.show_drop_off"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。 参数格式随场景变化，可先在游戏控制台输入“campaign.show_drop_off help”查看。",
+      "verified_registration": true,
+      "source_assembly": "NavalDLC.dll",
+      "source_module": "NavalDLC"
+    },
+    {
+      "name": "显示藏身处",
+      "description": "在战役或沙盒存档中显示藏身处。",
+      "command": "campaign.show_hideouts {mode}",
+      "parameters": [
+        {
+          "key": "mode",
+          "label": "显示模式（1=被占据，2=全部）",
+          "default": "2",
+          "placeholder": "请输入显示模式（1=被占据，2=全部）",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "领地",
+      "keywords": [
+        "campaign.show_hideouts",
+        "campaign",
+        "Core",
+        "显示藏身处"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "显示两名英雄关系",
+      "description": "在战役或沙盒存档中显示两名英雄关系。",
+      "command": "campaign.show_relation {heroname} | {heroname_2}",
+      "parameters": [
+        {
+          "key": "heroname",
+          "label": "英雄名称",
+          "default": "",
+          "placeholder": "请输入英雄名称",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "heroname_2",
+          "label": "另一名英雄名称",
+          "default": "",
+          "placeholder": "请输入另一名英雄名称",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "角色",
+      "keywords": [
+        "campaign.show_relation",
+        "campaign",
+        "Core",
+        "campaign.show_relation"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "显示全部领地",
+      "description": "在战役或沙盒存档中显示全部领地。",
+      "command": "campaign.show_settlements",
+      "parameters": [],
+      "category": "领地",
+      "keywords": [
+        "campaign.show_settlements",
+        "campaign",
+        "Core",
+        "显示全部领地"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "切换地图信息限制",
+      "description": "在战役或沙盒存档中切换地图信息限制。",
+      "command": "campaign.toggle_information_restrictions",
+      "parameters": [],
+      "category": "时间与地图",
+      "keywords": [
+        "campaign.toggle_information_restrictions",
+        "campaign",
+        "Core",
+        "切换地图信息限制"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "解锁全部锻造部件",
+      "description": "在战役或沙盒存档中解锁全部锻造部件。",
+      "command": "campaign.unlock_all_crafting_pieces",
+      "parameters": [],
+      "category": "物品与锻造",
+      "keywords": [
+        "campaign.unlock_all_crafting_pieces",
+        "campaign",
+        "Core",
+        "解锁全部锻造部件"
+      ],
+      "note": "适用于战役或沙盒存档；多数命令需要先启用作弊模式。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.CampaignSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "切换战斗中聊天框聚焦",
+      "description": "用于切换战斗中聊天框聚焦。",
+      "command": "chatlog.can_focus_while_in_mission {enabled}",
+      "parameters": [
+        {
+          "key": "enabled",
+          "label": "开关（0/1）",
+          "default": "1",
+          "placeholder": "请输入开关（0/1）",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "界面与调试",
+      "keywords": [
+        "chatlog.can_focus_while_in_mission",
+        "chatlog",
+        "Native",
+        "chatlog.can_focus_while_in_mission"
+      ],
+      "note": "可能只在对应功能或调试场景中生效。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.GauntletUI.dll",
+      "source_module": "Native"
+    },
+    {
+      "name": "清空聊天记录",
+      "description": "用于清空聊天记录。",
+      "command": "chatlog.clear",
+      "parameters": [],
+      "category": "界面与调试",
+      "keywords": [
+        "chatlog.clear",
+        "chatlog",
+        "Native",
+        "chatlog.clear"
+      ],
+      "note": "可能只在对应功能或调试场景中生效。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.GauntletUI.dll",
+      "source_module": "Native"
+    },
+    {
+      "name": "清空控制台",
+      "description": "用于清空控制台。",
+      "command": "console.clear",
+      "parameters": [],
+      "category": "界面与调试",
+      "keywords": [
+        "console.clear",
+        "console",
+        "Core",
+        "console.clear"
+      ],
+      "note": "可能只在对应功能或调试场景中生效。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.Engine.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "向命令窗口输出文本",
+      "description": "用于向命令窗口输出文本。",
+      "command": "console.echo_command_window {arguments}",
+      "parameters": [
+        {
+          "key": "arguments",
+          "label": "命令参数（可选）",
+          "default": "",
+          "placeholder": "请输入命令参数（可选）",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "category": "界面与调试",
+      "keywords": [
+        "console.echo_command_window",
+        "console",
+        "Core",
+        "console.echo_command_window"
+      ],
+      "note": "可能只在对应功能或调试场景中生效。 参数格式随场景变化，可先在游戏控制台输入“console.echo_command_window help”查看。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.Engine.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "测试命令窗口文本输出",
+      "description": "用于测试命令窗口文本输出。",
+      "command": "console.echo_command_window_test {arguments}",
+      "parameters": [
+        {
+          "key": "arguments",
+          "label": "命令参数（可选）",
+          "default": "",
+          "placeholder": "请输入命令参数（可选）",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "category": "界面与调试",
+      "keywords": [
+        "console.echo_command_window_test",
+        "console",
+        "Core",
+        "console.echo_command_window_test"
+      ],
+      "note": "可能只在对应功能或调试场景中生效。 参数格式随场景变化，可先在游戏控制台输入“console.echo_command_window_test help”查看。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.Engine.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "获取自定义服务器令牌",
+      "description": "在多人游戏或服务器环境中获取自定义服务器令牌。",
+      "command": "customserver.gettoken",
+      "parameters": [],
+      "category": "多人游戏",
+      "keywords": [
+        "customserver.gettoken",
+        "customserver",
+        "Multiplayer",
+        "customserver.gettoken"
+      ],
+      "note": "仅在多人游戏或服务器环境中可用；管理命令需要相应权限。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.Multiplayer.dll",
+      "source_module": "Multiplayer"
+    },
+    {
+      "name": "下载多人地图",
+      "description": "在多人游戏或服务器环境中下载多人地图。",
+      "command": "dcshelper.download_map {host} {map_name}",
+      "parameters": [
+        {
+          "key": "host",
+          "label": "主机地址（可含端口）",
+          "default": "",
+          "placeholder": "请输入主机地址（可含端口）",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "map_name",
+          "label": "地图名称（可选）",
+          "default": "",
+          "placeholder": "请输入地图名称（可选）",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "category": "多人游戏",
+      "keywords": [
+        "dcshelper.download_map",
+        "dcshelper",
+        "Multiplayer",
+        "dcshelper.download_map"
+      ],
+      "note": "仅在多人游戏或服务器环境中可用；管理命令需要相应权限。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.DedicatedCustomServer.ClientHelper.dll",
+      "source_module": "Multiplayer"
+    },
+    {
+      "name": "获取可下载地图列表",
+      "description": "在多人游戏或服务器环境中获取可下载地图列表。",
+      "command": "dcshelper.get_map_list {host}",
+      "parameters": [
+        {
+          "key": "host",
+          "label": "主机地址（可含端口）",
+          "default": "",
+          "placeholder": "请输入主机地址（可含端口）",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "多人游戏",
+      "keywords": [
+        "dcshelper.get_map_list",
+        "dcshelper",
+        "Multiplayer",
+        "dcshelper.get_map_list"
+      ],
+      "note": "仅在多人游戏或服务器环境中可用；管理命令需要相应权限。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.DedicatedCustomServer.ClientHelper.dll",
+      "source_module": "Multiplayer"
+    },
+    {
+      "name": "打开地图下载面板",
+      "description": "在多人游戏或服务器环境中打开地图下载面板。",
+      "command": "dcshelper.open_download_panel {host}",
+      "parameters": [
+        {
+          "key": "host",
+          "label": "主机地址（可含端口）",
+          "default": "",
+          "placeholder": "请输入主机地址（可含端口）",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "多人游戏",
+      "keywords": [
+        "dcshelper.open_download_panel",
+        "dcshelper",
+        "Multiplayer",
+        "dcshelper.open_download_panel"
+      ],
+      "note": "仅在多人游戏或服务器环境中可用；管理命令需要相应权限。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.DedicatedCustomServer.ClientHelper.dll",
+      "source_module": "Multiplayer"
+    },
+    {
+      "name": "显示 .NET 运行时版本",
+      "description": "用于显示 .NET 运行时版本。",
+      "command": "dotnet.show_version",
+      "parameters": [],
+      "category": "界面与调试",
+      "keywords": [
+        "dotnet.show_version",
+        "dotnet",
+        "Core",
+        "dotnet.show_version"
+      ],
+      "note": "可能只在对应功能或调试场景中生效。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.DotNet.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "显示角色捏脸调试信息",
+      "description": "用于显示角色捏脸调试信息。",
+      "command": "facegen.show_debug",
+      "parameters": [],
+      "category": "界面与调试",
+      "keywords": [
+        "facegen.show_debug",
+        "facegen",
+        "Native",
+        "facegen.show_debug"
+      ],
+      "note": "调试命令；可能只在特定界面或开发场景中生效。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.GauntletUI.dll",
+      "source_module": "Native"
+    },
+    {
+      "name": "切换脸部变形键更新",
+      "description": "用于切换脸部变形键更新。",
+      "command": "facegen.toggle_update_deform_keys",
+      "parameters": [],
+      "category": "界面与调试",
+      "keywords": [
+        "facegen.toggle_update_deform_keys",
+        "facegen",
+        "Native",
+        "facegen.toggle_update_deform_keys"
+      ],
+      "note": "调试命令；可能只在特定界面或开发场景中生效。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.GauntletUI.dll",
+      "source_module": "Native"
+    },
+    {
+      "name": "重新加载托管核心参数",
+      "description": "用于重新加载托管核心参数。",
+      "command": "game.reload_managed_core_params",
+      "parameters": [],
+      "category": "界面与调试",
+      "keywords": [
+        "game.reload_managed_core_params",
+        "game",
+        "Core",
+        "game.reload_managed_core_params"
+      ],
+      "note": "可能只在对应功能或调试场景中生效。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "切换游戏语言",
+      "description": "用于切换游戏语言。",
+      "command": "localization.change_language {languagecode_languagename_isocode}",
+      "parameters": [
+        {
+          "key": "languagecode_languagename_isocode",
+          "label": "语言代码、语言名称或 ISO 代码",
+          "default": "",
+          "placeholder": "请输入语言代码、语言名称或 ISO 代码",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "界面与调试",
+      "keywords": [
+        "localization.change_language",
+        "localization",
+        "Core",
+        "localization.change_language"
+      ],
+      "note": "可能只在对应功能或调试场景中生效。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.Localization.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "检查本地化文本错误",
+      "description": "用于检查本地化文本错误。",
+      "command": "localization.check_for_errors",
+      "parameters": [],
+      "category": "界面与调试",
+      "keywords": [
+        "localization.check_for_errors",
+        "localization",
+        "Core",
+        "localization.check_for_errors"
+      ],
+      "note": "可能只在对应功能或调试场景中生效。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.Localization.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "重新加载本地化文本",
+      "description": "用于重新加载本地化文本。",
+      "command": "localization.reload_texts",
+      "parameters": [],
+      "category": "界面与调试",
+      "keywords": [
+        "localization.reload_texts",
+        "localization",
+        "Core",
+        "localization.reload_texts"
+      ],
+      "note": "可能只在对应功能或调试场景中生效。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.Localization.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "修复战斗镜头切换",
+      "description": "在当前战斗任务中修复战斗镜头切换。",
+      "command": "mission.fix_camera_toggle",
+      "parameters": [],
+      "category": "战斗任务",
+      "keywords": [
+        "mission.fix_camera_toggle",
+        "mission",
+        "Native",
+        "mission.fix_camera_toggle"
+      ],
+      "note": "仅在战斗、竞技场或其他任务场景中可用。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.View.dll",
+      "source_module": "Native"
+    },
+    {
+      "name": "使全部敌军逃跑",
+      "description": "在当前战斗任务中使全部敌军逃跑。",
+      "command": "mission.flee_enemies",
+      "parameters": [],
+      "category": "战斗任务",
+      "keywords": [
+        "mission.flee_enemies",
+        "mission",
+        "Core",
+        "使敌军逃跑"
+      ],
+      "note": "仅在战斗、竞技场或其他任务场景中可用。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "使指定队伍编队逃跑",
+      "description": "在当前战斗任务中使指定队伍编队逃跑。",
+      "command": "mission.flee_team {attacker_attackerally_defender_defenderally} {formationno}",
+      "parameters": [
+        {
+          "key": "attacker_attackerally_defender_defenderally",
+          "label": "队伍阵营",
+          "default": "",
+          "placeholder": "请输入队伍阵营",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "formationno",
+          "label": "编队编号",
+          "default": "",
+          "placeholder": "请输入编队编号",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "战斗任务",
+      "keywords": [
+        "mission.flee_team",
+        "mission",
+        "Core",
+        "mission.flee_team"
+      ],
+      "note": "仅在战斗、竞技场或其他任务场景中可用。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "显示跟随单位的面部与头盔信息",
+      "description": "在当前战斗任务中显示跟随单位的面部与头盔信息。",
+      "command": "mission.get_face_and_helmet_info_of_followed_agent",
+      "parameters": [],
+      "category": "战斗任务",
+      "keywords": [
+        "mission.get_face_and_helmet_info_of_followed_agent",
+        "mission",
+        "SandBox",
+        "mission.get_face_and_helmet_info_of_followed_agent"
+      ],
+      "note": "仅在战斗、竞技场或其他任务场景中可用。",
+      "verified_registration": true,
+      "source_assembly": "SandBox.View.dll",
+      "source_module": "SandBox"
+    },
+    {
+      "name": "杀死指定单位",
+      "description": "在当前战斗任务中杀死指定单位。",
+      "command": "mission.killAgent {agent_index}",
+      "parameters": [
+        {
+          "key": "agent_index",
+          "label": "单位索引",
+          "default": "0",
+          "placeholder": "请输入单位索引",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "战斗任务",
+      "keywords": [
+        "mission.killAgent",
+        "mission",
+        "Core",
+        "mission.killAgent"
+      ],
+      "note": "仅在战斗、竞技场或其他任务场景中可用。 执行前建议备份存档或确认目标。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "杀死全部友军",
+      "description": "在当前战斗任务中杀死全部友军。",
+      "command": "mission.kill_all_allies",
+      "parameters": [],
+      "category": "战斗任务",
+      "keywords": [
+        "mission.kill_all_allies",
+        "mission",
+        "Core",
+        "杀死全部友军"
+      ],
+      "note": "仅在战斗、竞技场或其他任务场景中可用。 执行前建议备份存档或确认目标。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "杀死全部哨兵",
+      "description": "在当前战斗任务中杀死全部哨兵。",
+      "command": "mission.kill_all_sentries",
+      "parameters": [],
+      "category": "战斗任务",
+      "keywords": [
+        "mission.kill_all_sentries",
+        "mission",
+        "SandBox",
+        "mission.kill_all_sentries"
+      ],
+      "note": "仅在战斗、竞技场或其他任务场景中可用。 执行前建议备份存档或确认目标。",
+      "verified_registration": true,
+      "source_assembly": "SandBox.dll",
+      "source_module": "SandBox"
+    },
+    {
+      "name": "杀死指定数量友军",
+      "description": "在当前战斗任务中杀死指定数量友军。",
+      "command": "mission.kill_n_allies {count}",
+      "parameters": [
+        {
+          "key": "count",
+          "label": "数量",
+          "default": "",
+          "placeholder": "请输入数量",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "战斗任务",
+      "keywords": [
+        "mission.kill_n_allies",
+        "mission",
+        "Core",
+        "mission.kill_n_allies"
+      ],
+      "note": "仅在战斗、竞技场或其他任务场景中可用。 执行前建议备份存档或确认目标。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "设置攻城锤速度",
+      "description": "在当前战斗任务中设置攻城锤速度。",
+      "command": "mission.set_battering_ram_speed {speed}",
+      "parameters": [
+        {
+          "key": "speed",
+          "label": "速度",
+          "default": "3",
+          "placeholder": "请输入速度",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "战斗任务",
+      "keywords": [
+        "mission.set_battering_ram_speed",
+        "mission",
+        "Core",
+        "mission.set_battering_ram_speed"
+      ],
+      "note": "仅在战斗、竞技场或其他任务场景中可用。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "设置战斗镜头坐标",
+      "description": "在当前战斗任务中设置战斗镜头坐标。",
+      "command": "mission.set_camera_position {x} {y} {z}",
+      "parameters": [
+        {
+          "key": "x",
+          "label": "X 坐标",
+          "default": "0",
+          "placeholder": "请输入X 坐标",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "y",
+          "label": "Y 坐标",
+          "default": "0",
+          "placeholder": "请输入Y 坐标",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "z",
+          "label": "Z 坐标",
+          "default": "0",
+          "placeholder": "请输入Z 坐标",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "战斗任务",
+      "keywords": [
+        "mission.set_camera_position",
+        "mission",
+        "Native",
+        "mission.set_camera_position"
+      ],
+      "note": "仅在战斗、竞技场或其他任务场景中可用。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.View.dll",
+      "source_module": "Native"
+    },
+    {
+      "name": "设置部署可视化选项",
+      "description": "在当前战斗任务中设置部署可视化选项。",
+      "command": "mission.set_deployment_visualization_selector {integer_0}",
+      "parameters": [
+        {
+          "key": "integer_0",
+          "label": "大于 0 的整数",
+          "default": "",
+          "placeholder": "请输入大于 0 的整数",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "战斗任务",
+      "keywords": [
+        "mission.set_deployment_visualization_selector",
+        "mission",
+        "Native",
+        "mission.set_deployment_visualization_selector"
+      ],
+      "note": "仅在战斗、竞技场或其他任务场景中可用。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.View.dll",
+      "source_module": "Native"
+    },
+    {
+      "name": "设置单位面部动画",
+      "description": "在当前战斗任务中设置单位面部动画。",
+      "command": "mission.set_facial_anim_to_agent {agent_index} | {animation}",
+      "parameters": [
+        {
+          "key": "agent_index",
+          "label": "单位索引",
+          "default": "0",
+          "placeholder": "请输入单位索引",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "animation",
+          "label": "面部动画名称",
+          "default": "",
+          "placeholder": "请输入面部动画名称",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "战斗任务",
+      "keywords": [
+        "mission.set_facial_anim_to_agent",
+        "mission",
+        "Core",
+        "mission.set_facial_anim_to_agent"
+      ],
+      "note": "仅在战斗、竞技场或其他任务场景中可用。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "设置加速镜头移动速度",
+      "description": "在当前战斗任务中设置加速镜头移动速度。",
+      "command": "mission.set_shift_camera_speed {speed}",
+      "parameters": [
+        {
+          "key": "speed",
+          "label": "速度",
+          "default": "3",
+          "placeholder": "请输入速度",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "战斗任务",
+      "keywords": [
+        "mission.set_shift_camera_speed",
+        "mission",
+        "Native",
+        "mission.set_shift_camera_speed"
+      ],
+      "note": "仅在战斗、竞技场或其他任务场景中可用。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.View.dll",
+      "source_module": "Native"
+    },
+    {
+      "name": "设置攻城塔速度",
+      "description": "在当前战斗任务中设置攻城塔速度。",
+      "command": "mission.set_siege_tower_speed {speed}",
+      "parameters": [
+        {
+          "key": "speed",
+          "label": "速度",
+          "default": "3",
+          "placeholder": "请输入速度",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "战斗任务",
+      "keywords": [
+        "mission.set_siege_tower_speed",
+        "mission",
+        "Core",
+        "mission.set_siege_tower_speed"
+      ],
+      "note": "仅在战斗、竞技场或其他任务场景中可用。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "切换指定单位无敌状态",
+      "description": "在当前战斗任务中切换指定单位无敌状态。",
+      "command": "mission.toggleDisableDying {index}' or just 'toggleDisableDying' for making all agents invincible",
+      "parameters": [
+        {
+          "key": "index",
+          "label": "单位索引",
+          "default": "",
+          "placeholder": "请输入单位索引",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "战斗任务",
+      "keywords": [
+        "mission.toggleDisableDying",
+        "mission",
+        "Core",
+        "切换玩家无敌"
+      ],
+      "note": "仅在战斗、竞技场或其他任务场景中可用。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "切换指定队伍无敌状态",
+      "description": "在当前战斗任务中切换指定队伍无敌状态。",
+      "command": "mission.toggleDisableDyingTeam {team_no}' for making all active agents of a team invincible",
+      "parameters": [
+        {
+          "key": "team_no",
+          "label": "队伍编号",
+          "default": "",
+          "placeholder": "请输入队伍编号",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "战斗任务",
+      "keywords": [
+        "mission.toggleDisableDyingTeam",
+        "mission",
+        "Core",
+        "切换玩家队伍无敌"
+      ],
+      "note": "仅在战斗、竞技场或其他任务场景中可用。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "列出物品模型名称",
+      "description": "用于列出物品模型名称。",
+      "command": "module.get_item_mesh_names",
+      "parameters": [],
+      "category": "界面与调试",
+      "keywords": [
+        "module.get_item_mesh_names",
+        "module",
+        "Core",
+        "module.get_item_mesh_names"
+      ],
+      "note": "可能只在对应功能或调试场景中生效。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "发布服务器公告",
+      "description": "在多人游戏或服务器环境中发布服务器公告。",
+      "command": "mp_admin.announcement {arguments}",
+      "parameters": [
+        {
+          "key": "arguments",
+          "label": "命令参数（可选）",
+          "default": "",
+          "placeholder": "请输入命令参数（可选）",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "category": "多人游戏",
+      "keywords": [
+        "mp_admin.announcement",
+        "mp_admin",
+        "Multiplayer",
+        "mp_admin.announcement"
+      ],
+      "note": "仅在多人游戏或服务器环境中可用；管理命令需要相应权限。 参数格式随场景变化，可先在游戏控制台输入“mp_admin.announcement help”查看。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.Multiplayer.dll",
+      "source_module": "Multiplayer"
+    },
+    {
+      "name": "封禁玩家",
+      "description": "在多人游戏或服务器环境中封禁玩家。",
+      "command": "mp_admin.ban_player {player_name}",
+      "parameters": [
+        {
+          "key": "player_name",
+          "label": "玩家名称",
+          "default": "",
+          "placeholder": "请输入玩家名称",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "多人游戏",
+      "keywords": [
+        "mp_admin.ban_player",
+        "mp_admin",
+        "Multiplayer",
+        "mp_admin.ban_player"
+      ],
+      "note": "仅在多人游戏或服务器环境中可用；管理命令需要相应权限。 执行前建议备份存档或确认目标。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.Multiplayer.dll",
+      "source_module": "Multiplayer"
+    },
+    {
+      "name": "修改兵种限制",
+      "description": "在多人游戏或服务器环境中修改兵种限制。",
+      "command": "mp_admin.change_class_restriction {arguments}",
+      "parameters": [
+        {
+          "key": "arguments",
+          "label": "命令参数（可选）",
+          "default": "",
+          "placeholder": "请输入命令参数（可选）",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "category": "多人游戏",
+      "keywords": [
+        "mp_admin.change_class_restriction",
+        "mp_admin",
+        "Multiplayer",
+        "mp_admin.change_class_restriction"
+      ],
+      "note": "仅在多人游戏或服务器环境中可用；管理命令需要相应权限。 参数格式随场景变化，可先在游戏控制台输入“mp_admin.change_class_restriction help”查看。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.Multiplayer.dll",
+      "source_module": "Multiplayer"
+    },
+    {
+      "name": "修改服务器人数上限",
+      "description": "在多人游戏或服务器环境中修改服务器人数上限。",
+      "command": "mp_admin.change_server_slots {arguments}",
+      "parameters": [
+        {
+          "key": "arguments",
+          "label": "命令参数（可选）",
+          "default": "",
+          "placeholder": "请输入命令参数（可选）",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "category": "多人游戏",
+      "keywords": [
+        "mp_admin.change_server_slots",
+        "mp_admin",
+        "Multiplayer",
+        "mp_admin.change_server_slots"
+      ],
+      "note": "仅在多人游戏或服务器环境中可用；管理命令需要相应权限。 参数格式随场景变化，可先在游戏控制台输入“mp_admin.change_server_slots help”查看。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.Multiplayer.dll",
+      "source_module": "Multiplayer"
+    },
+    {
+      "name": "修改服务器欢迎语",
+      "description": "在多人游戏或服务器环境中修改服务器欢迎语。",
+      "command": "mp_admin.change_welcome_message {message}",
+      "parameters": [
+        {
+          "key": "message",
+          "label": "欢迎消息",
+          "default": "",
+          "placeholder": "请输入欢迎消息",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "多人游戏",
+      "keywords": [
+        "mp_admin.change_welcome_message",
+        "mp_admin",
+        "Multiplayer",
+        "mp_admin.change_welcome_message"
+      ],
+      "note": "仅在多人游戏或服务器环境中可用；管理命令需要相应权限。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.Multiplayer.dll",
+      "source_module": "Multiplayer"
+    },
+    {
+      "name": "踢出玩家",
+      "description": "在多人游戏或服务器环境中踢出玩家。",
+      "command": "mp_admin.kick_player {player_name}",
+      "parameters": [
+        {
+          "key": "player_name",
+          "label": "玩家名称",
+          "default": "",
+          "placeholder": "请输入玩家名称",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "多人游戏",
+      "keywords": [
+        "mp_admin.kick_player",
+        "mp_admin",
+        "Multiplayer",
+        "mp_admin.kick_player"
+      ],
+      "note": "仅在多人游戏或服务器环境中可用；管理命令需要相应权限。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.Multiplayer.dll",
+      "source_module": "Multiplayer"
+    },
+    {
+      "name": "重启多人对局",
+      "description": "在多人游戏或服务器环境中重启多人对局。",
+      "command": "mp_admin.restart_game",
+      "parameters": [],
+      "category": "多人游戏",
+      "keywords": [
+        "mp_admin.restart_game",
+        "mp_admin",
+        "Multiplayer",
+        "mp_admin.restart_game"
+      ],
+      "note": "仅在多人游戏或服务器环境中可用；管理命令需要相应权限。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.Multiplayer.dll",
+      "source_module": "Multiplayer"
+    },
+    {
+      "name": "结束多人热身",
+      "description": "在多人游戏或服务器环境中结束多人热身。",
+      "command": "mp_host.end_warmup",
+      "parameters": [],
+      "category": "多人游戏",
+      "keywords": [
+        "mp_host.end_warmup",
+        "mp_host",
+        "Core",
+        "mp_host.end_warmup"
+      ],
+      "note": "仅在多人游戏或服务器环境中可用；管理命令需要相应权限。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "处死指定玩家",
+      "description": "在多人游戏或服务器环境中处死指定玩家。",
+      "command": "mp_host.kill_player {user_name}",
+      "parameters": [
+        {
+          "key": "user_name",
+          "label": "玩家名称",
+          "default": "",
+          "placeholder": "请输入玩家名称",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "多人游戏",
+      "keywords": [
+        "mp_host.kill_player",
+        "mp_host",
+        "Core",
+        "mp_host.kill_player"
+      ],
+      "note": "仅在多人游戏或服务器环境中可用；管理命令需要相应权限。 执行前建议备份存档或确认目标。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "触发多人特长事件",
+      "description": "在多人游戏或服务器环境中触发多人特长事件。",
+      "command": "mp_perks.raise_event {arguments}",
+      "parameters": [
+        {
+          "key": "arguments",
+          "label": "命令参数（可选）",
+          "default": "",
+          "placeholder": "请输入命令参数（可选）",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "category": "多人游戏",
+      "keywords": [
+        "mp_perks.raise_event",
+        "mp_perks",
+        "Core",
+        "mp_perks.raise_event"
+      ],
+      "note": "仅在多人游戏或服务器环境中可用；管理命令需要相应权限。 参数格式随场景变化，可先在游戏控制台输入“mp_perks.raise_event help”查看。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "推进多人特长效果",
+      "description": "在多人游戏或服务器环境中推进多人特长效果。",
+      "command": "mp_perks.tick_perks {arguments}",
+      "parameters": [
+        {
+          "key": "arguments",
+          "label": "命令参数（可选）",
+          "default": "",
+          "placeholder": "请输入命令参数（可选）",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "category": "多人游戏",
+      "keywords": [
+        "mp_perks.tick_perks",
+        "mp_perks",
+        "Core",
+        "mp_perks.tick_perks"
+      ],
+      "note": "仅在多人游戏或服务器环境中可用；管理命令需要相应权限。 参数格式随场景变化，可先在游戏控制台输入“mp_perks.tick_perks help”查看。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "为玩家添加船只",
+      "description": "在 War Sails 航海内容中为玩家添加船只。",
+      "command": "naval.add_ship_to_player {ship_name} | {count}",
+      "parameters": [
+        {
+          "key": "ship_name",
+          "label": "船只名称（留空为随机）",
+          "default": "",
+          "placeholder": "请输入船只名称（留空为随机）",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "count",
+          "label": "数量",
+          "default": "1",
+          "placeholder": "请输入数量",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "War Sails 航海",
+      "keywords": [
+        "naval.add_ship_to_player",
+        "naval",
+        "NavalDLC",
+        "为玩家添加船只"
+      ],
+      "note": "War Sails 命令；部分命令仅在海战或自定义海战中可用。",
+      "verified_registration": true,
+      "source_assembly": "NavalDLC.dll",
+      "source_module": "NavalDLC"
+    },
+    {
+      "name": "损伤玩家船只",
+      "description": "在 War Sails 航海内容中损伤玩家船只。",
+      "command": "naval.damage_player_ships",
+      "parameters": [],
+      "category": "War Sails 航海",
+      "keywords": [
+        "naval.damage_player_ships",
+        "naval",
+        "NavalDLC",
+        "损伤玩家船只"
+      ],
+      "note": "War Sails 命令；部分命令仅在海战或自定义海战中可用。",
+      "verified_registration": true,
+      "source_assembly": "NavalDLC.dll",
+      "source_module": "NavalDLC"
+    },
+    {
+      "name": "镜头定位玩家锚点",
+      "description": "在 War Sails 航海内容中镜头定位玩家锚点。",
+      "command": "naval.focus_player_anchor",
+      "parameters": [],
+      "category": "War Sails 航海",
+      "keywords": [
+        "naval.focus_player_anchor",
+        "naval",
+        "NavalDLC",
+        "镜头定位玩家锚点"
+      ],
+      "note": "War Sails 命令；部分命令仅在海战或自定义海战中可用。",
+      "verified_registration": true,
+      "source_assembly": "NavalDLC.View.dll",
+      "source_module": "NavalDLC"
+    },
+    {
+      "name": "镜头定位船只",
+      "description": "在 War Sails 航海内容中镜头定位船只。",
+      "command": "naval.focus_ship {shiphullstringid_shiphullname}",
+      "parameters": [
+        {
+          "key": "shiphullstringid_shiphullname",
+          "label": "船体 ID 或船体名称",
+          "default": "",
+          "placeholder": "请输入船体 ID 或船体名称",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "War Sails 航海",
+      "keywords": [
+        "naval.focus_ship",
+        "naval",
+        "NavalDLC",
+        "镜头定位船只"
+      ],
+      "note": "War Sails 命令；部分命令仅在海战或自定义海战中可用。",
+      "verified_registration": true,
+      "source_assembly": "NavalDLC.View.dll",
+      "source_module": "NavalDLC"
+    },
+    {
+      "name": "显示海战任务设置",
+      "description": "在 War Sails 航海内容中显示海战任务设置。",
+      "command": "naval.get_mission_settings {arguments}",
+      "parameters": [
+        {
+          "key": "arguments",
+          "label": "命令参数（可选）",
+          "default": "",
+          "placeholder": "请输入命令参数（可选）",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "category": "War Sails 航海",
+      "keywords": [
+        "naval.get_mission_settings",
+        "naval",
+        "NavalDLC",
+        "naval.get_mission_settings"
+      ],
+      "note": "War Sails 命令；部分命令仅在海战或自定义海战中可用。 参数格式随场景变化，可先在游戏控制台输入“naval.get_mission_settings help”查看。",
+      "verified_registration": true,
+      "source_assembly": "NavalDLC.dll",
+      "source_module": "NavalDLC"
+    },
+    {
+      "name": "列出全部船首像名称",
+      "description": "在 War Sails 航海内容中列出全部船首像名称。",
+      "command": "naval.list_all_figurehead_names",
+      "parameters": [],
+      "category": "War Sails 航海",
+      "keywords": [
+        "naval.list_all_figurehead_names",
+        "naval",
+        "NavalDLC",
+        "列出全部船首像名称"
+      ],
+      "note": "War Sails 命令；部分命令仅在海战或自定义海战中可用。",
+      "verified_registration": true,
+      "source_assembly": "NavalDLC.dll",
+      "source_module": "NavalDLC"
+    },
+    {
+      "name": "列出全部船只名称",
+      "description": "在 War Sails 航海内容中列出全部船只名称。",
+      "command": "naval.list_all_ship_names",
+      "parameters": [],
+      "category": "War Sails 航海",
+      "keywords": [
+        "naval.list_all_ship_names",
+        "naval",
+        "NavalDLC",
+        "列出全部船只名称"
+      ],
+      "note": "War Sails 命令；部分命令仅在海战或自定义海战中可用。",
+      "verified_registration": true,
+      "source_assembly": "NavalDLC.dll",
+      "source_module": "NavalDLC"
+    },
+    {
+      "name": "重置海战任务设置",
+      "description": "在 War Sails 航海内容中重置海战任务设置。",
+      "command": "naval.reset_mission_settings",
+      "parameters": [],
+      "category": "War Sails 航海",
+      "keywords": [
+        "naval.reset_mission_settings",
+        "naval",
+        "NavalDLC",
+        "naval.reset_mission_settings"
+      ],
+      "note": "War Sails 命令；部分命令仅在海战或自定义海战中可用。",
+      "verified_registration": true,
+      "source_assembly": "NavalDLC.dll",
+      "source_module": "NavalDLC"
+    },
+    {
+      "name": "切换海战兵力最大化",
+      "description": "在 War Sails 航海内容中切换海战兵力最大化。",
+      "command": "naval.set_maximize_troop_counts {value}",
+      "parameters": [
+        {
+          "key": "value",
+          "label": "数值",
+          "default": "100",
+          "placeholder": "请输入数值",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "War Sails 航海",
+      "keywords": [
+        "naval.set_maximize_troop_counts",
+        "naval",
+        "NavalDLC",
+        "naval.set_maximize_troop_counts"
+      ],
+      "note": "War Sails 命令；部分命令仅在海战或自定义海战中可用。",
+      "verified_registration": true,
+      "source_assembly": "NavalDLC.dll",
+      "source_module": "NavalDLC"
+    },
+    {
+      "name": "设置海战场景",
+      "description": "在 War Sails 航海内容中设置海战场景。",
+      "command": "naval.set_mission_scene {scenename}",
+      "parameters": [
+        {
+          "key": "scenename",
+          "label": "场景名称",
+          "default": "",
+          "placeholder": "请输入场景名称",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "War Sails 航海",
+      "keywords": [
+        "naval.set_mission_scene",
+        "naval",
+        "NavalDLC",
+        "naval.set_mission_scene"
+      ],
+      "note": "War Sails 命令；部分命令仅在海战或自定义海战中可用。",
+      "verified_registration": true,
+      "source_assembly": "NavalDLC.dll",
+      "source_module": "NavalDLC"
+    },
+    {
+      "name": "设置海战双方船只",
+      "description": "在 War Sails 航海内容中设置海战双方船只。",
+      "command": "naval.set_mission_ships {arguments}",
+      "parameters": [
+        {
+          "key": "arguments",
+          "label": "命令参数（可选）",
+          "default": "player default",
+          "placeholder": "请输入命令参数（可选）",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "War Sails 航海",
+      "keywords": [
+        "naval.set_mission_ships",
+        "naval",
+        "NavalDLC",
+        "naval.set_mission_ships"
+      ],
+      "note": "War Sails 命令；部分命令仅在海战或自定义海战中可用。 参数格式随场景变化，可先在游戏控制台输入“naval.set_mission_ships help”查看。",
+      "verified_registration": true,
+      "source_assembly": "NavalDLC.dll",
+      "source_module": "NavalDLC"
+    },
+    {
+      "name": "设置海战双方兵力",
+      "description": "在 War Sails 航海内容中设置海战双方兵力。",
+      "command": "naval.set_mission_troop_counts {player_melee} {player_ranged} {enemy_melee} {enemy_ranged}",
+      "parameters": [
+        {
+          "key": "player_melee",
+          "label": "玩家近战人数",
+          "default": "50",
+          "placeholder": "请输入玩家近战人数",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "player_ranged",
+          "label": "玩家远程人数",
+          "default": "50",
+          "placeholder": "请输入玩家远程人数",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "enemy_melee",
+          "label": "敌方近战人数",
+          "default": "50",
+          "placeholder": "请输入敌方近战人数",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "enemy_ranged",
+          "label": "敌方远程人数",
+          "default": "50",
+          "placeholder": "请输入敌方远程人数",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "War Sails 航海",
+      "keywords": [
+        "naval.set_mission_troop_counts",
+        "naval",
+        "NavalDLC",
+        "naval.set_mission_troop_counts"
+      ],
+      "note": "War Sails 命令；部分命令仅在海战或自定义海战中可用。",
+      "verified_registration": true,
+      "source_assembly": "NavalDLC.dll",
+      "source_module": "NavalDLC"
+    },
+    {
+      "name": "启动海战任务",
+      "description": "在 War Sails 航海内容中启动海战任务。",
+      "command": "naval.start_mission",
+      "parameters": [],
+      "category": "War Sails 航海",
+      "keywords": [
+        "naval.start_mission",
+        "naval",
+        "NavalDLC",
+        "启动海战任务"
+      ],
+      "note": "War Sails 命令；部分命令仅在海战或自定义海战中可用。",
+      "verified_registration": true,
+      "source_assembly": "NavalDLC.dll",
+      "source_module": "NavalDLC"
+    },
+    {
+      "name": "解锁船首像",
+      "description": "在 War Sails 航海内容中解锁船首像。",
+      "command": "naval.unlock_figurehead {figurehead_id_or_all}",
+      "parameters": [
+        {
+          "key": "figurehead_id_or_all",
+          "label": "船首像 ID 或 all",
+          "default": "",
+          "placeholder": "请输入船首像 ID 或 all",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "War Sails 航海",
+      "keywords": [
+        "naval.unlock_figurehead",
+        "naval",
+        "NavalDLC",
+        "解锁船首像"
+      ],
+      "note": "War Sails 命令；部分命令仅在海战或自定义海战中可用。",
+      "verified_registration": true,
+      "source_assembly": "NavalDLC.dll",
+      "source_module": "NavalDLC"
+    },
+    {
+      "name": "触发平台邀请",
+      "description": "用于触发平台邀请。",
+      "command": "platform_services.trigger_invitation",
+      "parameters": [],
+      "category": "界面与调试",
+      "keywords": [
+        "platform_services.trigger_invitation",
+        "platform_services",
+        "Core",
+        "platform_services.trigger_invitation"
+      ],
+      "note": "可能只在对应功能或调试场景中生效。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.PlatformService.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "启用自定义战斗录像",
+      "description": "用于启用自定义战斗录像。",
+      "command": "replay_mission.enable_custom_record",
+      "parameters": [],
+      "category": "界面与调试",
+      "keywords": [
+        "replay_mission.enable_custom_record",
+        "replay_mission",
+        "CustomBattle",
+        "replay_mission.enable_custom_record"
+      ],
+      "note": "调试命令；可能只在特定界面或开发场景中生效。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.CustomBattle.dll",
+      "source_module": "CustomBattle"
+    },
+    {
+      "name": "强制切换计分板",
+      "description": "用于强制切换计分板。",
+      "command": "scoreboard.force_toggle {arguments}",
+      "parameters": [
+        {
+          "key": "arguments",
+          "label": "命令参数（可选）",
+          "default": "",
+          "placeholder": "请输入命令参数（可选）",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "category": "界面与调试",
+      "keywords": [
+        "scoreboard.force_toggle",
+        "scoreboard",
+        "Native",
+        "scoreboard.force_toggle"
+      ],
+      "note": "调试命令；可能只在特定界面或开发场景中生效。 参数格式随场景变化，可先在游戏控制台输入“scoreboard.force_toggle help”查看。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.GauntletUI.dll",
+      "source_module": "Native"
+    },
+    {
+      "name": "结束状态字符串性能测试",
+      "description": "用于结束状态字符串性能测试。",
+      "command": "state_string.benchmark_end {arguments}",
+      "parameters": [
+        {
+          "key": "arguments",
+          "label": "命令参数（可选）",
+          "default": "",
+          "placeholder": "请输入命令参数（可选）",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "category": "界面与调试",
+      "keywords": [
+        "state_string.benchmark_end",
+        "state_string",
+        "CustomBattle",
+        "state_string.benchmark_end"
+      ],
+      "note": "调试命令；可能只在特定界面或开发场景中生效。 参数格式随场景变化，可先在游戏控制台输入“state_string.benchmark_end help”查看。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.CustomBattle.dll",
+      "source_module": "CustomBattle"
+    },
+    {
+      "name": "开始状态字符串性能测试",
+      "description": "用于开始状态字符串性能测试。",
+      "command": "state_string.benchmark_start",
+      "parameters": [],
+      "category": "界面与调试",
+      "keywords": [
+        "state_string.benchmark_start",
+        "state_string",
+        "CustomBattle",
+        "state_string.benchmark_start"
+      ],
+      "note": "调试命令；可能只在特定界面或开发场景中生效。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.MountAndBlade.CustomBattle.dll",
+      "source_module": "CustomBattle"
+    },
+    {
+      "name": "添加故事模式家族成员",
+      "description": "用于添加故事模式家族成员。",
+      "command": "storymode.add_family_members",
+      "parameters": [],
+      "category": "界面与调试",
+      "keywords": [
+        "storymode.add_family_members",
+        "storymode",
+        "StoryMode",
+        "storymode.add_family_members"
+      ],
+      "note": "可能只在对应功能或调试场景中生效。",
+      "verified_registration": true,
+      "source_assembly": "StoryMode.dll",
+      "source_module": "StoryMode"
+    },
+    {
+      "name": "从文本应用战斗布局",
+      "description": "用于从文本应用战斗布局。",
+      "command": "ui.cb_apply_battle_layout_from_string",
+      "parameters": [],
+      "category": "界面与调试",
+      "keywords": [
+        "ui.cb_apply_battle_layout_from_string",
+        "ui",
+        "Core",
+        "ui.cb_apply_battle_layout_from_string"
+      ],
+      "note": "调试命令；可能只在特定界面或开发场景中生效。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.ScreenSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "清除攻城器械选择",
+      "description": "用于清除攻城器械选择。",
+      "command": "ui.cb_clear_siege_machine_selection",
+      "parameters": [],
+      "category": "界面与调试",
+      "keywords": [
+        "ui.cb_clear_siege_machine_selection",
+        "ui",
+        "Core",
+        "ui.cb_clear_siege_machine_selection"
+      ],
+      "note": "调试命令；可能只在特定界面或开发场景中生效。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.ScreenSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "复制战斗布局到剪贴板",
+      "description": "用于复制战斗布局到剪贴板。",
+      "command": "ui.cb_copy_battle_layout_to_clipboard",
+      "parameters": [],
+      "category": "界面与调试",
+      "keywords": [
+        "ui.cb_copy_battle_layout_to_clipboard",
+        "ui",
+        "Core",
+        "ui.cb_copy_battle_layout_to_clipboard"
+      ],
+      "note": "调试命令；可能只在特定界面或开发场景中生效。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.ScreenSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "切换界面调试模式",
+      "description": "用于切换界面调试模式。",
+      "command": "ui.set_debug_mode {value_1_0}",
+      "parameters": [
+        {
+          "key": "value_1_0",
+          "label": "开关（1/0）",
+          "default": "",
+          "placeholder": "请输入开关（1/0）",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "界面与调试",
+      "keywords": [
+        "ui.set_debug_mode",
+        "ui",
+        "Core",
+        "ui.set_debug_mode"
+      ],
+      "note": "调试命令；可能只在特定界面或开发场景中生效。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.Engine.GauntletUI.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "切换屏幕调试信息",
+      "description": "用于切换屏幕调试信息。",
+      "command": "ui.set_screen_debug_information_enabled {true_false}",
+      "parameters": [
+        {
+          "key": "true_false",
+          "label": "开关（True/False）",
+          "default": "",
+          "placeholder": "请输入开关（True/False）",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "category": "界面与调试",
+      "keywords": [
+        "ui.set_screen_debug_information_enabled",
+        "ui",
+        "Core",
+        "ui.set_screen_debug_information_enabled"
+      ],
+      "note": "调试命令；可能只在特定界面或开发场景中生效。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.ScreenSystem.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "切换游戏界面显示",
+      "description": "用于切换游戏界面显示。",
+      "command": "ui.toggle_ui",
+      "parameters": [],
+      "category": "界面与调试",
+      "keywords": [
+        "ui.toggle_ui",
+        "ui",
+        "Core",
+        "切换游戏界面"
+      ],
+      "note": "调试命令；可能只在特定界面或开发场景中生效。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.Engine.dll",
+      "source_module": "Core"
+    },
+    {
+      "name": "切换自动生成界面预制件",
+      "description": "用于切换自动生成界面预制件。",
+      "command": "ui.use_generated_prefabs {value_1_0}",
+      "parameters": [
+        {
+          "key": "value_1_0",
+          "label": "开关（1/0）",
+          "default": "",
+          "placeholder": "请输入开关（1/0）",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "category": "界面与调试",
+      "keywords": [
+        "ui.use_generated_prefabs",
+        "ui",
+        "Core",
+        "ui.use_generated_prefabs"
+      ],
+      "note": "调试命令；可能只在特定界面或开发场景中生效。",
+      "verified_registration": true,
+      "source_assembly": "TaleWorlds.Engine.GauntletUI.dll",
+      "source_module": "Core"
+    }
+  ]
+}

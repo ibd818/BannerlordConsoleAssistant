@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bannerlord-console-assistant"
+version = "1.0.0"
+description = "A command library and generator for the official Mount & Blade II: Bannerlord console."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["PySide6-Essentials>=6.7,<7"]
+
+[project.scripts]
+bannerlord-console-assistant = "bannerlord_assistant.app:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+bannerlord_assistant = ["data/*.json"]

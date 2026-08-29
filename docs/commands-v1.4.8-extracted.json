@@ -1,0 +1,2878 @@
+{
+  "game_version": "Bannerlord v1.4.8.119303",
+  "dlc_version": "War Sails v1.2.8.119303",
+  "game_path": "D:\\Mount & Blade II Bannerlord\\Mount & Blade II Bannerlord",
+  "method": "CommandLineArgumentFunction attributes extracted from installed Win64_Shipping_Client assemblies",
+  "command_count": 163,
+  "commands": [
+    {
+      "command": "ai.formation_speed_adjustment_enabled",
+      "group": "ai",
+      "attribute_name": "formation_speed_adjustment_enabled",
+      "method": "EnableSpeedAdjustmentCommand",
+      "module": "Core",
+      "assembly": "TaleWorlds.MountAndBlade.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Speed Adjustment ",
+        "enabled",
+        "disabled",
+        "Does not work on multiplayer."
+      ]
+    },
+    {
+      "command": "benchmark.cpu_benchmark",
+      "group": "benchmark",
+      "attribute_name": "cpu_benchmark",
+      "method": "CPUBenchmark",
+      "module": "CustomBattle",
+      "assembly": "TaleWorlds.MountAndBlade.CustomBattle.dll",
+      "help_strings": [],
+      "method_strings": [
+        "siege"
+      ]
+    },
+    {
+      "command": "benchmark.cpu_benchmark_mission",
+      "group": "benchmark",
+      "attribute_name": "cpu_benchmark_mission",
+      "method": "CPUBenchmarkMission",
+      "module": "CustomBattle",
+      "assembly": "TaleWorlds.MountAndBlade.CustomBattle.dll",
+      "help_strings": [],
+      "method_strings": [
+        "benchmark_battle_11",
+        "Success"
+      ]
+    },
+    {
+      "command": "campaign.activate_all_policies_for_player_kingdom",
+      "group": "campaign",
+      "attribute_name": "activate_all_policies_for_player_kingdom",
+      "method": "ActivateAllPolicies",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.activate_all_policies_for_player_kingdom"
+      ],
+      "method_strings": [
+        "Format is \"campaign.activate_all_policies_for_player_kingdom",
+        "All policies are now active for player kingdom.",
+        "Player is not in a kingdom."
+      ]
+    },
+    {
+      "command": "campaign.add_attribute_points_to_hero",
+      "group": "campaign",
+      "attribute_name": "add_attribute_points_to_hero",
+      "method": "AddAttributePointsCheat",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.add_attribute_points_to_hero [HeroName] | [PositiveNumber]\".",
+        "Check parameters \n"
+      ],
+      "method_strings": [
+        "Format is \"campaign.add_attribute_points_to_hero [HeroName] | [PositiveNumber]\".",
+        "{0} attribute points added to the {1}. ",
+        "Please enter a positive number\n",
+        "Check parameters \n"
+      ]
+    },
+    {
+      "command": "campaign.add_building_level",
+      "group": "campaign",
+      "attribute_name": "add_building_level",
+      "method": "AddDevelopment",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.add_building_level [SettlementName] | [Building]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.add_building_level [SettlementName] | [Building]\".",
+        " level increased to ",
+        " at ",
+        " is already at max level!",
+        "\n",
+        "Requested settlement is not suitable right now to take this action"
+      ]
+    },
+    {
+      "command": "campaign.add_crafting_materials",
+      "group": "campaign",
+      "attribute_name": "add_crafting_materials",
+      "method": "AddCraftingMaterials",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.add_crafting_materials\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.add_crafting_materials\".",
+        "100 pieces for each crafting material is added to the player inventory."
+      ]
+    },
+    {
+      "command": "campaign.add_focus_points_to_hero",
+      "group": "campaign",
+      "attribute_name": "add_focus_points_to_hero",
+      "method": "AddFocusPointCheat",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.add_focus_points_to_hero [HeroName] | [PositiveNumber]\".",
+        "Check parameters \n"
+      ],
+      "method_strings": [
+        "Format is \"campaign.add_focus_points_to_hero [HeroName] | [PositiveNumber]\".",
+        "{0} focus points added to the {1}. ",
+        "Please enter a positive number\n",
+        "Check parameters \n"
+      ]
+    },
+    {
+      "command": "campaign.add_gold_to_hero",
+      "group": "campaign",
+      "attribute_name": "add_gold_to_hero",
+      "method": "AddGoldToHero",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.add_gold_to_hero [HeroName] | [PositiveNumber]\".\n If number is not specified, 1000 will be added. \n If hero name is not specified, player's gold will change.",
+        "Hero's gold must be between 0-100000000."
+      ],
+      "method_strings": [
+        "Format is \"campaign.add_gold_to_hero [HeroName] | [PositiveNumber]\".\n If number is not specified, 1000 will be added. \n If hero name is not specified, player's gold will change.",
+        "Success",
+        "Please enter a number\n",
+        "\n",
+        "Hero's gold must be between 0-100000000.",
+        "{0}'s denars changed by {1}."
+      ]
+    },
+    {
+      "command": "campaign.add_hero_relation",
+      "group": "campaign",
+      "attribute_name": "add_hero_relation",
+      "method": "AddHeroRelation",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.add_hero_relation [HeroName] | [OtherHeroName(optional)] | [Value] \".\n",
+        "Format is \"campaign.add_hero_relation [HeroName]/All | [OtherHeroName(optional)] | [Value] \".\n"
+      ],
+      "method_strings": [
+        "Format is \"campaign.add_hero_relation [HeroName] | [OtherHeroName(optional)] | [Value] \".\n",
+        "Format is \"campaign.add_hero_relation [HeroName]/All | [OtherHeroName(optional)] | [Value] \".\n",
+        "The value is too much",
+        "Can not add relation to same heroes.",
+        "Success",
+        "all",
+        "\n",
+        "Please enter a number\n"
+      ]
+    },
+    {
+      "command": "campaign.add_influence",
+      "group": "campaign",
+      "attribute_name": "add_influence",
+      "method": "AddInfluence",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.add_influence [Number]\". If Number is not entered, 100 influence will be added.",
+        "Please enter a positive number\nFormat is \"campaign.add_influence [Number]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.add_influence [Number]\". If Number is not entered, 100 influence will be added.",
+        "The value is too much",
+        "The influence of player is changed by {0} to {1} ",
+        "Please enter a positive number\nFormat is \"campaign.add_influence [Number]\"."
+      ]
+    },
+    {
+      "command": "campaign.add_item_to_player_party",
+      "group": "campaign",
+      "attribute_name": "add_item_to_player_party",
+      "method": "AddItemToPlayerParty",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.add_item_to_player_party [ItemId] | [ModifierId] | [Amount]\"\n If amount is not entered only 1 item will be given.\n Modifier name is optional.",
+        "Second parameter is invalid.\n"
+      ],
+      "method_strings": [
+        "Format is \"campaign.add_item_to_player_party [ItemId] | [ModifierId] | [Amount]\"\n If amount is not entered only 1 item will be given.\n Modifier name is optional.",
+        " has been given to the main party.",
+        "The value is too much",
+        "Second parameter is invalid.\n",
+        "Item is not found\n"
+      ]
+    },
+    {
+      "command": "campaign.add_morale_to_party",
+      "group": "campaign",
+      "attribute_name": "add_morale_to_party",
+      "method": "AddMoraleToParty",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.add_morale_to_party [HeroName] | [Number]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.add_morale_to_party [HeroName] | [Number]\".",
+        "all",
+        "All lords parties morale is changed",
+        "The base morale of {0}'s party changed by {1}.",
+        "Hero: ",
+        " does not belonged to any party.\n",
+        "\n"
+      ]
+    },
+    {
+      "command": "campaign.add_player_age",
+      "group": "campaign",
+      "attribute_name": "add_player_age",
+      "method": "SetMainHeroAge",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.add_player_age [PositiveNumber]\".",
+        "Age must be between {0} - {1}"
+      ],
+      "method_strings": [
+        "Format is \"campaign.add_player_age [PositiveNumber]\".",
+        "Please enter a positive number\n",
+        "Age must be between {0} - {1}",
+        "Success"
+      ]
+    },
+    {
+      "command": "campaign.add_power_to_notable",
+      "group": "campaign",
+      "attribute_name": "add_power_to_notable",
+      "method": "AddPowerToNotable",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is campaign.add_power_to_notable [HeroName] | [Number]"
+      ],
+      "method_strings": [
+        "Format is campaign.add_power_to_notable [HeroName] | [Number]",
+        "Please enter a positive number\n",
+        "Hero is not a notable.",
+        "The value is too much",
+        "{0} power is {1}",
+        "\n"
+      ]
+    },
+    {
+      "command": "campaign.add_prisoner_to_party",
+      "group": "campaign",
+      "attribute_name": "add_prisoner_to_party",
+      "method": "AddPrisonerToParty",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.add_prisoner_to_party [PrisonerName] | [CapturerName]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.add_prisoner_to_party [PrisonerName] | [CapturerName]\".",
+        "\n",
+        "Capturer hero is not active!",
+        "Hero can't be taken as a prisoner!",
+        "Factions are not at war!",
+        "prisoners party shouldn't be in a map event.",
+        "Success"
+      ]
+    },
+    {
+      "command": "campaign.add_renown_to_clan",
+      "group": "campaign",
+      "attribute_name": "add_renown_to_clan",
+      "method": "AddRenown",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.add_renown [ClanName] | [PositiveNumber]\". \n If number is not specified, 100 will be added. \n If clan name is not specified, player clan will get the renown."
+      ],
+      "method_strings": [
+        "Format is \"campaign.add_renown [ClanName] | [PositiveNumber]\". \n If number is not specified, 100 will be added. \n If clan name is not specified, player clan will get the renown.",
+        "Please enter a positive number\n",
+        "The value is too much",
+        "Added {0} renown to ",
+        "Clan: ",
+        " not found.\n",
+        "Wrong Input.\n"
+      ]
+    },
+    {
+      "command": "campaign.add_skill_xp_to_hero",
+      "group": "campaign",
+      "attribute_name": "add_skill_xp_to_hero",
+      "method": "AddSkillXpToHero",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.add_skill_xp_to_hero [HeroName] | [SkillName] | [PositiveNumber]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.add_skill_xp_to_hero [HeroName] | [SkillName] | [PositiveNumber]\".",
+        "{0} xp is modified to {1} xp due to focus point factor \nand added to the {2}'s {3} skill.\n",
+        "Wrong Input.\n",
+        "Please enter a positive number\n",
+        " ",
+        "Input {0} xp is modified to {1} xp due to focus point factor \nand added to the {2}'s {3} skill. ",
+        "{0} value for {1} is already at max.. ",
+        "Skill not found.\n",
+        "\n"
+      ]
+    },
+    {
+      "command": "campaign.add_supporters_for_main_hero",
+      "group": "campaign",
+      "attribute_name": "add_supporters_for_main_hero",
+      "method": "AddSupportersForMainHero",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Usage : campaign.add_supporters_for_main_hero [Number]"
+      ],
+      "method_strings": [
+        "Usage : campaign.add_supporters_for_main_hero [Number]",
+        "\n",
+        "supporter added: ",
+        "\nSuccess",
+        "Please enter a positive number\n"
+      ]
+    },
+    {
+      "command": "campaign.add_troops",
+      "group": "campaign",
+      "attribute_name": "add_troops",
+      "method": "AddTroopsToParty",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Write \"campaign.add_troops help\" for help",
+        "Usage : \"campaign.add_troops [TroopId] | [Number] | [PartyName]\". Party name is optional.",
+        "Given party with the parameter: "
+      ],
+      "method_strings": [
+        "Write \"campaign.add_troops help\" for help",
+        "Usage : \"campaign.add_troops [TroopId] | [Number] | [PartyName]\". Party name is optional.",
+        "\n",
+        "Available troops",
+        "==============================",
+        "Id: ",
+        " Name: ",
+        "Troop occupation should be Soldier or Gangster to add party",
+        "Please enter a positive number\n",
+        "Given party with the parameter: ",
+        "  not found",
+        "Party shouldn't be in a map event.",
+        "The value is too much",
+        "_addAdditionalPartySizeAsCheat",
+        " gained ",
+        " of ",
+        "."
+      ]
+    },
+    {
+      "command": "campaign.add_xp_to_player_party_prisoners",
+      "group": "campaign",
+      "attribute_name": "add_xp_to_player_party_prisoners",
+      "method": "AddPrisonersXp",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.add_xp_to_player_party_prisoners [Amount]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.add_xp_to_player_party_prisoners [Amount]\".",
+        "Please enter a positive number\n",
+        "[DEBUG] ",
+        " xp given to ",
+        "Success"
+      ]
+    },
+    {
+      "command": "campaign.add_xp_to_player_party_troops",
+      "group": "campaign",
+      "attribute_name": "add_xp_to_player_party_troops",
+      "method": "AddTroopsXp",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.add_xp_to_player_party_troops [Amount]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.add_xp_to_player_party_troops [Amount]\".",
+        "Please enter a positive number\n",
+        "The value is too much",
+        "[DEBUG] ",
+        " xp given to ",
+        "Success"
+      ]
+    },
+    {
+      "command": "campaign.boost_cohesion_of_army",
+      "group": "campaign",
+      "attribute_name": "boost_cohesion_of_army",
+      "method": "BoostCohesionOfArmy",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"boost_cohesion_of_army [ArmyLeaderName]\"."
+      ],
+      "method_strings": [
+        "Format is \"boost_cohesion_of_army [ArmyLeaderName]\".",
+        "Hero: ",
+        " does not belong to any army.",
+        ".\n",
+        "{0}'s army cohesion is boosted.",
+        "Wrong input.\n"
+      ]
+    },
+    {
+      "command": "campaign.cancel_quest",
+      "group": "campaign",
+      "attribute_name": "cancel_quest",
+      "method": "CancelQuestCheat",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.cancel_quest [quest name]\".",
+        "Given parameters is not correct"
+      ],
+      "method_strings": [
+        "Format is \"campaign.cancel_quest [quest name]\".",
+        " ",
+        "Quest not found.\n",
+        "There are more than one quest with the name: ",
+        "Quest can not be special quest",
+        "{=!}Quest is canceled by cheat.",
+        "Success",
+        "Given parameters is not correct"
+      ]
+    },
+    {
+      "command": "campaign.clear_settlement_defense",
+      "group": "campaign",
+      "attribute_name": "clear_settlement_defense",
+      "method": "ClearSettlementDefense",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.clear_settlement_defense [SettlementName]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.clear_settlement_defense [SettlementName]\".",
+        "Success",
+        "\n"
+      ]
+    },
+    {
+      "command": "campaign.conceive_child",
+      "group": "campaign",
+      "attribute_name": "conceive_child",
+      "method": "MakePregnant",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Success",
+        "You are expecting a child already.",
+        "You need to be married to have a child, use \"campaign.marry_player_with_hero [HeroName]\" cheat to marry.",
+        "error"
+      ]
+    },
+    {
+      "command": "campaign.create_clan",
+      "group": "campaign",
+      "attribute_name": "create_clan",
+      "method": "CreateRandomClan",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.create_clan [KingdomName]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.create_clan [KingdomName]\".",
+        "\n",
+        "test_clan_",
+        "Can't find a proper lord template.\n",
+        "{0} is added to {1}. Its leader is: {2}"
+      ]
+    },
+    {
+      "command": "campaign.create_player_kingdom",
+      "group": "campaign",
+      "attribute_name": "create_player_kingdom",
+      "method": "CreatePlayerKingdom",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.create_player_kingdom\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.create_player_kingdom\".",
+        "Success"
+      ]
+    },
+    {
+      "command": "campaign.declare_peace",
+      "group": "campaign",
+      "attribute_name": "declare_peace",
+      "method": "DeclarePeace",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [],
+      "method_strings": [
+        "campaign.declare_peace [Faction1] | [Faction2]",
+        ": ",
+        "\n",
+        "Can't declare between same factions",
+        " is bound to a kingdom.",
+        "There is constant war between factions, peace can't be declared",
+        "The factions not at war",
+        "Peace declared between ",
+        " and "
+      ]
+    },
+    {
+      "command": "campaign.declare_war",
+      "group": "campaign",
+      "attribute_name": "declare_war",
+      "method": "DeclareWar",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is campaign.declare_war [Faction1] | [Faction2]\"."
+      ],
+      "method_strings": [
+        "Format is campaign.declare_war [Faction1] | [Faction2]\".",
+        ": ",
+        "\n",
+        "Can't declare between same factions",
+        " is bound to a kingdom.",
+        "The factions already at war",
+        "Faction 1 is eliminated",
+        "Faction 2 is eliminated",
+        "War declared between ",
+        " and "
+      ]
+    },
+    {
+      "command": "campaign.export_hero",
+      "group": "campaign",
+      "attribute_name": "export_hero",
+      "method": "ExportHero",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.export_hero [filenamewithoutextension] | [nameofhero]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.export_hero [filenamewithoutextension] | [nameofhero]\".",
+        ".char",
+        "File ",
+        " already exists",
+        "Success",
+        "\n"
+      ]
+    },
+    {
+      "command": "campaign.export_main_hero",
+      "group": "campaign",
+      "attribute_name": "export_main_hero",
+      "method": "ExportMainHero",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.export_main_hero [filenamewithoutextension]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.export_main_hero [filenamewithoutextension]\".",
+        ".char",
+        "File already exists",
+        "Main hero is exported to ",
+        "An error occurred"
+      ]
+    },
+    {
+      "command": "campaign.focus_hero",
+      "group": "campaign",
+      "attribute_name": "focus_hero",
+      "method": "FocusHero",
+      "module": "SandBox",
+      "assembly": "SandBox.View.dll",
+      "help_strings": [
+        "Format is \"campaign.focus_hero [HeroName]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.focus_hero [HeroName]\".",
+        "Instance",
+        "Success",
+        "Party is not found : ",
+        "\n",
+        ": "
+      ]
+    },
+    {
+      "command": "campaign.focus_hostile_army",
+      "group": "campaign",
+      "attribute_name": "focus_hostile_army",
+      "method": "FocusHostileArmy",
+      "module": "SandBox",
+      "assembly": "SandBox.View.dll",
+      "help_strings": [
+        "Format is \"campaign.focus_hostile_army\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.focus_hostile_army\".",
+        "There isn't any hostile army right now.",
+        "Instance",
+        "Success"
+      ]
+    },
+    {
+      "command": "campaign.focus_infested_hideout",
+      "group": "campaign",
+      "attribute_name": "focus_infested_hideout",
+      "method": "FocusInfestedHideout",
+      "module": "SandBox",
+      "assembly": "SandBox.View.dll",
+      "help_strings": [
+        "Format is \"campaign.focus_infested_hideout [Optional: Number of troops]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.focus_infested_hideout [Optional: Number of troops]\".",
+        "All hideouts are empty!",
+        "Can't find suitable hideout.",
+        "Incorrect input.\n",
+        "Instance",
+        "Success",
+        "Unable to find such a hideout."
+      ]
+    },
+    {
+      "command": "campaign.focus_issue",
+      "group": "campaign",
+      "attribute_name": "focus_issue",
+      "method": "FocusIssues",
+      "module": "SandBox",
+      "assembly": "SandBox.View.dll",
+      "help_strings": [
+        "Format is \"campaign.focus_issue [IssueName]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.focus_issue [IssueName]\".",
+        "Instance",
+        " ",
+        "Found issue: ",
+        ". Issue Owner: "
+      ]
+    },
+    {
+      "command": "campaign.focus_mobile_party",
+      "group": "campaign",
+      "attribute_name": "focus_mobile_party",
+      "method": "FocusMobileParty",
+      "module": "SandBox",
+      "assembly": "SandBox.View.dll",
+      "help_strings": [
+        "Format is \"campaign.focus_mobile_party [PartyName]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.focus_mobile_party [PartyName]\".",
+        "Instance",
+        "Focused party {0}",
+        " : \n"
+      ]
+    },
+    {
+      "command": "campaign.focus_tournament",
+      "group": "campaign",
+      "attribute_name": "focus_tournament",
+      "method": "FocusTournament",
+      "module": "SandBox",
+      "assembly": "SandBox.View.dll",
+      "help_strings": [
+        "Format is \"campaign.focus_tournament\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.focus_tournament\".",
+        "There isn't any tournament right now.",
+        "Instance",
+        "Success"
+      ]
+    },
+    {
+      "command": "campaign.give_settlement_to_kingdom",
+      "group": "campaign",
+      "attribute_name": "give_settlement_to_kingdom",
+      "method": "GiveSettlementToKingdom",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.give_settlement_to_kingdom [SettlementName] | [KingdomName]",
+        "Settlement must be castle or town."
+      ],
+      "method_strings": [
+        "Format is \"campaign.give_settlement_to_kingdom [SettlementName] | [KingdomName]",
+        "Kingdom already owns the settlement.",
+        "Settlement must be castle or town.",
+        " has been given to {0}.",
+        "\n"
+      ]
+    },
+    {
+      "command": "campaign.give_settlement_to_player",
+      "group": "campaign",
+      "attribute_name": "give_settlement_to_player",
+      "method": "GiveSettlementToPlayer",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.give_settlement_to_player [SettlementName/SettlementId]\nWrite \"campaign.give_settlement_to_player help\" to list available settlements.\nWrite \"campaign.give_settlement_to_player Calradia\" to give all settlements to player.",
+        "help",
+        "Settlement must be castle or town."
+      ],
+      "method_strings": [
+        "Format is \"campaign.give_settlement_to_player [SettlementName/SettlementId]\nWrite \"campaign.give_settlement_to_player help\" to list available settlements.\nWrite \"campaign.give_settlement_to_player Calradia\" to give all settlements to player.",
+        "help",
+        "\n",
+        "Available settlements",
+        "==============================",
+        "Id: ",
+        " Name: ",
+        "Player cannot take ownership of a settlement during mercenary service.",
+        " ",
+        "calradia",
+        "You own all of Calradia now!",
+        "Settlement must be castle or town.",
+        " has been given to the player."
+      ]
+    },
+    {
+      "command": "campaign.give_workshop_to_player",
+      "group": "campaign",
+      "attribute_name": "give_workshop_to_player",
+      "method": "GiveWorkshopToPlayer",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.give_workshop_to_player [SettlementName] | [workshop_name]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.give_workshop_to_player [SettlementName] | [workshop_name]\".",
+        "Gave {0} to {1}",
+        "There is no suitable workshop to give player in requested settlement",
+        "Settlement should be town\n"
+      ]
+    },
+    {
+      "command": "campaign.heal_player_party",
+      "group": "campaign",
+      "attribute_name": "heal_player_party",
+      "method": "HealMainParty",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.heal_player_party\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.heal_player_party\".",
+        "Success",
+        "Party shouldn't be in a map event."
+      ]
+    },
+    {
+      "command": "campaign.hide_hideouts",
+      "group": "campaign",
+      "attribute_name": "hide_hideouts",
+      "method": "HideHideouts",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [],
+      "method_strings": [
+        "All hideouts should be invisible now."
+      ]
+    },
+    {
+      "command": "campaign.hide_settlements",
+      "group": "campaign",
+      "attribute_name": "hide_settlements",
+      "method": "HideSettlements",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Success"
+      ]
+    },
+    {
+      "command": "campaign.import_main_hero",
+      "group": "campaign",
+      "attribute_name": "import_main_hero",
+      "method": "ImportMainHero",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.import_main_hero [filenamewithoutextension]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.import_main_hero [filenamewithoutextension]\".",
+        ".char",
+        "File ",
+        " doesn't exists",
+        "Can't read file: ",
+        ". It's possible that it's corrupted.",
+        "Main hero was imported successfully.",
+        "An error occurred"
+      ]
+    },
+    {
+      "command": "campaign.is_hero_suitable_for_marriage_with_player",
+      "group": "campaign",
+      "attribute_name": "is_hero_suitable_for_marriage_with_player",
+      "method": "IsHeroSuitableForMarriageWithPlayer",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.is_hero_suitable_for_marriage_with_player [HeroName]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.is_hero_suitable_for_marriage_with_player [HeroName]\".",
+        "Marriage is suitable between ",
+        " and ",
+        "\n",
+        "Marriage is not suitable between ",
+        ": "
+      ]
+    },
+    {
+      "command": "campaign.join_kingdom",
+      "group": "campaign",
+      "attribute_name": "join_kingdom",
+      "method": "JoinKingdom",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.join_kingdom[KingdomName / FirstTwoCharactersOfKingdomName]\".\nWrite \"campaign.join_kingdom help\" to list available Kingdoms.",
+        "help",
+        "Format is \"campaign.join_kingdom [KingdomName/FirstTwoCharacterOfKingdomName]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.join_kingdom[KingdomName / FirstTwoCharactersOfKingdomName]\".\nWrite \"campaign.join_kingdom help\" to list available Kingdoms.",
+        " ",
+        "help",
+        "\n",
+        "Format is \"campaign.join_kingdom [KingdomName/FirstTwoCharacterOfKingdomName]\".",
+        "Available Kingdoms",
+        "Kingdom name ",
+        "Cannot join a kingdom while leading a kingdom!",
+        "Success"
+      ]
+    },
+    {
+      "command": "campaign.join_kingdom_as_mercenary",
+      "group": "campaign",
+      "attribute_name": "join_kingdom_as_mercenary",
+      "method": "JoinKingdomAsMercenary",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.join_kingdom_as_mercenary[KingdomName / FirstTwoCharactersOfKingdomName]\".\nWrite \"campaign.join_kingdom_as_mercenary help\" to list available Kingdoms.",
+        "help",
+        "Format is \"campaign.join_kingdom_as_mercenary [KingdomName/FirstTwoCharacterOfKingdomName]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.join_kingdom_as_mercenary[KingdomName / FirstTwoCharactersOfKingdomName]\".\nWrite \"campaign.join_kingdom_as_mercenary help\" to list available Kingdoms.",
+        " ",
+        "help",
+        "\n",
+        "Format is \"campaign.join_kingdom_as_mercenary [KingdomName/FirstTwoCharacterOfKingdomName]\".",
+        "Available Kingdoms",
+        "Kingdom name ",
+        "Success",
+        ": "
+      ]
+    },
+    {
+      "command": "campaign.kick_companion",
+      "group": "campaign",
+      "attribute_name": "kick_companion",
+      "method": "KickCompanionFromParty",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.kick_companion [CompanionName] or [noargument](kicks first companion if any) \".",
+        "Format is \"campaign.kick_companion [CompanionName] or [all](kicks all companions) or [noargument](kicks first companion if any) \"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.kick_companion [CompanionName] or [noargument](kicks first companion if any) \".",
+        "Format is \"campaign.kick_companion [CompanionName] or [all](kicks all companions) or [noargument](kicks first companion if any) \".",
+        "There are no companions in your party.",
+        " ",
+        "Success",
+        "all",
+        "\n"
+      ]
+    },
+    {
+      "command": "campaign.kill_hero",
+      "group": "campaign",
+      "attribute_name": "kill_hero",
+      "method": "KillHero",
+      "module": "SandBox",
+      "assembly": "SandBox.View.dll",
+      "help_strings": [
+        "Format is \"campaign.kill_hero [HeroName]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.kill_hero [HeroName]\".",
+        "Hero ",
+        " is already dead.",
+        "Hero already has a death mark.",
+        "Hero cannot be killed while staying in a settlement.",
+        "Hero cannot be killed during the heir selection.",
+        "Hero cannot be killed during a conversation.",
+        "Hero can't die!",
+        " is killed.",
+        "\n"
+      ]
+    },
+    {
+      "command": "campaign.lead_kingdom",
+      "group": "campaign",
+      "attribute_name": "lead_kingdom",
+      "method": "LeadKingdom",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [],
+      "method_strings": [
+        "You are already leading your faction",
+        "You are not in a kingdom",
+        "OK"
+      ]
+    },
+    {
+      "command": "campaign.make_clan_mercenary_of_kingdom",
+      "group": "campaign",
+      "attribute_name": "make_clan_mercenary_of_kingdom",
+      "method": "MakeClanMercenaryOfKingdom",
+      "module": "SandBox",
+      "assembly": "SandBox.View.dll",
+      "help_strings": [
+        "Format is \"campaign.MakeClanMercenaryOfKingdom [clan] | [kingdom] | [days]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.MakeClanMercenaryOfKingdom [clan] | [kingdom] | [days]\".",
+        "Cant find the clan\n",
+        "Clan is not suitable to be mercenary",
+        "Use join_kingdom or join_kingdom_as_mercenary",
+        "Success"
+      ]
+    },
+    {
+      "command": "campaign.make_trade_agreement",
+      "group": "campaign",
+      "attribute_name": "make_trade_agreement",
+      "method": "MakeTradeAgreement",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is campaign.make_trade_agreement [Kingdom1] | [Kingdom2]\"."
+      ],
+      "method_strings": [
+        "Format is campaign.make_trade_agreement [Kingdom1] | [Kingdom2]\".",
+        "Cant find one of the kingdoms",
+        "Can't declare between same factions",
+        "kingdom1 is eliminated",
+        "kingdom2 is eliminated",
+        "Trade agreement signed between ",
+        " and "
+      ]
+    },
+    {
+      "command": "campaign.marry_hero_to_hero",
+      "group": "campaign",
+      "attribute_name": "marry_hero_to_hero",
+      "method": "MarryHeroWithHero",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.marry_hero_to_hero [HeroName] | [HeroName]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.marry_hero_to_hero [HeroName] | [HeroName]\".",
+        "Success",
+        "They are not suitable for marriage",
+        "\nCan't find a hero with name: "
+      ]
+    },
+    {
+      "command": "campaign.marry_player_with_hero",
+      "group": "campaign",
+      "attribute_name": "marry_player_with_hero",
+      "method": "MarryPlayerWithHero",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.marry_player_with_hero [HeroName]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.marry_player_with_hero [HeroName]\".",
+        "Main hero is not suitable for marriage",
+        "Success",
+        "Hero: {0} is not suitable for marriage.",
+        "{0}'s clan is not suitable for marriage.",
+        "Main hero's clan is not suitable for marriage.",
+        "Clan leaders are not suitable for marriage.",
+        "Hero is not female.",
+        "AreHeroesRelated",
+        "Heroes are related.",
+        "{0} has courted {1}.",
+        "Marriage is not suitable between ",
+        " and ",
+        "\n",
+        ": "
+      ]
+    },
+    {
+      "command": "campaign.print_all_issues",
+      "group": "campaign",
+      "attribute_name": "print_all_issues",
+      "method": "PrintAllIssues",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Total issue count : ",
+        "\n",
+        ") ",
+        ", ",
+        ": "
+      ]
+    },
+    {
+      "command": "campaign.print_criminal_ratings",
+      "group": "campaign",
+      "attribute_name": "print_criminal_ratings",
+      "method": "PrintCriminalRatings",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.print_criminal_ratings"
+      ],
+      "method_strings": [
+        "Format is \"campaign.print_criminal_ratings",
+        "   criminal rating: ",
+        "\n",
+        "-----------\n",
+        "You don't have any criminal rating."
+      ]
+    },
+    {
+      "command": "campaign.print_gameplay_statistics",
+      "group": "campaign",
+      "attribute_name": "print_gameplay_statistics",
+      "method": "PrintGameplayStatistics",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"statistics.print_gameplay_statistics\"."
+      ],
+      "method_strings": [
+        "Format is \"statistics.print_gameplay_statistics\".",
+        "Can not find IStatistics Campaign Behavior!",
+        "---------------------------GENERAL---------------------------\n",
+        "Played Time in Campaign Time(Days): ",
+        "\n",
+        "Played Time in Real Time: ",
+        "Number of children born: ",
+        "Total influence earned: ",
+        "Number of issues solved: ",
+        "Number of tournaments won: ",
+        "Best tournament rank: ",
+        "Number of prisoners recruited: ",
+        "Number of troops recruited: ",
+        "Number of enemy clans defected: ",
+        "Total crime rating gained: ",
+        "---------------------------BATTLE---------------------------\n",
+        "Battles Won / Lost: ",
+        " / ",
+        "Largest battle won as the leader: ",
+        "Largest army formed by the player: ",
+        "Number of enemy clans destroyed: ",
+        "Heroes killed in battle: ",
+        "Troops killed or knocked out in person: ",
+        "Troops killed or knocked out by player party: ",
+        "Number of hero prisoners taken: ",
+        "Number of troop prisoners taken: ",
+        "Number of captured towns: ",
+        "Number of captured castles: ",
+        "Number of cleared hideouts: ",
+        "Number of raided villages: ",
+        "Number of days spent as prisoner: ",
+        "---------------------------FINANCES---------------------------\n",
+        "Total denars earned: ",
+        "Total denars earned from caravans: ",
+        "Total denars earned from workshops: ",
+        "Total denars earned from ransoms: ",
+        "Total denars earned from taxes: ",
+        "Total denars earned from tributes: ",
+        "Total denars paid in tributes: ",
+        "---------------------------CRAFTING---------------------------\n",
+        "Number of weapons crafted: ",
+        "Most expensive weapon crafted: ",
+        " - ",
+        "Numbere of crafting parts unlocked: ",
+        "Number of crafting orders completed: ",
+        "---------------------------COMPANIONS---------------------------\n",
+        "Number of hired companions: ",
+        "Companion with most issues solved: ",
+        "Companion with most kills: "
+      ]
+    },
+    {
+      "command": "campaign.print_heroes_suitable_for_marriage",
+      "group": "campaign",
+      "attribute_name": "print_heroes_suitable_for_marriage",
+      "method": "PrintHeroesSuitableForMarriage",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"print_heroes_suitable_for_marriage\"."
+      ],
+      "method_strings": [
+        "Format is \"print_heroes_suitable_for_marriage\".",
+        "Maidens:\n",
+        "Suitors:\n",
+        "Name: ",
+        " --- Clan: ",
+        " --- Party:",
+        "\n"
+      ]
+    },
+    {
+      "command": "campaign.print_player_party_position",
+      "group": "campaign",
+      "attribute_name": "print_player_party_position",
+      "method": "PrintMainPartyPosition",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.print_player_party_position\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.print_player_party_position\".",
+        " "
+      ]
+    },
+    {
+      "command": "campaign.print_player_traits",
+      "group": "campaign",
+      "attribute_name": "print_player_traits",
+      "method": "PrintPlayerTrait",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.print_player_traits\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.print_player_traits\".",
+        " Trait Level:  ",
+        " Trait Xp: ",
+        "\n"
+      ]
+    },
+    {
+      "command": "campaign.print_strength_of_factions",
+      "group": "campaign",
+      "attribute_name": "print_strength_of_factions",
+      "method": "PrintStrengthOfFactions",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [],
+      "method_strings": [
+        " strength: ",
+        "Success"
+      ]
+    },
+    {
+      "command": "campaign.print_strength_of_lord_parties",
+      "group": "campaign",
+      "attribute_name": "print_strength_of_lord_parties",
+      "method": "PrintStrengthOfLordParties",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [],
+      "method_strings": [
+        " strength: ",
+        "Success"
+      ]
+    },
+    {
+      "command": "campaign.print_tournaments",
+      "group": "campaign",
+      "attribute_name": "print_tournaments",
+      "method": "PrintSettlementsWithTournament",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Cant print tournaments. Wait day light.",
+        "\n"
+      ]
+    },
+    {
+      "command": "campaign.rebellion_enabled",
+      "group": "campaign",
+      "attribute_name": "rebellion_enabled",
+      "method": "SetRebellionEnabled",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is campaign.rebellion_enabled [1/0]\"."
+      ],
+      "method_strings": [
+        "Format is campaign.rebellion_enabled [1/0]\".",
+        "0",
+        "1",
+        "_rebellionEnabled",
+        "Rebellion is",
+        " disabled",
+        " enabled",
+        "Rebellions Campaign behavior not found.",
+        "Wrong input.\n"
+      ]
+    },
+    {
+      "command": "campaign.remove_militias_from_settlement",
+      "group": "campaign",
+      "attribute_name": "remove_militias_from_settlement",
+      "method": "RemoveMilitiasFromSettlement",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.remove_militias_from_settlement [SettlementName]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.remove_militias_from_settlement [SettlementName]\".",
+        "Settlement, ",
+        " is in a MapEvent, try later to remove them",
+        "Militia in ",
+        " are in a MapEvent, try later to remove them",
+        "Success",
+        ": "
+      ]
+    },
+    {
+      "command": "campaign.rule_your_faction",
+      "group": "campaign",
+      "attribute_name": "rule_your_faction",
+      "method": "LeadYourFaction",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.rule_your_faction\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.rule_your_faction\".",
+        "Success",
+        "Function execution failed."
+      ]
+    },
+    {
+      "command": "campaign.set_all_companion_skills",
+      "group": "campaign",
+      "attribute_name": "set_all_companion_skills",
+      "method": "SetAllSkillsOfAllCompanions",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.set_all_companion_skills [LevelValue]\".",
+        "Level must be between 0 - {0}."
+      ],
+      "method_strings": [
+        "Format is \"campaign.set_all_companion_skills [LevelValue]\".",
+        "Please enter a number\n",
+        "Level must be between 0 - {0}.",
+        "The value is too much",
+        "Success"
+      ]
+    },
+    {
+      "command": "campaign.set_all_heroes_skills",
+      "group": "campaign",
+      "attribute_name": "set_all_heroes_skills",
+      "method": "SetAllHeroSkills",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.set_all_heroes_skills [LevelValue]\".",
+        "Level must be between 0 - {0}."
+      ],
+      "method_strings": [
+        "Format is \"campaign.set_all_heroes_skills [LevelValue]\".",
+        "Please enter a positive number\n",
+        "Level must be between 0 - {0}.",
+        "The value is too much",
+        "Success"
+      ]
+    },
+    {
+      "command": "campaign.set_campaign_speed_multiplier",
+      "group": "campaign",
+      "attribute_name": "set_campaign_speed_multiplier",
+      "method": "SetCampaignSpeed",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.set_campaign_speed_multiplier  [positive speedUp multiplier]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.set_campaign_speed_multiplier  [positive speedUp multiplier]\".",
+        "Campaign speed is set to ",
+        ". which is the maximum value for speed up multiplier!",
+        "Success"
+      ]
+    },
+    {
+      "command": "campaign.set_clan_culture",
+      "group": "campaign",
+      "attribute_name": "set_clan_culture",
+      "method": "SetClanCulture",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.set_clan_culture [ClanName] | [CultureName]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.set_clan_culture [ClanName] | [CultureName]\".",
+        "Clan culture is already {0}",
+        "Success",
+        "\n"
+      ]
+    },
+    {
+      "command": "campaign.set_food_of_settlement",
+      "group": "campaign",
+      "attribute_name": "set_food_of_settlement",
+      "method": "SetFoodOfSettlement",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.set_food_of_settlement [SettlementName/SettlementID] | [Value]\".",
+        "Settlement must be castle or town"
+      ],
+      "method_strings": [
+        "Format is \"campaign.set_food_of_settlement [SettlementName/SettlementID] | [Value]\".",
+        "Settlement must be castle or town",
+        "Please enter a number\n",
+        "The value is too much",
+        "Success",
+        ": ",
+        "\n"
+      ]
+    },
+    {
+      "command": "campaign.set_hearth_of_settlement",
+      "group": "campaign",
+      "attribute_name": "set_hearth_of_settlement",
+      "method": "SetHearthOfSettlement",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.set_hearth_of_settlement [SettlementName/SettlementID] | [Value]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.set_hearth_of_settlement [SettlementName/SettlementID] | [Value]\".",
+        "Settlement doesn't have hearth variable.",
+        "Please enter a number\n",
+        "The value is too much",
+        "Success",
+        ": ",
+        "\n"
+      ]
+    },
+    {
+      "command": "campaign.set_hero_crafting_stamina",
+      "group": "campaign",
+      "attribute_name": "set_hero_crafting_stamina",
+      "method": "SetCraftingStamina",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.set_hero_crafting_stamina [HeroName] | [Stamina]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.set_hero_crafting_stamina [HeroName] | [Stamina]\".",
+        "Can not found ICrafting Campaign Behavior!\n",
+        "Please enter a valid number between 0-100 number is: ",
+        "\n",
+        "The value is too much",
+        "Success"
+      ]
+    },
+    {
+      "command": "campaign.set_hero_culture",
+      "group": "campaign",
+      "attribute_name": "set_hero_culture",
+      "method": "SetHeroCulture",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.set_hero_culture [HeroName] | [CultureName]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.set_hero_culture [HeroName] | [CultureName]\".",
+        "Hero culture is already {0}",
+        "Success",
+        "\n"
+      ]
+    },
+    {
+      "command": "campaign.set_hero_trait",
+      "group": "campaign",
+      "attribute_name": "set_hero_trait",
+      "method": "SetHeroTrait",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.set_hero_trait [HeroName] | [Trait]  | [Value]\".",
+        "Number must be between {0} and {1}."
+      ],
+      "method_strings": [
+        "Format is \"campaign.set_hero_trait [HeroName] | [Trait]  | [Value]\".",
+        "Please enter a number\n",
+        "{0} 's {1} trait has been set to {2}.",
+        "Number must be between {0} and {1}.",
+        "\n",
+        "Trait not found.\n"
+      ]
+    },
+    {
+      "command": "campaign.set_loyalty_of_settlement",
+      "group": "campaign",
+      "attribute_name": "set_loyalty_of_settlement",
+      "method": "SetLoyaltyOfSettlement",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.set_loyalty_of_settlement [SettlementName] | [loyalty]\".",
+        "Settlement must be castle or town"
+      ],
+      "method_strings": [
+        "Format is \"campaign.set_loyalty_of_settlement [SettlementName] | [loyalty]\".",
+        "Please enter a positive number\n",
+        "Loyalty has to be in the range of 0 to 100",
+        "The value is too much",
+        "Settlement must be castle or town",
+        "Success",
+        ": ",
+        "\n"
+      ]
+    },
+    {
+      "command": "campaign.set_main_party_attackable",
+      "group": "campaign",
+      "attribute_name": "set_main_party_attackable",
+      "method": "SetMainPartyAttackable",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is campaign.set_main_party_attackable [1/0]\"."
+      ],
+      "method_strings": [
+        "Format is campaign.set_main_party_attackable [1/0]\".",
+        "0",
+        "1",
+        "Main party is",
+        " NOT ",
+        " ",
+        "attackable.",
+        "Wrong input.\n"
+      ]
+    },
+    {
+      "command": "campaign.set_militia_of_settlement",
+      "group": "campaign",
+      "attribute_name": "set_militia_of_settlement",
+      "method": "SetMilitiaOfSettlement",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.set_militia_of_settlement [SettlementName/SettlementID] | [Value]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.set_militia_of_settlement [SettlementName/SettlementID] | [Value]\".",
+        "Please enter a number\n",
+        "The value is too much",
+        "Success",
+        ": ",
+        "\n"
+      ]
+    },
+    {
+      "command": "campaign.set_parties_visible",
+      "group": "campaign",
+      "attribute_name": "set_parties_visible",
+      "method": "SetAllArmiesAndPartiesVisible",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.set_parties_visible [1/0]\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.set_parties_visible [1/0]\".",
+        "1",
+        "Success"
+      ]
+    },
+    {
+      "command": "campaign.set_player_trait",
+      "group": "campaign",
+      "attribute_name": "set_player_trait",
+      "method": "SetPlayerReputationTrait",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.set_player_trait [Trait] | [Number]\".",
+        "Number must be between {0} and {1}."
+      ],
+      "method_strings": [
+        "Format is \"campaign.set_player_trait [Trait] | [Number]\".",
+        "Set {0} to {1}.",
+        "Number must be between {0} and {1}.",
+        "\n",
+        "Please enter a number\n"
+      ]
+    },
+    {
+      "command": "campaign.set_prosperity_of_settlement",
+      "group": "campaign",
+      "attribute_name": "set_prosperity_of_settlement",
+      "method": "SetProsperityOfSettlement",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.set_prosperity_of_settlement [SettlementName/SettlementID] | [Value]\".",
+        "Settlement must be castle or town"
+      ],
+      "method_strings": [
+        "Format is \"campaign.set_prosperity_of_settlement [SettlementName/SettlementID] | [Value]\".",
+        "Settlement must be castle or town",
+        "Please enter a positive number\n",
+        "The value is too much",
+        "Success",
+        ": ",
+        "\n"
+      ]
+    },
+    {
+      "command": "campaign.set_security_of_settlement",
+      "group": "campaign",
+      "attribute_name": "set_security_of_settlement",
+      "method": "SetSecurityOfSettlement",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.set_security_of_settlement [SettlementName/SettlementID] | [Value]\".",
+        "Settlement must be castle or town"
+      ],
+      "method_strings": [
+        "Format is \"campaign.set_security_of_settlement [SettlementName/SettlementID] | [Value]\".",
+        "Settlement must be castle or town",
+        "Please enter a number\n",
+        "The value is too much",
+        "Success",
+        ": ",
+        "\n"
+      ]
+    },
+    {
+      "command": "campaign.set_skill_of_all_companions",
+      "group": "campaign",
+      "attribute_name": "set_skill_of_all_companions",
+      "method": "SetSkillCompanion",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.set_skill_of_all_companions [SkillName] | [LevelValue]\".",
+        "Level must be between 0 - {0}."
+      ],
+      "method_strings": [
+        "Format is \"campaign.set_skill_of_all_companions [SkillName] | [LevelValue]\".",
+        "There is no companion in player clan",
+        "Please enter a number\n",
+        "Level must be between 0 - {0}.",
+        "The value is too much",
+        "Success",
+        "\n"
+      ]
+    },
+    {
+      "command": "campaign.set_skill_player",
+      "group": "campaign",
+      "attribute_name": "set_skill_player",
+      "method": "SetSkillMainHero",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.set_skill_player [SkillName] | [LevelValue]\".",
+        "Level must be between 0 - {0}."
+      ],
+      "method_strings": [
+        "Format is \"campaign.set_skill_player [SkillName] | [LevelValue]\".",
+        "Please enter a number\n",
+        "Level must be between 0 - {0}.",
+        "The value is too much",
+        "Success",
+        "\n"
+      ]
+    },
+    {
+      "command": "campaign.set_skills_of_hero",
+      "group": "campaign",
+      "attribute_name": "set_skills_of_hero",
+      "method": "SetSkillsOfGivenHero",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.set_skills_of_hero [HeroName] | [Level]\".",
+        "Level must be a number\n",
+        "Level must be between 0 - {0}."
+      ],
+      "method_strings": [
+        "Format is \"campaign.set_skills_of_hero [HeroName] | [Level]\".",
+        "Level must be a number\n",
+        "The value is too much",
+        "{0}'s skills are set to level {1}.",
+        "Level must be between 0 - {0}.",
+        "\n"
+      ]
+    },
+    {
+      "command": "campaign.show_drop_off",
+      "group": "campaign",
+      "attribute_name": "show_drop_off",
+      "method": "show_drop_off",
+      "module": "NavalDLC",
+      "assembly": "NavalDLC.dll",
+      "help_strings": [],
+      "method_strings": []
+    },
+    {
+      "command": "campaign.show_hideouts",
+      "group": "campaign",
+      "attribute_name": "show_hideouts",
+      "method": "ShowHideouts",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.show_hideouts [1/2]\n 1: Show infested hideouts\n2: Show all hideouts\".",
+        "Format is \"campaign.show_hideouts"
+      ],
+      "method_strings": [
+        "Format is \"campaign.show_hideouts [1/2]\n 1: Show infested hideouts\n2: Show all hideouts\".",
+        "All",
+        "Infested",
+        " hideouts is visible now.",
+        "Format is \"campaign.show_hideouts",
+        "Success"
+      ]
+    },
+    {
+      "command": "campaign.show_relation",
+      "group": "campaign",
+      "attribute_name": "show_relation",
+      "method": "ShowHeroRelation",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.show_relation [HeroName] | [HeroName] \".\n"
+      ],
+      "method_strings": [
+        "Format is \"campaign.show_relation [HeroName] | [HeroName] \".\n",
+        "{0} relation to {1}: {2}"
+      ]
+    },
+    {
+      "command": "campaign.show_settlements",
+      "group": "campaign",
+      "attribute_name": "show_settlements",
+      "method": "ShowSettlements",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Success"
+      ]
+    },
+    {
+      "command": "campaign.toggle_information_restrictions",
+      "group": "campaign",
+      "attribute_name": "toggle_information_restrictions",
+      "method": "ToggleInformationRestrictions",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.toggle_information_restrictions\".",
+        "DefaultInformationRestrictionModel is missing.",
+        "Information restrictions are "
+      ],
+      "method_strings": [
+        "Format is \"campaign.toggle_information_restrictions\".",
+        "DefaultInformationRestrictionModel is missing.",
+        "Information restrictions are ",
+        "enabled",
+        "disabled",
+        "."
+      ]
+    },
+    {
+      "command": "campaign.unlock_all_crafting_pieces",
+      "group": "campaign",
+      "attribute_name": "unlock_all_crafting_pieces",
+      "method": "UnlockCraftingPieces",
+      "module": "Core",
+      "assembly": "TaleWorlds.CampaignSystem.dll",
+      "help_strings": [
+        "Format is \"campaign.unlock_all_crafting_pieces\"."
+      ],
+      "method_strings": [
+        "Format is \"campaign.unlock_all_crafting_pieces\".",
+        "Can not find Crafting Campaign Behavior!",
+        "_openedPartsDictionary",
+        "_openNewPartXpDictionary",
+        "OpenPart",
+        "Success"
+      ]
+    },
+    {
+      "command": "chatlog.can_focus_while_in_mission",
+      "group": "chatlog",
+      "attribute_name": "can_focus_while_in_mission",
+      "method": "SetCanFocusWhileInMission",
+      "module": "Native",
+      "assembly": "TaleWorlds.MountAndBlade.GauntletUI.dll",
+      "help_strings": [],
+      "method_strings": [
+        "0",
+        "1",
+        "Chat window will",
+        " NOT ",
+        " ",
+        " be able to gain focus now.",
+        "Wrong input"
+      ]
+    },
+    {
+      "command": "chatlog.clear",
+      "group": "chatlog",
+      "attribute_name": "clear",
+      "method": "ClearChatLog",
+      "module": "Native",
+      "assembly": "TaleWorlds.MountAndBlade.GauntletUI.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Chatlog cleared!"
+      ]
+    },
+    {
+      "command": "console.clear",
+      "group": "console",
+      "attribute_name": "clear",
+      "method": "ClearConsole",
+      "module": "Core",
+      "assembly": "TaleWorlds.Engine.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Debug console cleared."
+      ]
+    },
+    {
+      "command": "console.echo_command_window",
+      "group": "console",
+      "attribute_name": "echo_command_window",
+      "method": "EchoCommandWindow",
+      "module": "Core",
+      "assembly": "TaleWorlds.Engine.dll",
+      "help_strings": [],
+      "method_strings": []
+    },
+    {
+      "command": "console.echo_command_window_test",
+      "group": "console",
+      "attribute_name": "echo_command_window_test",
+      "method": "EchoCommandWindowTest",
+      "module": "Core",
+      "assembly": "TaleWorlds.Engine.dll",
+      "help_strings": [],
+      "method_strings": []
+    },
+    {
+      "command": "customserver.gettoken",
+      "group": "customserver",
+      "attribute_name": "gettoken",
+      "method": "GetDedicatedCustomServerAuthToken",
+      "module": "Multiplayer",
+      "assembly": "TaleWorlds.MountAndBlade.Multiplayer.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Platform not supported.",
+        "Not logged into lobby."
+      ]
+    },
+    {
+      "command": "dcshelper.download_map",
+      "group": "dcshelper",
+      "attribute_name": "download_map",
+      "method": "DownloadMapCommand",
+      "module": "Multiplayer",
+      "assembly": "TaleWorlds.MountAndBlade.DedicatedCustomServer.ClientHelper.dll",
+      "help_strings": [
+        "Usage: dcshelper.download_map [host_address[:port]] [map_name]\nOmit map_name to download the currently played map"
+      ],
+      "method_strings": [
+        "Usage: dcshelper.download_map [host_address[:port]] [map_name]\nOmit map_name to download the currently played map",
+        "Attempting to download in the background..."
+      ]
+    },
+    {
+      "command": "dcshelper.get_map_list",
+      "group": "dcshelper",
+      "attribute_name": "get_map_list",
+      "method": "GetMapListCommand",
+      "module": "Multiplayer",
+      "assembly": "TaleWorlds.MountAndBlade.DedicatedCustomServer.ClientHelper.dll",
+      "help_strings": [
+        "Usage: dcshelper.get_map_list [host_address[:port]]"
+      ],
+      "method_strings": [
+        "Usage: dcshelper.get_map_list [host_address[:port]]",
+        "The map list was printed to the debug console"
+      ]
+    },
+    {
+      "command": "dcshelper.open_download_panel",
+      "group": "dcshelper",
+      "attribute_name": "open_download_panel",
+      "method": "OpenDownloadPanel",
+      "module": "Multiplayer",
+      "assembly": "TaleWorlds.MountAndBlade.DedicatedCustomServer.ClientHelper.dll",
+      "help_strings": [
+        "Usage: dcshelper.open_download_panel [host_address[:port]]"
+      ],
+      "method_strings": [
+        "Usage: dcshelper.open_download_panel [host_address[:port]]",
+        "The download panel can only be opened while on the multiplayer lobby.",
+        "Opening download panel for host '",
+        "'..."
+      ]
+    },
+    {
+      "command": "dotnet.show_version",
+      "group": "dotnet",
+      "attribute_name": "show_version",
+      "method": "ShowDotNetVersion",
+      "module": "Core",
+      "assembly": "TaleWorlds.DotNet.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Version:"
+      ]
+    },
+    {
+      "command": "facegen.show_debug",
+      "group": "facegen",
+      "attribute_name": "show_debug",
+      "method": "FaceGenShowDebug",
+      "module": "Native",
+      "assembly": "TaleWorlds.MountAndBlade.GauntletUI.dll",
+      "help_strings": [],
+      "method_strings": [
+        "FaceGen: Show Debug Values are ",
+        "disabled",
+        "enabled"
+      ]
+    },
+    {
+      "command": "facegen.toggle_update_deform_keys",
+      "group": "facegen",
+      "attribute_name": "toggle_update_deform_keys",
+      "method": "FaceGenUpdateDeformKeys",
+      "module": "Native",
+      "assembly": "TaleWorlds.MountAndBlade.GauntletUI.dll",
+      "help_strings": [],
+      "method_strings": [
+        "FaceGen: update deform keys is now ",
+        "disabled",
+        "enabled"
+      ]
+    },
+    {
+      "command": "game.reload_managed_core_params",
+      "group": "game",
+      "attribute_name": "reload_managed_core_params",
+      "method": "LoadParamsDebug",
+      "module": "Core",
+      "assembly": "TaleWorlds.MountAndBlade.dll",
+      "help_strings": [
+        "managed_core_parameters",
+        "Managed core parameters reloaded."
+      ],
+      "method_strings": [
+        "Native",
+        "managed_core_parameters",
+        "Managed core parameters reloaded.",
+        "Does not work on multiplayer."
+      ]
+    },
+    {
+      "command": "localization.change_language",
+      "group": "localization",
+      "attribute_name": "change_language",
+      "method": "ChangeLanguage",
+      "module": "Core",
+      "assembly": "TaleWorlds.Localization.dll",
+      "help_strings": [
+        "Format is \"localization.change_language [LanguageCode/LanguageName/ISOCode]\"."
+      ],
+      "method_strings": [
+        "Format is \"localization.change_language [LanguageCode/LanguageName/ISOCode]\".",
+        "cant find the language in current configuration.",
+        "Same language",
+        "New language is "
+      ]
+    },
+    {
+      "command": "localization.check_for_errors",
+      "group": "localization",
+      "attribute_name": "check_for_errors",
+      "method": "CheckValidity",
+      "module": "Core",
+      "assembly": "TaleWorlds.Localization.dll",
+      "help_strings": [],
+      "method_strings": [
+        "faulty_translation_lines.txt",
+        "Testing Language: ",
+        "\n\n",
+        "\nTesting Language: ",
+        "No errors are found.",
+        "Errors are written into 'faulty_translation_lines.txt' file in the binary folder."
+      ]
+    },
+    {
+      "command": "localization.reload_texts",
+      "group": "localization",
+      "attribute_name": "reload_texts",
+      "method": "ReloadTexts",
+      "module": "Core",
+      "assembly": "TaleWorlds.Localization.dll",
+      "help_strings": [],
+      "method_strings": [
+        "OK"
+      ]
+    },
+    {
+      "command": "mission.fix_camera_toggle",
+      "group": "mission",
+      "attribute_name": "fix_camera_toggle",
+      "method": "ToggleFixedMissionCamera",
+      "module": "Native",
+      "assembly": "TaleWorlds.MountAndBlade.View.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Done"
+      ]
+    },
+    {
+      "command": "mission.flee_enemies",
+      "group": "mission",
+      "attribute_name": "flee_enemies",
+      "method": "MakeEnemiesFleeCheat",
+      "module": "Core",
+      "assembly": "TaleWorlds.MountAndBlade.dll",
+      "help_strings": [],
+      "method_strings": [
+        "enemies are fleeing",
+        "mission is not available",
+        "does not work in multiplayer",
+        "Cheat mode is not enabled."
+      ]
+    },
+    {
+      "command": "mission.flee_team",
+      "group": "mission",
+      "attribute_name": "flee_team",
+      "method": "MakeTeamFleeCheat",
+      "module": "Core",
+      "assembly": "TaleWorlds.MountAndBlade.dll",
+      "help_strings": [
+        "Usage 1: flee_team [ Attacker | AttackerAlly | Defender | DefenderAlly ]\nUsage 2: flee_team [ Attacker | AttackerAlly | Defender | DefenderAlly ] [FormationNo]",
+        "help",
+        "makes an entire team or a team's formation flee battle.\n",
+        "invalid number of parameters.\n",
+        "invalid formation index. formation index should be between [0, ",
+        " and formation: "
+      ],
+      "method_strings": [
+        "Usage 1: flee_team [ Attacker | AttackerAlly | Defender | DefenderAlly ]\nUsage 2: flee_team [ Attacker | AttackerAlly | Defender | DefenderAlly ] [FormationNo]",
+        "help",
+        "makes an entire team or a team's formation flee battle.\n",
+        "invalid number of parameters.\n",
+        "attacker",
+        "attackerally",
+        "defender",
+        "defenderally",
+        "given team is not valid",
+        "invalid formation index. formation index should be between [0, ",
+        "]",
+        "agents in team: ",
+        " are fleeing",
+        " and formation: ",
+        " (",
+        ") are fleeing",
+        "mission is not available",
+        "does not work in multiplayer"
+      ]
+    },
+    {
+      "command": "mission.get_face_and_helmet_info_of_followed_agent",
+      "group": "mission",
+      "attribute_name": "get_face_and_helmet_info_of_followed_agent",
+      "method": "GetFaceAndHelmetInfoOfFollowedAgent",
+      "module": "SandBox",
+      "assembly": "SandBox.View.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Only works at missions",
+        "An agent needs to be focussed.",
+        "\n Armor Name: ",
+        "\n Mesh Name: ",
+        "\n Troop Id: ",
+        "Copied to clipboard:\n"
+      ]
+    },
+    {
+      "command": "mission.killAgent",
+      "group": "mission",
+      "attribute_name": "killAgent",
+      "method": "KillAgent",
+      "module": "Core",
+      "assembly": "TaleWorlds.MountAndBlade.dll",
+      "help_strings": [
+        "Please write the arguments in the correct format. Correct format is: 'killAgent [index]'"
+      ],
+      "method_strings": [
+        "Please write the arguments in the correct format. Correct format is: 'killAgent [index]'",
+        "Agent ",
+        " died.",
+        " already dead.",
+        " not found.",
+        "Current mission does not exist.",
+        "Does not work on multiplayer."
+      ]
+    },
+    {
+      "command": "mission.kill_all_allies",
+      "group": "mission",
+      "attribute_name": "kill_all_allies",
+      "method": "KillAllAllies",
+      "module": "Core",
+      "assembly": "TaleWorlds.MountAndBlade.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Allied agents killed.",
+        "No active mission found",
+        "Does not work on multiplayer."
+      ]
+    },
+    {
+      "command": "mission.kill_all_sentries",
+      "group": "mission",
+      "attribute_name": "kill_all_sentries",
+      "method": "KillAllSentries",
+      "module": "SandBox",
+      "assembly": "SandBox.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Done",
+        "This cheat only works in hideout ambush mission!"
+      ]
+    },
+    {
+      "command": "mission.kill_n_allies",
+      "group": "mission",
+      "attribute_name": "kill_n_allies",
+      "method": "KillNAllies",
+      "module": "Core",
+      "assembly": "TaleWorlds.MountAndBlade.dll",
+      "help_strings": [
+        "Please write the arguments in the correct format. Correct format is: 'mission.kill_n_allies [count]"
+      ],
+      "method_strings": [
+        "Please write the arguments in the correct format. Correct format is: 'mission.kill_n_allies [count]",
+        "n allied agents killed.",
+        "No active mission found or less than 1 agent to kill.",
+        "Does not work on multiplayer."
+      ]
+    },
+    {
+      "command": "mission.set_battering_ram_speed",
+      "group": "mission",
+      "attribute_name": "set_battering_ram_speed",
+      "method": "IncreaseBatteringRamSpeeds",
+      "module": "Core",
+      "assembly": "TaleWorlds.MountAndBlade.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Please enter a speed value",
+        "Battering ram max speed increased.",
+        "Does not work on multiplayer."
+      ]
+    },
+    {
+      "command": "mission.set_camera_position",
+      "group": "mission",
+      "attribute_name": "set_camera_position",
+      "method": "SetCameraPosition",
+      "module": "Native",
+      "assembly": "TaleWorlds.MountAndBlade.View.dll",
+      "help_strings": [
+        "You need to enter 3 arguments.",
+        "Argument "
+      ],
+      "method_strings": [
+        "You need to enter 3 arguments.",
+        "Argument ",
+        " is not valid.",
+        "Camera position has been set to: ",
+        ", ",
+        "Mission screen not found.",
+        "Does not work on multiplayer."
+      ]
+    },
+    {
+      "command": "mission.set_deployment_visualization_selector",
+      "group": "mission",
+      "attribute_name": "set_deployment_visualization_selector",
+      "method": "SetDeploymentVisualizationSelector",
+      "module": "Native",
+      "assembly": "TaleWorlds.MountAndBlade.View.dll",
+      "help_strings": [
+        "Format is \"mission.set_deployment_visualization_selector [integer > 0]\"."
+      ],
+      "method_strings": [
+        "Enabled deployment visualization options are:",
+        "Format is \"mission.set_deployment_visualization_selector [integer > 0]\"."
+      ]
+    },
+    {
+      "command": "mission.set_facial_anim_to_agent",
+      "group": "mission",
+      "attribute_name": "set_facial_anim_to_agent",
+      "method": "SetFacialAnimToAgent",
+      "module": "Core",
+      "assembly": "TaleWorlds.MountAndBlade.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Enter agent index and animation name please",
+        "Done",
+        "Please enter a valid agent index",
+        "Mission could not be found"
+      ]
+    },
+    {
+      "command": "mission.set_shift_camera_speed",
+      "group": "mission",
+      "attribute_name": "set_shift_camera_speed",
+      "method": "SetShiftCameraSpeed",
+      "module": "Native",
+      "assembly": "TaleWorlds.MountAndBlade.View.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Done",
+        "Current multiplier is ",
+        "No Mission Available"
+      ]
+    },
+    {
+      "command": "mission.set_siege_tower_speed",
+      "group": "mission",
+      "attribute_name": "set_siege_tower_speed",
+      "method": "IncreaseSiegeTowerSpeed",
+      "module": "Core",
+      "assembly": "TaleWorlds.MountAndBlade.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Please enter a speed value",
+        "Siege tower max speed increased.",
+        "Does not work on multiplayer."
+      ]
+    },
+    {
+      "command": "mission.toggleDisableDying",
+      "group": "mission",
+      "attribute_name": "toggleDisableDying",
+      "method": "ToggleDisableDying",
+      "module": "Core",
+      "assembly": "TaleWorlds.MountAndBlade.dll",
+      "help_strings": [
+        "Please write the arguments in the correct format. Correct format is: 'toggleDisableDying [index]' or just 'toggleDisableDying' for making all agents invincible."
+      ],
+      "method_strings": [
+        "Please write the arguments in the correct format. Correct format is: 'toggleDisableDying [index]' or just 'toggleDisableDying' for making all agents invincible.",
+        "Dying disabled for all",
+        "Dying not disabled for all",
+        "Disable Dying for agent ",
+        ": ",
+        "Invalid agent index ",
+        "No active mission found",
+        "Does not work on multiplayer."
+      ]
+    },
+    {
+      "command": "mission.toggleDisableDyingTeam",
+      "group": "mission",
+      "attribute_name": "toggleDisableDyingTeam",
+      "method": "ToggleDisableDyingTeam",
+      "module": "Core",
+      "assembly": "TaleWorlds.MountAndBlade.dll",
+      "help_strings": [
+        "Please write the arguments in the correct format. Correct format is: 'toggleDisableDyingTeam [team_no]' for making all active agents of a team invincible."
+      ],
+      "method_strings": [
+        "Please write the arguments in the correct format. Correct format is: 'toggleDisableDyingTeam [team_no]' for making all active agents of a team invincible.",
+        "Toggled invulnerability for active agents of team ",
+        ", agent count: ",
+        "Does not work on multiplayer."
+      ]
+    },
+    {
+      "command": "module.get_item_mesh_names",
+      "group": "module",
+      "attribute_name": "get_item_mesh_names",
+      "method": "GetCraftedItemMeshNames",
+      "module": "Core",
+      "assembly": "TaleWorlds.MountAndBlade.dll",
+      "help_strings": [],
+      "method_strings": [
+        "#"
+      ]
+    },
+    {
+      "command": "mp_admin.announcement",
+      "group": "mp_admin",
+      "attribute_name": "announcement",
+      "method": "MPAdminAnnouncement",
+      "module": "Multiplayer",
+      "assembly": "TaleWorlds.MountAndBlade.Multiplayer.dll",
+      "help_strings": [
+        "Wrong format! Usage: mp_admin.announcement {TEXT}"
+      ],
+      "method_strings": [
+        "Wrong format! Usage: mp_admin.announcement {TEXT}",
+        "Mission is not running!",
+        "Admin component could not be found!",
+        " ",
+        "Success"
+      ]
+    },
+    {
+      "command": "mp_admin.ban_player",
+      "group": "mp_admin",
+      "attribute_name": "ban_player",
+      "method": "MPAdminBanPlayer",
+      "module": "Multiplayer",
+      "assembly": "TaleWorlds.MountAndBlade.Multiplayer.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Failed: MultiplayerAdminComponent has not been created.",
+        "Failed: Only admins can use mp_admin commands.",
+        "Failed: Input is incorrect.",
+        "Player ",
+        " has been banned from the server.",
+        " could not be found."
+      ]
+    },
+    {
+      "command": "mp_admin.change_class_restriction",
+      "group": "mp_admin",
+      "attribute_name": "change_class_restriction",
+      "method": "MPAdminChangeClassRestriction",
+      "module": "Multiplayer",
+      "assembly": "TaleWorlds.MountAndBlade.Multiplayer.dll",
+      "help_strings": [
+        "Wrong format! Usage: mp_admin.change_class_restriction {FormationClass} {true/false}"
+      ],
+      "method_strings": [
+        "Wrong format! Usage: mp_admin.change_class_restriction {FormationClass} {true/false}",
+        "Mission is not running!",
+        "Admin component could not be found!",
+        "Success"
+      ]
+    },
+    {
+      "command": "mp_admin.change_server_slots",
+      "group": "mp_admin",
+      "attribute_name": "change_server_slots",
+      "method": "MPAdminChangeServerSlots",
+      "module": "Multiplayer",
+      "assembly": "TaleWorlds.MountAndBlade.Multiplayer.dll",
+      "help_strings": [
+        "Wrong format! Usage: mp_admin.change_server_slots {NUMBER}"
+      ],
+      "method_strings": [
+        "Mission is not running!",
+        "Admin component could not be found!",
+        "Wrong format! Usage: mp_admin.change_server_slots {NUMBER}",
+        "Success"
+      ]
+    },
+    {
+      "command": "mp_admin.change_welcome_message",
+      "group": "mp_admin",
+      "attribute_name": "change_welcome_message",
+      "method": "MPAdminChangeWelcomeMessage",
+      "module": "Multiplayer",
+      "assembly": "TaleWorlds.MountAndBlade.Multiplayer.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Failed: MultiplayerAdminComponent has not been created.",
+        "Failed: Only admins can use mp_host commands.",
+        " ",
+        "Changed welcome message to: "
+      ]
+    },
+    {
+      "command": "mp_admin.kick_player",
+      "group": "mp_admin",
+      "attribute_name": "kick_player",
+      "method": "MPAdminKickPlayer",
+      "module": "Multiplayer",
+      "assembly": "TaleWorlds.MountAndBlade.Multiplayer.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Failed: MultiplayerAdminComponent has not been created.",
+        "Failed: Only admins can use mp_admin commands.",
+        "Failed: Input is incorrect.",
+        "Player ",
+        " has been kicked from the server.",
+        " could not be found."
+      ]
+    },
+    {
+      "command": "mp_admin.restart_game",
+      "group": "mp_admin",
+      "attribute_name": "restart_game",
+      "method": "MPHostRestartGame",
+      "module": "Multiplayer",
+      "assembly": "TaleWorlds.MountAndBlade.Multiplayer.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Mission is not running!",
+        "Admin component could not be found!",
+        "Success"
+      ]
+    },
+    {
+      "command": "mp_host.end_warmup",
+      "group": "mp_host",
+      "attribute_name": "end_warmup",
+      "method": "CommandEndWarmup",
+      "module": "Core",
+      "assembly": "TaleWorlds.MountAndBlade.dll",
+      "help_strings": [],
+      "method_strings": [
+        "end_warmup can only be called within a mission.",
+        "end_warmup can only be called by the server.",
+        "end_warmup can only be called when the game is in warmup.",
+        "Success"
+      ]
+    },
+    {
+      "command": "mp_host.kill_player",
+      "group": "mp_host",
+      "attribute_name": "kill_player",
+      "method": "MPHostChangeParam",
+      "module": "Core",
+      "assembly": "TaleWorlds.MountAndBlade.dll",
+      "help_strings": [
+        "usage: kill_player {UserName}."
+      ],
+      "method_strings": [
+        "kill_player can only be called within a mission.",
+        "kill_player can only be called by the server.",
+        "usage: kill_player {UserName}.",
+        "Success.",
+        "Could not find the player ",
+        " or the agent."
+      ]
+    },
+    {
+      "command": "mp_perks.raise_event",
+      "group": "mp_perks",
+      "attribute_name": "raise_event",
+      "method": "RaiseEventForAllPeersCommand",
+      "module": "Core",
+      "assembly": "TaleWorlds.MountAndBlade.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Raised event with flags ",
+        "Can't run this command on clients"
+      ]
+    },
+    {
+      "command": "mp_perks.tick_perks",
+      "group": "mp_perks",
+      "attribute_name": "tick_perks",
+      "method": "TickAllPeerPerksCommand",
+      "module": "Core",
+      "assembly": "TaleWorlds.MountAndBlade.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Peer perks on tick with tick count ",
+        "Can't run this command on clients"
+      ]
+    },
+    {
+      "command": "naval.add_ship_to_player",
+      "group": "naval",
+      "attribute_name": "add_ship_to_player",
+      "method": "AddShipToPlayer",
+      "module": "NavalDLC",
+      "assembly": "NavalDLC.dll",
+      "help_strings": [
+        "Format is \"naval.add_ship_to_player [ShipName] | [Count] - (Empty = Random 1 Ship)\".",
+        "Ship count must between 0-{0}"
+      ],
+      "method_strings": [
+        "Format is \"naval.add_ship_to_player [ShipName] | [Count] - (Empty = Random 1 Ship)\".",
+        "Main party not suitable to take ship right now",
+        "Ship count must between 0-{0}",
+        "{0} {1} were added to main party.",
+        "    "
+      ]
+    },
+    {
+      "command": "naval.damage_player_ships",
+      "group": "naval",
+      "attribute_name": "damage_player_ships",
+      "method": "DamagePlayerShips",
+      "module": "NavalDLC",
+      "assembly": "NavalDLC.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Player does not have any ships",
+        "All ship hit points are reduced"
+      ]
+    },
+    {
+      "command": "naval.focus_player_anchor",
+      "group": "naval",
+      "attribute_name": "focus_player_anchor",
+      "method": "FocusPlayerAnchor",
+      "module": "NavalDLC",
+      "assembly": "NavalDLC.View.dll",
+      "help_strings": [
+        "Format is \"naval.focus_player_anchor\"."
+      ],
+      "method_strings": [
+        "Format is \"naval.focus_player_anchor\".",
+        "Anchor is not valid",
+        "Success"
+      ]
+    },
+    {
+      "command": "naval.focus_ship",
+      "group": "naval",
+      "attribute_name": "focus_ship",
+      "method": "FocusShip",
+      "module": "NavalDLC",
+      "assembly": "NavalDLC.View.dll",
+      "help_strings": [
+        "Format is \"naval.focus_ship [ShipHullStringId/ShipHullName]\"."
+      ],
+      "method_strings": [
+        "Format is \"naval.focus_ship [ShipHullStringId/ShipHullName]\".",
+        "Success! Found in ",
+        "Ship is not found : ",
+        "\n"
+      ]
+    },
+    {
+      "command": "naval.get_mission_settings",
+      "group": "naval",
+      "attribute_name": "get_mission_settings",
+      "method": "GetMissionSettings",
+      "module": "NavalDLC",
+      "assembly": "NavalDLC.dll",
+      "help_strings": [],
+      "method_strings": []
+    },
+    {
+      "command": "naval.list_all_figurehead_names",
+      "group": "naval",
+      "attribute_name": "list_all_figurehead_names",
+      "method": "ListAllFigureheads",
+      "module": "NavalDLC",
+      "assembly": "NavalDLC.dll",
+      "help_strings": [],
+      "method_strings": [
+        "   -   "
+      ]
+    },
+    {
+      "command": "naval.list_all_ship_names",
+      "group": "naval",
+      "attribute_name": "list_all_ship_names",
+      "method": "ListAllShipNames",
+      "module": "NavalDLC",
+      "assembly": "NavalDLC.dll",
+      "help_strings": [],
+      "method_strings": [
+        "   -   "
+      ]
+    },
+    {
+      "command": "naval.reset_mission_settings",
+      "group": "naval",
+      "attribute_name": "reset_mission_settings",
+      "method": "ResetMissionSettings",
+      "module": "NavalDLC",
+      "assembly": "NavalDLC.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Mission settings reset successfully.\n"
+      ]
+    },
+    {
+      "command": "naval.set_maximize_troop_counts",
+      "group": "naval",
+      "attribute_name": "set_maximize_troop_counts",
+      "method": "SetMaximizeTroopCounts",
+      "module": "NavalDLC",
+      "assembly": "NavalDLC.dll",
+      "help_strings": [
+        "help",
+        "Unable to parse parameter.\n",
+        "\nIf set, mission will start with all ships having maximum number of troops\nusage: naval.set_maximize_troop_counts [value]\n- value: If passed 1 setting is enabled, if passed 0 it is disabled. Omitting the parameter toggles the setting"
+      ],
+      "method_strings": [
+        "help",
+        "1",
+        "0",
+        "Unable to parse parameter.\n",
+        "\nIf set, mission will start with all ships having maximum number of troops\nusage: naval.set_maximize_troop_counts [value]\n- value: If passed 1 setting is enabled, if passed 0 it is disabled. Omitting the parameter toggles the setting",
+        "Troops counts will be maximized in next mission",
+        "Troops counts will be specified manually in next mission\n- Player Melee Troop Count:",
+        "\n- Player Ranged Troop Count:",
+        "\n- Enemy Melee Troop Count:",
+        "\n- Enemy Ranged Troop Count:"
+      ]
+    },
+    {
+      "command": "naval.set_mission_scene",
+      "group": "naval",
+      "attribute_name": "set_mission_scene",
+      "method": "SetMissionScene",
+      "module": "NavalDLC",
+      "assembly": "NavalDLC.dll",
+      "help_strings": [
+        "usage: naval.set_mission_scene [SceneName]"
+      ],
+      "method_strings": [
+        "Mission scene is set to ",
+        "usage: naval.set_mission_scene [SceneName]"
+      ]
+    },
+    {
+      "command": "naval.set_mission_ships",
+      "group": "naval",
+      "attribute_name": "set_mission_ships",
+      "method": "SetMissionShips",
+      "module": "NavalDLC",
+      "assembly": "NavalDLC.dll",
+      "help_strings": [
+        "Invalid number of arguments provided\n",
+        "help",
+        "Unable to parse single parameter argument.\nFor single parameter calls, the parameter must either be \"default\" or \"help\"\n",
+        "At most 8 ships hull ids can be passed as parameter\n",
+        "Unable to parse team side argument\nIt must refer to a valid team side like \"player\",\"playerAlly\" or \"enemy\"\n",
+        "Mission will be loaded with the specified ship hulls for the given team\n\nUsage: naval.set_mission_ships [TeamSide] [ShipHullId0] [ShipHullId1] ...\n\n- TeamSide: is the side of the team for which starting ships will be changed.\n  Can be \"player\", \"playerAlly\" or \"enemy\"\n- ShipHullId(s): are the hull id(s) of the ships to be spawned for the given side.\n  These must exist in ShipHulls.xml file.\n\nRemarks: Passing \"default\" as the first parameter will reset ships to default for all teams\n          Passing \"default\" as the second parameter after the TeamSide parameter will set ships to default\n         for only the given team"
+      ],
+      "method_strings": [
+        "Invalid number of arguments provided\n",
+        "help",
+        "default",
+        "Unable to parse single parameter argument.\nFor single parameter calls, the parameter must either be \"default\" or \"help\"\n",
+        "player",
+        "playerTeam",
+        "playerAlly",
+        "playerAllyTeam",
+        "enemy",
+        "enemyTeam",
+        "At most 8 ships hull ids can be passed as parameter\n",
+        "Passed ship hull id: ",
+        " does not refer to a valid ship hull. Omitting this\n",
+        "None of the passed ship hull ids refer to a valid ship hull\n",
+        "Reverting to default ship hulls for ",
+        "\n",
+        "Unable to parse team side argument\nIt must refer to a valid team side like \"player\",\"playerAlly\" or \"enemy\"\n",
+        "Mission will be loaded with the specified ship hulls for the given team\n\nUsage: naval.set_mission_ships [TeamSide] [ShipHullId0] [ShipHullId1] ...\n\n- TeamSide: is the side of the team for which starting ships will be changed.\n  Can be \"player\", \"playerAlly\" or \"enemy\"\n- ShipHullId(s): are the hull id(s) of the ships to be spawned for the given side.\n  These must exist in ShipHulls.xml file.\n\nRemarks: Passing \"default\" as the first parameter will reset ships to default for all teams\n          Passing \"default\" as the second parameter after the TeamSide parameter will set ships to default\n         for only the given team",
+        "Player and enemy teams will start with their default ships:\n",
+        ", ",
+        " will use the following ships:\n"
+      ]
+    },
+    {
+      "command": "naval.set_mission_troop_counts",
+      "group": "naval",
+      "attribute_name": "set_mission_troop_counts",
+      "method": "SetMissionTroopCounts",
+      "module": "NavalDLC",
+      "assembly": "NavalDLC.dll",
+      "help_strings": [
+        "help",
+        "Unable to parse one or more of the parameters.\n",
+        "usage: naval.set_mission_troop_counts [PlayerMeleeTroopCount] [PlayerRangedTroopCount] [EnemyMeleeTroopCount] [EnemyRangedTroopCount]"
+      ],
+      "method_strings": [
+        "help",
+        "error",
+        "Troop count maximization disabled\n",
+        "Mission troop counts are successfully set.\n- Player Melee Troop Count:",
+        "\n- Player Ranged Troop Count:",
+        "\n- Enemy Melee Troop Count:",
+        "\n- Enemy Ranged Troop Count:",
+        "Unable to parse one or more of the parameters.\n",
+        "usage: naval.set_mission_troop_counts [PlayerMeleeTroopCount] [PlayerRangedTroopCount] [EnemyMeleeTroopCount] [EnemyRangedTroopCount]"
+      ]
+    },
+    {
+      "command": "naval.start_mission",
+      "group": "naval",
+      "attribute_name": "start_mission",
+      "method": "StartMission",
+      "module": "NavalDLC",
+      "assembly": "NavalDLC.dll",
+      "help_strings": [],
+      "method_strings": [
+        "SandBoxNewGame",
+        "NavalDLC",
+        "Naval DLC module isn't active!",
+        "Starting mission with current mission settings...\n"
+      ]
+    },
+    {
+      "command": "naval.unlock_figurehead",
+      "group": "naval",
+      "attribute_name": "unlock_figurehead",
+      "method": "UnlockFigurehead",
+      "module": "NavalDLC",
+      "assembly": "NavalDLC.dll",
+      "help_strings": [
+        "Format is \"naval.unlock_figurehead [figurehead_id or all]\"."
+      ],
+      "method_strings": [
+        "Format is \"naval.unlock_figurehead [figurehead_id or all]\".",
+        "Main party not suitable to take figurehead right now",
+        "all",
+        "All figureheads unlocked for the player",
+        "Figurehead {0} is unlocked",
+        "This figurehead already unlocked by the player",
+        "Figurehead with id ",
+        " does not exist."
+      ]
+    },
+    {
+      "command": "platform_services.trigger_invitation",
+      "group": "platform_services",
+      "attribute_name": "trigger_invitation",
+      "method": "TriggerInvitation",
+      "module": "Core",
+      "assembly": "TaleWorlds.PlatformService.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Triggered invitation with "
+      ]
+    },
+    {
+      "command": "replay_mission.enable_custom_record",
+      "group": "replay_mission",
+      "attribute_name": "enable_custom_record",
+      "method": "EnableRecordMission",
+      "module": "CustomBattle",
+      "assembly": "TaleWorlds.MountAndBlade.CustomBattle.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Mission recording for custom battle can only be enabled while in custom battle screen.",
+        "Mission recording activated."
+      ]
+    },
+    {
+      "command": "scoreboard.force_toggle",
+      "group": "scoreboard",
+      "attribute_name": "force_toggle",
+      "method": "ForceScoreboardToggle",
+      "module": "Native",
+      "assembly": "TaleWorlds.MountAndBlade.GauntletUI.dll",
+      "help_strings": [
+        "Format is: scoreboard.force_toggle 0-1"
+      ],
+      "method_strings": [
+        "Force Scoreboard Toggle is: ",
+        "OFF",
+        "ON",
+        "Format is: scoreboard.force_toggle 0-1"
+      ]
+    },
+    {
+      "command": "state_string.benchmark_end",
+      "group": "state_string",
+      "attribute_name": "benchmark_end",
+      "method": "BenchmarkStateEnd",
+      "module": "CustomBattle",
+      "assembly": "TaleWorlds.MountAndBlade.CustomBattle.dll",
+      "help_strings": [],
+      "method_strings": []
+    },
+    {
+      "command": "state_string.benchmark_start",
+      "group": "state_string",
+      "attribute_name": "benchmark_start",
+      "method": "BenchmarkStateStart",
+      "module": "CustomBattle",
+      "assembly": "TaleWorlds.MountAndBlade.CustomBattle.dll",
+      "help_strings": [],
+      "method_strings": [
+        "state_string.benchmark_end",
+        "benchmark_battle_11",
+        "benchmark_siege"
+      ]
+    },
+    {
+      "command": "storymode.add_family_members",
+      "group": "storymode",
+      "attribute_name": "add_family_members",
+      "method": "AddFamilyMembers",
+      "module": "StoryMode",
+      "assembly": "StoryMode.dll",
+      "help_strings": [],
+      "method_strings": [
+        "Success"
+      ]
+    },
+    {
+      "command": "ui.cb_apply_battle_layout_from_string",
+      "group": "ui",
+      "attribute_name": "cb_apply_battle_layout_from_string",
+      "method": "ApplyCustomBattleLayout",
+      "module": "Core",
+      "assembly": "TaleWorlds.ScreenSystem.dll",
+      "help_strings": [
+        "Argument is not right."
+      ],
+      "method_strings": [
+        "ApplyCustomBattleLayout",
+        "Applied new layout from text.",
+        "Argument is not right.",
+        "Something went wrong."
+      ]
+    },
+    {
+      "command": "ui.cb_clear_siege_machine_selection",
+      "group": "ui",
+      "attribute_name": "cb_clear_siege_machine_selection",
+      "method": "ClearSiegeMachineSelection",
+      "module": "Core",
+      "assembly": "TaleWorlds.ScreenSystem.dll",
+      "help_strings": [],
+      "method_strings": [
+        "ClearSiegeMachineSelections",
+        "Siege machine selections have been cleared."
+      ]
+    },
+    {
+      "command": "ui.cb_copy_battle_layout_to_clipboard",
+      "group": "ui",
+      "attribute_name": "cb_copy_battle_layout_to_clipboard",
+      "method": "CopyCustomBattle",
+      "module": "Core",
+      "assembly": "TaleWorlds.ScreenSystem.dll",
+      "help_strings": [],
+      "method_strings": [
+        "CopyBattleLayoutToClipboard",
+        "Custom battle layout has been copied to clipboard as text.",
+        "Something went wrong"
+      ]
+    },
+    {
+      "command": "ui.set_debug_mode",
+      "group": "ui",
+      "attribute_name": "set_debug_mode",
+      "method": "SetDebugMode",
+      "module": "Core",
+      "assembly": "TaleWorlds.Engine.GauntletUI.dll",
+      "help_strings": [
+        "Format is \"ui.set_debug_mode [1/0]\"."
+      ],
+      "method_strings": [
+        "Format is \"ui.set_debug_mode [1/0]\".",
+        "Success."
+      ]
+    },
+    {
+      "command": "ui.set_screen_debug_information_enabled",
+      "group": "ui",
+      "attribute_name": "set_screen_debug_information_enabled",
+      "method": "SetScreenDebugInformationEnabled",
+      "module": "Core",
+      "assembly": "TaleWorlds.ScreenSystem.dll",
+      "help_strings": [
+        "Usage: ui.set_screen_debug_information_enabled [True/False]"
+      ],
+      "method_strings": [
+        "Usage: ui.set_screen_debug_information_enabled [True/False]",
+        "Success."
+      ]
+    },
+    {
+      "command": "ui.toggle_ui",
+      "group": "ui",
+      "attribute_name": "toggle_ui",
+      "method": "DisableUI",
+      "module": "Core",
+      "assembly": "TaleWorlds.Engine.dll",
+      "help_strings": [],
+      "method_strings": [
+        "UI is now disabled.",
+        "UI is now enabled.",
+        "Invalid input."
+      ]
+    },
+    {
+      "command": "ui.use_generated_prefabs",
+      "group": "ui",
+      "attribute_name": "use_generated_prefabs",
+      "method": "SetUsingGeneratedPrefabs",
+      "module": "Core",
+      "assembly": "TaleWorlds.Engine.GauntletUI.dll",
+      "help_strings": [
+        "Format is \"ui.use_generated_prefabs [1/0].\""
+      ],
+      "method_strings": [
+        "Format is \"ui.use_generated_prefabs [1/0].\"",
+        "Success."
+      ]
+    }
+  ],
+  "scan_failures": []
+}
