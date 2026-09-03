@@ -9,9 +9,12 @@ from unittest.mock import patch
 from bannerlord_assistant.core import (
     CommandLibraryError,
     ensure_user_library,
+    filter_catalog,
     filter_commands,
     load_commands,
+    load_entity_catalogs,
     packaged_data_path,
+    packaged_entity_catalog_path,
 )
 
 
@@ -39,6 +42,30 @@ class CoreTests(unittest.TestCase):
             troops.render({"troop_id": "imperial_legionary", "amount": "50", "party_name": ""}),
             "campaign.add_troops imperial_legionary | 50",
         )
+
+    def test_versioned_entity_catalogs_load_and_match_bilingual_targets(self):
+        catalogs = load_entity_catalogs(packaged_entity_catalog_path())
+        self.assertGreaterEqual(len(catalogs["heroes"]), 400)
+        self.assertGreaterEqual(len(catalogs["troops"]), 200)
+        self.assertGreaterEqual(len(catalogs["items"]), 900)
+        self.assertGreaterEqual(len(catalogs["settlement_ids"]), 500)
+
+        troop = next(entry for entry in catalogs["troops"] if entry.value == "imperial_legionary")
+        self.assertIn("帝国", troop.label)
+        self.assertEqual(troop.display_text, f"imperial_legionary（{troop.label}）")
+        self.assertIn(troop, filter_catalog(catalogs["troops"], "legionary"))
+        self.assertIn(troop, filter_catalog(catalogs["troops"], "帝国"))
+        self.assertEqual(next(entry for entry in catalogs["items"] if entry.value == "grain").label, "谷物")
+        self.assertEqual(next(entry for entry in catalogs["modifiers"] if entry.value == "balanced").label, "均衡")
+
+    def test_object_parameters_reference_catalogs(self):
+        troops = next(command for command in self.commands if command.name == "添加士兵")
+        self.assertEqual(troops.parameters[0].catalog, "troops")
+        relation = next(command for command in self.commands if command.name == "修改英雄关系")
+        self.assertEqual(relation.parameters[0].catalog, "heroes")
+        self.assertEqual(relation.parameters[1].catalog, "heroes")
+        numeric = next(command for command in self.commands if command.name == "增加金币")
+        self.assertEqual(numeric.parameters[0].catalog, "")
 
     def test_empty_optional_middle_parameter_removes_one_separator(self):
         item = next(command for command in self.commands if command.name == "添加物品到玩家部队")

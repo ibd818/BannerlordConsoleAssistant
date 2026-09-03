@@ -29,6 +29,26 @@ class Parameter:
     description: str = ""
     required: bool = True
     type: str = "text"
+    catalog: str = ""
+
+
+@dataclass(frozen=True)
+class CatalogEntry:
+    """A finite game target with a display label and command-safe value."""
+
+    value: str
+    label: str
+    aliases: tuple[str, ...] = field(default_factory=tuple)
+
+    @property
+    def display_text(self) -> str:
+        if self.label and self.label != self.value:
+            return f"{self.value}（{self.label}）"
+        return self.value
+
+    @property
+    def searchable_text(self) -> str:
+        return " ".join((self.value, self.label, *self.aliases)).casefold()
 
 
 @dataclass(frozen=True)
@@ -85,6 +105,7 @@ def _parameter_from_raw(raw: Any) -> Parameter:
         description=str(raw.get("description", "")),
         required=bool(raw.get("required", True)),
         type=str(raw.get("type", "text")),
+        catalog=str(raw.get("catalog", "")),
     )
 
 
@@ -134,6 +155,55 @@ def packaged_data_path() -> Path:
     if getattr(sys, "frozen", False) and hasattr(sys, "_MEIPASS"):
         return Path(sys._MEIPASS) / "bannerlord_assistant" / "data" / "commands.json"
     return Path(__file__).resolve().parent / "data" / "commands.json"
+
+
+def packaged_entity_catalog_path() -> Path:
+    if getattr(sys, "frozen", False) and hasattr(sys, "_MEIPASS"):
+        return Path(sys._MEIPASS) / "bannerlord_assistant" / "data" / "entities.json"
+    return Path(__file__).resolve().parent / "data" / "entities.json"
+
+
+def load_entity_catalogs(path: Path | None = None) -> dict[str, tuple[CatalogEntry, ...]]:
+    """Load versioned finite target catalogs used by the GUI completers."""
+    catalog_path = path or packaged_entity_catalog_path()
+    try:
+        raw_data = json.loads(catalog_path.read_text(encoding="utf-8-sig"))
+    except (OSError, json.JSONDecodeError) as exc:
+        raise CommandLibraryError(f"无法读取目标目录：{exc}") from exc
+
+    if not isinstance(raw_data, dict) or not isinstance(raw_data.get("catalogs"), dict):
+        raise CommandLibraryError("entities.json 必须包含 catalogs 对象")
+
+    catalogs: dict[str, tuple[CatalogEntry, ...]] = {}
+    for catalog_name, raw_entries in raw_data["catalogs"].items():
+        if not isinstance(catalog_name, str) or not catalog_name.strip():
+            raise CommandLibraryError("目标目录名称不能为空")
+        if not isinstance(raw_entries, list):
+            raise CommandLibraryError(f"目标目录 {catalog_name} 必须是数组")
+        entries: list[CatalogEntry] = []
+        for index, raw_entry in enumerate(raw_entries, start=1):
+            if not isinstance(raw_entry, dict) or not str(raw_entry.get("value", "")).strip():
+                raise CommandLibraryError(f"目标目录 {catalog_name} 第 {index} 项缺少 value")
+            aliases = raw_entry.get("aliases", [])
+            if isinstance(aliases, str):
+                aliases = [aliases]
+            if not isinstance(aliases, list):
+                raise CommandLibraryError(f"目标目录 {catalog_name} 第 {index} 项 aliases 必须是数组")
+            entries.append(
+                CatalogEntry(
+                    value=str(raw_entry["value"]),
+                    label=str(raw_entry.get("label", raw_entry["value"])),
+                    aliases=tuple(str(alias) for alias in aliases if str(alias).strip()),
+                )
+            )
+        catalogs[catalog_name] = tuple(entries)
+    return catalogs
+
+
+def filter_catalog(entries: tuple[CatalogEntry, ...] | list[CatalogEntry], query: str) -> list[CatalogEntry]:
+    """Find catalog entries by substring in ID, English name, Chinese label, or alias."""
+    needle = query.strip().casefold()
+    return [entry for entry in entries if not needle or needle in entry.searchable_text]
 
 
 def user_data_path() -> Path:

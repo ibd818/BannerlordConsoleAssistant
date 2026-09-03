@@ -11,6 +11,8 @@ from PySide6.QtCore import Qt, QTimer, QUrl
 from PySide6.QtGui import QColor, QDesktopServices, QFont, QIcon, QPalette
 from PySide6.QtWidgets import (
     QApplication,
+    QComboBox,
+    QCompleter,
     QFormLayout,
     QFrame,
     QHBoxLayout,
@@ -30,7 +32,15 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from .core import Command, CommandLibraryError, ensure_user_library, filter_commands, load_commands
+from .core import (
+    CatalogEntry,
+    Command,
+    CommandLibraryError,
+    ensure_user_library,
+    filter_commands,
+    load_commands,
+    load_entity_catalogs,
+)
 
 
 CATEGORIES = (
@@ -66,6 +76,9 @@ QLabel#muted { color: #91a0b5; }
 QLabel#template { background: #0e1520; color: #80d4ff; padding: 12px; border: 1px solid #29384d; border-radius: 8px; font-family: Consolas; }
 QLineEdit { background: #0f1723; border: 1px solid #344258; border-radius: 8px; padding: 9px 11px; selection-background-color: #2b78d0; }
 QLineEdit:focus { border: 1px solid #4aa8ff; }
+QComboBox { background: #0f1723; border: 1px solid #344258; border-radius: 8px; padding: 9px 11px; selection-background-color: #2b78d0; }
+QComboBox:focus { border: 1px solid #4aa8ff; }
+QComboBox QAbstractItemView { background: #182130; border: 1px solid #344258; selection-background-color: #2b78d0; padding: 4px; }
 QListWidget { background: transparent; border: none; outline: none; }
 QListWidget::item { padding: 10px 12px; margin: 2px 0; border-radius: 7px; }
 QListWidget::item:hover { background: #202c3d; }
@@ -113,14 +126,65 @@ def command_tags(command: Command) -> list[tuple[str, str]]:
     return tags
 
 
+class CatalogComboBox(QComboBox):
+    """Editable candidate selector that emits the original command value."""
+
+    def __init__(self, entries: tuple[CatalogEntry, ...], parent: QWidget | None = None) -> None:
+        super().__init__(parent)
+        self.entries = tuple(entries)
+        self.setEditable(True)
+        self.setInsertPolicy(QComboBox.InsertPolicy.NoInsert)
+        self.setMaxVisibleItems(14)
+        for entry in self.entries:
+            self.addItem(entry.display_text, entry.value)
+
+        completer = QCompleter(self.model(), self)
+        completer.setCaseSensitivity(Qt.CaseInsensitive)
+        completer.setFilterMode(Qt.MatchContains)
+        completer.setCompletionMode(QCompleter.PopupCompletion)
+        completer.setMaxVisibleItems(14)
+        self.setCompleter(completer)
+        self.lineEdit().setPlaceholderText("输入 ID、英文名或中文名，可模糊匹配…")
+        completer.activated[str].connect(self._select_completion)
+
+    def set_entry_value(self, value: str) -> None:
+        needle = value.strip().casefold()
+        for index, entry in enumerate(self.entries):
+            candidates = (entry.value, entry.label, entry.display_text, *entry.aliases)
+            if any(needle == candidate.casefold() for candidate in candidates):
+                self.setCurrentIndex(index)
+                return
+        self.setEditText(value)
+
+    def raw_value(self) -> str:
+        text = self.lineEdit().text().strip()
+        index = self.currentIndex()
+        if 0 <= index < len(self.entries) and text == self.itemText(index):
+            return str(self.itemData(index))
+        needle = text.casefold()
+        for entry in self.entries:
+            candidates = (entry.value, entry.label, entry.display_text, *entry.aliases)
+            if any(needle == candidate.casefold() for candidate in candidates):
+                return entry.value
+        return text
+
+    def _select_completion(self, text: str) -> None:
+        for index, entry in enumerate(self.entries):
+            if text == entry.display_text:
+                self.setCurrentIndex(index)
+                return
+        self.setEditText(text)
+
+
 class MainWindow(QMainWindow):
     def __init__(self, library_path: Path) -> None:
         super().__init__()
         self.library_path = library_path
         self.commands: list[Command] = []
+        self.entity_catalogs: dict[str, tuple[CatalogEntry, ...]] = {}
         self.visible_commands: list[Command] = []
         self.current_command: Command | None = None
-        self.parameter_inputs: dict[str, QLineEdit] = {}
+        self.parameter_inputs: dict[str, QWidget] = {}
         self.tag_labels: list[QLabel] = []
         self.setWindowTitle("Bannerlord Console Assistant")
         self.setMinimumSize(1000, 650)
@@ -268,6 +332,7 @@ class MainWindow(QMainWindow):
         del checked
         try:
             self.commands = load_commands(self.library_path)
+            self.entity_catalogs = load_entity_catalogs()
         except CommandLibraryError as exc:
             QMessageBox.critical(self, "命令库错误", str(exc))
             return
@@ -334,15 +399,26 @@ class MainWindow(QMainWindow):
         self._clear_form()
         if command.parameters:
             for parameter in command.parameters:
-                field = QLineEdit(parameter.default)
-                field.setPlaceholderText(parameter.placeholder or parameter.description)
-                if parameter.type == "integer":
-                    field.setInputMethodHints(Qt.ImhDigitsOnly)
-                field.textChanged.connect(self._update_generated)
+                entries = self.entity_catalogs.get(parameter.catalog, ())
+                if parameter.catalog and entries:
+                    field: QWidget = CatalogComboBox(entries)
+                    field.set_entry_value(parameter.default)  # type: ignore[attr-defined]
+                    field.currentTextChanged.connect(self._update_generated)  # type: ignore[attr-defined]
+                    field.lineEdit().textChanged.connect(self._update_generated)  # type: ignore[attr-defined]
+                    field.setToolTip(
+                        (parameter.description + "\n" if parameter.description else "")
+                        + "可从下拉列表选择，或输入 ID、英文名、中文名的一部分进行匹配；生成命令使用英文原始值。"
+                    )
+                else:
+                    field = QLineEdit(parameter.default)
+                    field.setPlaceholderText(parameter.placeholder or parameter.description)
+                    if parameter.type == "integer":
+                        field.setInputMethodHints(Qt.ImhDigitsOnly)
+                    field.textChanged.connect(self._update_generated)
+                    if parameter.description:
+                        field.setToolTip(parameter.description)
                 label = parameter.label + (" *" if parameter.required else "")
                 self.form_layout.addRow(label, field)
-                if parameter.description:
-                    field.setToolTip(parameter.description)
                 self.parameter_inputs[parameter.key] = field
         else:
             no_parameters = QLabel("此命令不需要参数")
@@ -387,7 +463,7 @@ class MainWindow(QMainWindow):
     def _update_generated(self) -> None:
         if not self.current_command:
             return
-        values = {key: field.text() for key, field in self.parameter_inputs.items()}
+        values = {key: self._field_value(field) for key, field in self.parameter_inputs.items()}
         try:
             rendered = self.current_command.render(values)
         except ValueError as exc:
@@ -397,6 +473,14 @@ class MainWindow(QMainWindow):
         else:
             self.generated_input.setText(rendered)
             self.copy_button.setEnabled(True)
+
+    @staticmethod
+    def _field_value(field: QWidget) -> str:
+        if isinstance(field, CatalogComboBox):
+            return field.raw_value()
+        if isinstance(field, QLineEdit):
+            return field.text()
+        return ""
 
     def _copy_command(self) -> None:
         command = self.generated_input.text().strip()

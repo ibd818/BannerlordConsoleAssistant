@@ -1,6 +1,6 @@
 {
-  "schema_version": 3,
-  "library_version": "bannerlord-1.4.8.119303-warsails-1.2.8.119303-r2",
+  "schema_version": 4,
+  "library_version": "bannerlord-1.4.8.119303-warsails-1.2.8.119303-r3",
   "title": "Bannerlord v1.4.8 / War Sails v1.2.8 中文命令库",
   "target_game_version": "Bannerlord v1.4.8.119303",
   "target_dlc_version": "War Sails v1.2.8.119303",
@@ -122,6 +122,7 @@
           "default": "",
           "placeholder": "请输入家族名称",
           "type": "text",
+          "catalog": "clans",
           "required": false
         },
         {
@@ -156,6 +157,7 @@
           "default": "main_hero",
           "placeholder": "请输入英雄名称",
           "type": "text",
+          "catalog": "heroes",
           "required": true
         },
         {
@@ -190,6 +192,7 @@
           "default": "main_hero",
           "placeholder": "请输入英雄名称",
           "type": "text",
+          "catalog": "heroes",
           "required": true
         },
         {
@@ -224,6 +227,7 @@
           "default": "main_hero",
           "placeholder": "请输入英雄名称",
           "type": "text",
+          "catalog": "heroes",
           "required": true
         },
         {
@@ -232,6 +236,7 @@
           "default": "Leadership",
           "placeholder": "请输入技能名称",
           "type": "text",
+          "catalog": "skills",
           "required": true
         },
         {
@@ -266,6 +271,7 @@
           "default": "imperial_legionary",
           "placeholder": "请输入兵种 ID",
           "type": "text",
+          "catalog": "troops",
           "required": true
         },
         {
@@ -385,6 +391,7 @@
           "default": "",
           "placeholder": "请输入领地名称",
           "type": "text",
+          "catalog": "settlements",
           "required": true
         },
         {
@@ -393,6 +400,7 @@
           "default": "",
           "placeholder": "请输入建筑名称",
           "type": "text",
+          "catalog": "buildings",
           "required": true
         }
       ],
@@ -436,6 +444,7 @@
           "default": "",
           "placeholder": "请输入英雄名称",
           "type": "text",
+          "catalog": "heroes",
           "required": true
         },
         {
@@ -444,6 +453,7 @@
           "default": "",
           "placeholder": "请输入另一名英雄名称（可选）",
           "type": "text",
+          "catalog": "heroes",
           "required": false
         },
         {
@@ -478,6 +488,7 @@
           "default": "grain",
           "placeholder": "请输入物品 ID",
           "type": "text",
+          "catalog": "items",
           "required": true
         },
         {
@@ -486,6 +497,7 @@
           "default": "",
           "placeholder": "请输入物品词缀 ID（可选）",
           "type": "text",
+          "catalog": "modifiers",
           "required": false
         },
         {
@@ -520,6 +532,7 @@
           "default": "",
           "placeholder": "请输入英雄名称",
           "type": "text",
+          "catalog": "heroes",
           "required": true
         },
         {
@@ -580,6 +593,7 @@
           "default": "",
           "placeholder": "请输入英雄名称",
           "type": "text",
+          "catalog": "heroes",
           "required": true
         },
         {
@@ -614,6 +628,7 @@
           "default": "",
           "placeholder": "请输入俘虏名称",
           "type": "text",
+          "catalog": "characters",
           "required": true
         },
         {
@@ -622,6 +637,7 @@
           "default": "",
           "placeholder": "请输入俘虏持有者名称",
           "type": "text",
+          "catalog": "heroes",
           "required": true
         }
       ],
@@ -726,6 +742,7 @@
           "default": "",
           "placeholder": "请输入军团领袖名称",
           "type": "text",
+          "catalog": "heroes",
           "required": true
         }
       ],
@@ -778,6 +795,7 @@
           "default": "",
           "placeholder": "请输入领地名称",
           "type": "text",
+          "catalog": "settlements",
           "required": true
         }
       ],
@@ -821,6 +839,7 @@
           "default": "",
           "placeholder": "请输入王国名称",
           "type": "text",
+          "catalog": "kingdoms",
           "required": true
         }
       ],
@@ -864,6 +883,7 @@
           "default": "",
           "placeholder": "请输入势力一",
           "type": "text",
+          "catalog": "factions",
           "required": true
         },
         {
@@ -872,6 +892,7 @@
           "default": "",
           "placeholder": "请输入势力二",
           "type": "text",
+          "catalog": "factions",
           "required": true
         }
       ],
@@ -898,6 +919,7 @@
           "default": "",
           "placeholder": "请输入势力一",
           "type": "text",
+          "catalog": "factions",
           "required": true
         },
         {
@@ -906,6 +928,7 @@
           "default": "",
           "placeholder": "请输入势力二",
           "type": "text",
+          "catalog": "factions",
           "required": true
         }
       ],
@@ -940,6 +963,7 @@
           "default": "",
           "placeholder": "请输入英雄名称",
           "type": "text",
+          "catalog": "heroes",
           "required": true
         }
       ],
@@ -992,6 +1016,7 @@
           "default": "",
           "placeholder": "请输入英雄名称",
           "type": "text",
+          "catalog": "heroes",
           "required": true
         }
       ],
@@ -1130,6 +1155,7 @@
           "default": "",
           "placeholder": "请输入领地名称",
           "type": "text",
+          "catalog": "settlements",
           "required": true
         },
         {
@@ -1138,6 +1164,7 @@
           "default": "",
           "placeholder": "请输入王国名称",
           "type": "text",
+          "catalog": "kingdoms",
           "required": true
         }
       ],
@@ -1164,6 +1191,7 @@
           "default": "",
           "placeholder": "请输入领地名称或 ID",
           "type": "text",
+          "catalog": "settlement_ids",
           "required": true
         }
       ],
@@ -1190,6 +1218,7 @@
           "default": "",
           "placeholder": "请输入领地名称",
           "type": "text",
+          "catalog": "settlements",
           "required": true
         },
         {
@@ -1198,6 +1227,7 @@
           "default": "",
           "placeholder": "请输入工坊名称",
           "type": "text",
+          "catalog": "workshops",
           "required": true
         }
       ],
@@ -1284,6 +1314,7 @@
           "default": "",
           "placeholder": "请输入英雄名称",
           "type": "text",
+          "catalog": "heroes",
           "required": true
         }
       ],
@@ -1310,6 +1341,7 @@
           "default": "",
           "placeholder": "请输入王国名称或名称前两个字符",
           "type": "text",
+          "catalog": "kingdoms",
           "required": true
         }
       ],
@@ -1336,6 +1368,7 @@
           "default": "",
           "placeholder": "请输入王国名称或名称前两个字符",
           "type": "text",
+          "catalog": "kingdoms",
           "required": true
         }
       ],
@@ -1388,6 +1421,7 @@
           "default": "",
           "placeholder": "请输入英雄名称",
           "type": "text",
+          "catalog": "heroes",
           "required": true
         }
       ],
@@ -1431,6 +1465,7 @@
           "default": "",
           "placeholder": "请输入家族名称",
           "type": "text",
+          "catalog": "clans",
           "required": true
         },
         {
@@ -1439,6 +1474,7 @@
           "default": "",
           "placeholder": "请输入王国名称",
           "type": "text",
+          "catalog": "kingdoms",
           "required": true
         },
         {
@@ -1473,6 +1509,7 @@
           "default": "",
           "placeholder": "请输入王国一",
           "type": "text",
+          "catalog": "kingdoms",
           "required": true
         },
         {
@@ -1481,6 +1518,7 @@
           "default": "",
           "placeholder": "请输入王国二",
           "type": "text",
+          "catalog": "kingdoms",
           "required": true
         }
       ],
@@ -1507,6 +1545,7 @@
           "default": "",
           "placeholder": "请输入英雄名称",
           "type": "text",
+          "catalog": "heroes",
           "required": true
         },
         {
@@ -1515,6 +1554,7 @@
           "default": "",
           "placeholder": "请输入另一名英雄名称",
           "type": "text",
+          "catalog": "heroes",
           "required": true
         }
       ],
@@ -1541,6 +1581,7 @@
           "default": "",
           "placeholder": "请输入英雄名称",
           "type": "text",
+          "catalog": "heroes",
           "required": true
         }
       ],
@@ -1746,6 +1787,7 @@
           "default": "",
           "placeholder": "请输入领地名称",
           "type": "text",
+          "catalog": "settlements",
           "required": true
         }
       ],
@@ -1867,6 +1909,7 @@
           "default": "",
           "placeholder": "请输入家族名称",
           "type": "text",
+          "catalog": "clans",
           "required": true
         },
         {
@@ -1875,6 +1918,7 @@
           "default": "",
           "placeholder": "请输入文化名称",
           "type": "text",
+          "catalog": "cultures",
           "required": true
         }
       ],
@@ -1901,6 +1945,7 @@
           "default": "",
           "placeholder": "请输入领地名称或 ID",
           "type": "text",
+          "catalog": "settlement_ids",
           "required": true
         },
         {
@@ -1935,6 +1980,7 @@
           "default": "",
           "placeholder": "请输入领地名称或 ID",
           "type": "text",
+          "catalog": "settlement_ids",
           "required": true
         },
         {
@@ -1969,6 +2015,7 @@
           "default": "",
           "placeholder": "请输入英雄名称",
           "type": "text",
+          "catalog": "heroes",
           "required": true
         },
         {
@@ -2003,6 +2050,7 @@
           "default": "",
           "placeholder": "请输入英雄名称",
           "type": "text",
+          "catalog": "heroes",
           "required": true
         },
         {
@@ -2011,6 +2059,7 @@
           "default": "",
           "placeholder": "请输入文化名称",
           "type": "text",
+          "catalog": "cultures",
           "required": true
         }
       ],
@@ -2037,6 +2086,7 @@
           "default": "",
           "placeholder": "请输入英雄名称",
           "type": "text",
+          "catalog": "heroes",
           "required": true
         },
         {
@@ -2045,6 +2095,7 @@
           "default": "",
           "placeholder": "请输入特性名称",
           "type": "text",
+          "catalog": "traits",
           "required": true
         },
         {
@@ -2079,6 +2130,7 @@
           "default": "",
           "placeholder": "请输入领地名称",
           "type": "text",
+          "catalog": "settlements",
           "required": true
         },
         {
@@ -2139,6 +2191,7 @@
           "default": "",
           "placeholder": "请输入领地名称或 ID",
           "type": "text",
+          "catalog": "settlement_ids",
           "required": true
         },
         {
@@ -2199,6 +2252,7 @@
           "default": "",
           "placeholder": "请输入特性名称",
           "type": "text",
+          "catalog": "traits",
           "required": true
         },
         {
@@ -2233,6 +2287,7 @@
           "default": "",
           "placeholder": "请输入领地名称或 ID",
           "type": "text",
+          "catalog": "settlement_ids",
           "required": true
         },
         {
@@ -2267,6 +2322,7 @@
           "default": "",
           "placeholder": "请输入领地名称或 ID",
           "type": "text",
+          "catalog": "settlement_ids",
           "required": true
         },
         {
@@ -2301,6 +2357,7 @@
           "default": "",
           "placeholder": "请输入技能名称",
           "type": "text",
+          "catalog": "skills",
           "required": true
         },
         {
@@ -2335,6 +2392,7 @@
           "default": "",
           "placeholder": "请输入技能名称",
           "type": "text",
+          "catalog": "skills",
           "required": true
         },
         {
@@ -2369,6 +2427,7 @@
           "default": "",
           "placeholder": "请输入英雄名称",
           "type": "text",
+          "catalog": "heroes",
           "required": true
         },
         {
@@ -2455,6 +2514,7 @@
           "default": "",
           "placeholder": "请输入英雄名称",
           "type": "text",
+          "catalog": "heroes",
           "required": true
         },
         {
@@ -2463,6 +2523,7 @@
           "default": "",
           "placeholder": "请输入另一名英雄名称",
           "type": "text",
+          "catalog": "heroes",
           "required": true
         }
       ],
@@ -2823,6 +2884,7 @@
           "default": "",
           "placeholder": "请输入语言代码、语言名称或 ISO 代码",
           "type": "text",
+          "catalog": "languages",
           "required": true
         }
       ],
@@ -2917,6 +2979,7 @@
           "default": "",
           "placeholder": "请输入队伍阵营",
           "type": "text",
+          "catalog": "teams",
           "required": true
         },
         {
@@ -3639,6 +3702,7 @@
           "default": "",
           "placeholder": "请输入船体 ID 或船体名称",
           "type": "text",
+          "catalog": "ship_hulls",
           "required": true
         }
       ],
@@ -3768,6 +3832,7 @@
           "default": "",
           "placeholder": "请输入场景名称",
           "type": "text",
+          "catalog": "scenes",
           "required": true
         }
       ],
@@ -3887,6 +3952,7 @@
           "default": "",
           "placeholder": "请输入船首像 ID 或 all",
           "type": "text",
+          "catalog": "figureheads",
           "required": true
         }
       ],
@@ -4110,7 +4176,8 @@
           "default": "",
           "placeholder": "请输入开关（True/False）",
           "type": "text",
-          "required": true
+          "required": true,
+          "catalog": "booleans"
         }
       ],
       "category": "界面与调试",

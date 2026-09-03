@@ -9,8 +9,11 @@
 - 按经济、角色、军队、政治、领地、任务、战斗、航海、多人等分类浏览
 - 搜索命令名称、说明、模板与关键词
 - 根据参数实时生成完整控制台命令
+- 对英雄、兵种、物品、领地、势力、王国、文化、技能、特性、建筑、工坊、船体、场景等固定目标提供下拉列表和中英文模糊匹配
+- 候选项显示为“英文 ID/名称（中文名）”，生成命令始终使用英文原始值；任务名、部队名等随存档变化的目标仍可手动输入
 - 一键复制命令到剪贴板
 - 独立的 UTF-8 `commands.json`，支持不改源码扩展
+- 独立的 UTF-8 `entities.json`，按目标游戏版本保存候选目录
 - 深色中文界面，高 DPI 适配
 
 ## 项目结构
@@ -19,7 +22,8 @@
 src/bannerlord_assistant/
 ├── app.py                 # PySide6 界面
 ├── core.py                # 数据校验、搜索和命令生成
-└── data/commands.json     # 默认命令库
+├── data/commands.json     # 默认命令库与参数目录引用
+└── data/entities.json     # 当前版本目标 ID、英文名和中文显示标签
 tests/test_core.py         # 核心逻辑测试
 build.ps1                  # Windows 单文件构建脚本
 run.ps1                    # 源码运行脚本
@@ -47,6 +51,8 @@ python -m pip install -r requirements.txt
 ```
 
 构建产物为 `outputs/BannerlordConsoleAssistant.exe`，目标电脑不需要安装 Python。
+
+推送到 `main`、提交 Pull Request 或手动运行 GitHub Actions 的 `Build Windows EXE` 工作流时，GitHub Windows runner 会自动安装依赖、运行核心测试并构建 EXE。构建成功后，可从工作流运行页面下载 `BannerlordConsoleAssistant-windows` artifact。
 
 ## 编辑命令库
 
@@ -100,6 +106,18 @@ campaign.add_troops imperial_legionary | 50
   "keywords": ["金币", "gold", "钱"]
 }
 ```
+
+有限目标参数可增加 `catalog` 字段，例如：
+
+```json
+{
+  "key": "troop_id",
+  "label": "兵种 ID",
+  "catalog": "troops"
+}
+```
+
+目录项的 `value` 是最终写入命令的原始值，`label` 只用于界面显示，`aliases` 用于英文 ID、英文名和中文名的包含匹配。当前版本的中文标签来自版本化中文文本数据，作为辅助参考；游戏内 `help` 和实际模块数据仍是命令是否可用的最终依据。
 
 模板中每个 `{参数名}` 都必须在 `parameters` 中声明，反之亦然。命令可能随游戏版本变化；默认库中的版本提示可直接通过数据文件修订。
 
