@@ -68,15 +68,15 @@ build path for the Bannerlord official-console command assistant.
 - Run GUI smoke tests in an environment with PySide6 when GUI changes are made.
 - Launch and smoke-test the downloaded Windows artifact before distributing a
   new EXE.
-- Push the local metadata-selector commit `4daeffa` after GitHub credentials
-  are made available in this environment, then download and launch its Actions
-  artifact on Windows.
+- Push the local metadata-selector commits `4daeffa`, `4fcf6dd`, and `539a891`
+  after GitHub credentials are made available in this environment, then
+  download and launch their Actions artifact on Windows.
 
 ## Next step
 
 - Run GUI smoke tests and launch the downloaded artifact in a Windows/PySide6
   environment before distributing the metadata-selector release. The local
-  commit is ready; GitHub push is currently blocked by missing HTTPS/SSH
+  commits are ready; GitHub push is currently blocked by missing HTTPS/SSH
   credentials in Oracle.
 
 ## Risks and notes
