@@ -344,7 +344,13 @@ class MainWindow(QMainWindow):
         panel_layout.addWidget(generated_heading)
         panel_layout.addWidget(self.generated_input)
         panel_layout.addWidget(self.copy_button)
-        outer.addWidget(panel)
+        # Metadata adds a second line below catalog fields. Keep long commands
+        # usable instead of allowing the detail card to run below the window.
+        detail_scroll = QScrollArea()
+        detail_scroll.setWidgetResizable(True)
+        detail_scroll.setFrameShape(QFrame.Shape.NoFrame)
+        detail_scroll.setWidget(panel)
+        outer.addWidget(detail_scroll)
         return wrapper
 
     def reload_library(self, checked: bool = False, initial: bool = False) -> None:
