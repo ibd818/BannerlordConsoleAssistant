@@ -79,6 +79,8 @@ QLineEdit:focus { border: 1px solid #4aa8ff; }
 QComboBox { background: #0f1723; border: 1px solid #344258; border-radius: 8px; padding: 9px 11px; selection-background-color: #2b78d0; }
 QComboBox:focus { border: 1px solid #4aa8ff; }
 QComboBox QAbstractItemView { background: #182130; border: 1px solid #344258; selection-background-color: #2b78d0; padding: 4px; }
+QLabel#catalogMeta { color: #91a7be; font-size: 11px; padding-top: 2px; }
+QLabel#catalogMeta[missing="true"] { color: #c89d59; }
 QListWidget { background: transparent; border: none; outline: none; }
 QListWidget::item { padding: 10px 12px; margin: 2px 0; border-radius: 7px; }
 QListWidget::item:hover { background: #202c3d; }
@@ -136,7 +138,8 @@ class CatalogComboBox(QComboBox):
         self.setInsertPolicy(QComboBox.InsertPolicy.NoInsert)
         self.setMaxVisibleItems(14)
         for entry in self.entries:
-            self.addItem(entry.display_text, entry.value)
+            self.addItem(entry.selector_text, entry.value)
+            self.setItemData(self.count() - 1, entry.detail_text, Qt.ToolTipRole)
 
         completer = QCompleter(self.model(), self)
         completer.setCaseSensitivity(Qt.CaseInsensitive)
@@ -168,9 +171,24 @@ class CatalogComboBox(QComboBox):
                 return entry.value
         return text
 
+    def selected_entry(self) -> CatalogEntry | None:
+        """Return the selected catalog record, if the current text matches one."""
+        text = self.lineEdit().text().strip()
+        index = self.currentIndex()
+        if 0 <= index < len(self.entries):
+            item_text = self.itemText(index)
+            if text in (item_text, self.entries[index].display_text, self.entries[index].selector_text):
+                return self.entries[index]
+        needle = text.casefold()
+        for entry in self.entries:
+            candidates = (entry.value, entry.label, entry.display_text, entry.selector_text, *entry.aliases)
+            if any(needle == candidate.casefold() for candidate in candidates):
+                return entry
+        return None
+
     def _select_completion(self, text: str) -> None:
         for index, entry in enumerate(self.entries):
-            if text == entry.display_text:
+            if text in (entry.display_text, entry.selector_text):
                 self.setCurrentIndex(index)
                 return
         self.setEditText(text)
@@ -185,6 +203,7 @@ class MainWindow(QMainWindow):
         self.visible_commands: list[Command] = []
         self.current_command: Command | None = None
         self.parameter_inputs: dict[str, QWidget] = {}
+        self.catalog_detail_labels: dict[str, QLabel] = {}
         self.tag_labels: list[QLabel] = []
         self.setWindowTitle("Bannerlord Console Assistant")
         self.setMinimumSize(1000, 650)
@@ -409,6 +428,18 @@ class MainWindow(QMainWindow):
                         (parameter.description + "\n" if parameter.description else "")
                         + "可从下拉列表选择，或输入 ID、英文名、中文名的一部分进行匹配；生成命令使用英文原始值。"
                     )
+                    field_wrapper = QWidget()
+                    field_layout = QVBoxLayout(field_wrapper)
+                    field_layout.setContentsMargins(0, 0, 0, 0)
+                    field_layout.setSpacing(2)
+                    field_layout.addWidget(field)
+                    detail_label = QLabel()
+                    detail_label.setObjectName("catalogMeta")
+                    detail_label.setWordWrap(True)
+                    detail_label.setTextInteractionFlags(Qt.TextSelectableByMouse)
+                    field_layout.addWidget(detail_label)
+                    self.catalog_detail_labels[parameter.key] = detail_label
+                    field_for_form: QWidget = field_wrapper
                 else:
                     field = QLineEdit(parameter.default)
                     field.setPlaceholderText(parameter.placeholder or parameter.description)
@@ -417,8 +448,9 @@ class MainWindow(QMainWindow):
                     field.textChanged.connect(self._update_generated)
                     if parameter.description:
                         field.setToolTip(parameter.description)
+                    field_for_form = field
                 label = parameter.label + (" *" if parameter.required else "")
-                self.form_layout.addRow(label, field)
+                self.form_layout.addRow(label, field_for_form)
                 self.parameter_inputs[parameter.key] = field
         else:
             no_parameters = QLabel("此命令不需要参数")
@@ -430,6 +462,7 @@ class MainWindow(QMainWindow):
         while self.form_layout.rowCount():
             self.form_layout.removeRow(0)
         self.parameter_inputs.clear()
+        self.catalog_detail_labels.clear()
 
     def _show_tags(self, command: Command) -> None:
         self._clear_tags()
@@ -464,6 +497,7 @@ class MainWindow(QMainWindow):
         if not self.current_command:
             return
         values = {key: self._field_value(field) for key, field in self.parameter_inputs.items()}
+        self._update_catalog_details()
         try:
             rendered = self.current_command.render(values)
         except ValueError as exc:
@@ -473,6 +507,22 @@ class MainWindow(QMainWindow):
         else:
             self.generated_input.setText(rendered)
             self.copy_button.setEnabled(True)
+
+    def _update_catalog_details(self) -> None:
+        """Keep a small metadata card below each catalog-backed input."""
+        for key, label in self.catalog_detail_labels.items():
+            field = self.parameter_inputs.get(key)
+            if not isinstance(field, CatalogComboBox):
+                continue
+            entry = field.selected_entry()
+            if entry is None:
+                label.setProperty("missing", True)
+                label.setText("未匹配目录项；命令将使用手动输入值")
+            else:
+                label.setProperty("missing", False)
+                label.setText(entry.detail_text)
+            label.style().unpolish(label)
+            label.style().polish(label)
 
     @staticmethod
     def _field_value(field: QWidget) -> str:

@@ -39,6 +39,7 @@ class CatalogEntry:
     value: str
     label: str
     aliases: tuple[str, ...] = field(default_factory=tuple)
+    metadata: dict[str, Any] = field(default_factory=dict)
 
     @property
     def display_text(self) -> str:
@@ -47,8 +48,61 @@ class CatalogEntry:
         return self.value
 
     @property
+    def metadata_summary(self) -> str:
+        """Return the compact facts useful in a long selector list.
+
+        Catalog files may contain richer metadata than the command renderer
+        needs. Keep this presentation deliberately small and data-driven so
+        unknown future fields do not leak into the command value.
+        """
+        preferred_keys = (
+            "tier", "culture", "type", "category", "item_type",
+            "settlement_type", "faction", "role", "subtype",
+        )
+        parts: list[str] = []
+        for key in preferred_keys:
+            value = self.metadata.get(key)
+            if value is None or str(value).strip() == "":
+                continue
+            text = str(value).strip()
+            if text not in parts:
+                parts.append(text)
+            if len(parts) >= 3:
+                break
+        return " · ".join(parts)
+
+    @property
+    def selector_text(self) -> str:
+        summary = self.metadata_summary
+        return f"{self.display_text}  ·  {summary}" if summary else self.display_text
+
+    @property
+    def detail_text(self) -> str:
+        """Return a concise, human-readable detail card for the GUI."""
+        facts = self.metadata.get("facts", [])
+        if isinstance(facts, dict):
+            facts = [f"{key}: {value}" for key, value in facts.items()]
+        elif isinstance(facts, list):
+            facts = [str(fact) for fact in facts if str(fact).strip()]
+        else:
+            facts = []
+        lines = [f"命令值：{self.value}"]
+        if self.metadata.get("dynamic_note"):
+            lines.append(str(self.metadata["dynamic_note"]))
+        lines.extend(facts[:5])
+        return "\n".join(lines)
+
+    @property
     def searchable_text(self) -> str:
-        return " ".join((self.value, self.label, *self.aliases)).casefold()
+        metadata_values: list[str] = []
+        for value in self.metadata.values():
+            if isinstance(value, (str, int, float)):
+                metadata_values.append(str(value))
+            elif isinstance(value, (list, tuple)):
+                metadata_values.extend(str(item) for item in value)
+            elif isinstance(value, dict):
+                metadata_values.extend(str(item) for item in value.values())
+        return " ".join((self.value, self.label, *self.aliases, *metadata_values)).casefold()
 
 
 @dataclass(frozen=True)
@@ -189,11 +243,15 @@ def load_entity_catalogs(path: Path | None = None) -> dict[str, tuple[CatalogEnt
                 aliases = [aliases]
             if not isinstance(aliases, list):
                 raise CommandLibraryError(f"目标目录 {catalog_name} 第 {index} 项 aliases 必须是数组")
+            metadata = raw_entry.get("metadata", {})
+            if not isinstance(metadata, dict):
+                raise CommandLibraryError(f"目标目录 {catalog_name} 第 {index} 项 metadata 必须是对象")
             entries.append(
                 CatalogEntry(
                     value=str(raw_entry["value"]),
                     label=str(raw_entry.get("label", raw_entry["value"])),
                     aliases=tuple(str(alias) for alias in aliases if str(alias).strip()),
+                    metadata=metadata,
                 )
             )
         catalogs[catalog_name] = tuple(entries)

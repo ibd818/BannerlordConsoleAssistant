@@ -1,6 +1,6 @@
 # Project status
 
-Last updated: 2026-09-03 UTC
+Last updated: 2026-09-04 UTC
 
 ## Current goal
 
@@ -27,6 +27,10 @@ build path for the Bannerlord official-console command assistant.
 - Validated every migrated JSON file and found no credential-pattern matches.
 - Added a GitHub Actions Windows workflow that installs dependencies, runs core
   tests, builds the EXE with `build.ps1`, and uploads a downloadable artifact.
+- Committed the current source and workflow as `586f5fa` and pushed it to the
+  public GitHub repository `ibd818/BannerlordConsoleAssistant`.
+- GitHub Actions run 1 completed successfully on `windows-latest`; artifact
+  `BannerlordConsoleAssistant-windows` was uploaded and is not expired.
 
 ## Current environment
 
@@ -43,6 +47,8 @@ build path for the Bannerlord official-console command assistant.
 - Tests: `tests/`
 - Windows build script: `build.ps1`
 - GitHub Actions workflow: `.github/workflows/windows-build.yml`
+- GitHub repository: `https://github.com/ibd818/BannerlordConsoleAssistant`
+- Latest Actions run: `https://github.com/ibd818/BannerlordConsoleAssistant/actions/runs/33779376933`
 - Current binary: `outputs/BannerlordConsoleAssistant.exe`
 - No server service or network port is used.
 
@@ -54,16 +60,14 @@ build path for the Bannerlord official-console command assistant.
 ## Unfinished work
 
 - Run GUI smoke tests in an environment with PySide6 when GUI changes are made.
-- Run the Windows build and launch checks before publishing a new EXE.
-- Run the new GitHub Actions workflow on GitHub to validate the Windows runner
-  build and artifact upload.
-- Configure a Git remote if off-server source replication is desired.
+- Launch and smoke-test the downloaded Windows artifact before distributing a
+  new EXE.
 
 ## Next step
 
-- Run GUI smoke tests in a Windows/PySide6 environment and rebuild the EXE
-  before distributing the catalog-enabled release; the GitHub Actions workflow
-  now provides the repeatable Windows build path.
+- Run GUI smoke tests and launch the downloaded artifact in a Windows/PySide6
+  environment before distributing the catalog-enabled release. Future builds
+  can use the GitHub Actions workflow.
 
 ## Risks and notes
 
