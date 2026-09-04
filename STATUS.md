@@ -33,6 +33,9 @@ build path for the Bannerlord official-console command assistant.
 - Added compact metadata filter chips to editable catalog selectors. Item,
   troop, settlement, and modifier selectors now expose only relevant type or
   effect facets while keeping text input and original command values intact.
+- Removed visible detail-panel scrollbars and constrained catalog selectors to
+  the available column width; long forms remain wheel-scrollable without a
+  horizontal drag bar.
 - Added tests covering troop tier/culture metadata, item category, and
   settlement initial-faction metadata.
 - Committed the current source and workflow as `586f5fa` and pushed it to the

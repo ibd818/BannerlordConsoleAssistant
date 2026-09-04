@@ -83,3 +83,14 @@
 - Alternatives: A separate candidate-card grid was rejected as redundant with
   the dropdown; free-text-only selection was rejected because it hides valid
   values and metadata.
+
+## 2026-09-04 — Hide detail-panel drag bars while preserving overflow access
+
+- Decision: Keep the detail panel's scroll container for long commands, but
+  hide both scrollbars and force catalog controls to fit the available width.
+  Mouse-wheel scrolling remains available for unusually tall forms.
+- Reason: The visible horizontal bar was caused by long catalog labels being
+  used as the combo box minimum width. A compact selector should not widen the
+  whole detail panel or expose a draggable page bar.
+- Alternative: Removing the scroll container entirely would clip parameters
+  on smaller windows and make long commands inaccessible.

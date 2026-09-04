@@ -142,6 +142,16 @@ class CatalogComboBox(QComboBox):
         self.entries = tuple(entries)
         self.visible_entries = self.entries
         self.setEditable(True)
+        # Catalog labels can be much longer than the available detail-column
+        # width.  Do not let the longest item determine the combo's minimum
+        # width, otherwise the surrounding detail view grows horizontally and
+        # exposes a page-level scrollbar.
+        self.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
+        self.setMinimumWidth(0)
+        self.setMinimumContentsLength(18)
+        self.setSizeAdjustPolicy(
+            QComboBox.SizeAdjustPolicy.AdjustToMinimumContentsLengthWithIcon
+        )
         self.setInsertPolicy(QComboBox.InsertPolicy.NoInsert)
         self.setMaxVisibleItems(14)
         self._populate(self.entries)
@@ -441,6 +451,7 @@ class MainWindow(QMainWindow):
         parameter_heading.setObjectName("section")
         panel_layout.addWidget(parameter_heading)
         self.form_widget = QWidget()
+        self.form_widget.setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Preferred)
         self.form_layout = QFormLayout(self.form_widget)
         self.form_layout.setContentsMargins(0, 4, 0, 4)
         self.form_layout.setHorizontalSpacing(16)
@@ -464,7 +475,13 @@ class MainWindow(QMainWindow):
         # usable instead of allowing the detail card to run below the window.
         detail_scroll = QScrollArea()
         detail_scroll.setWidgetResizable(True)
+        detail_scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        # Keep long forms usable with the mouse wheel, without showing a
+        # draggable scrollbar in the compact detail panel.
+        detail_scroll.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
         detail_scroll.setFrameShape(QFrame.Shape.NoFrame)
+        panel.setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Preferred)
+        panel.setMinimumWidth(0)
         detail_scroll.setWidget(panel)
         outer.addWidget(detail_scroll)
         return wrapper
