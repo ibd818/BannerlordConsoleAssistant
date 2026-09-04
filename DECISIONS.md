@@ -70,3 +70,16 @@
   product scope.
 - Alternatives: A single cross-category quality score was rejected because
   weapons, armor, and trade goods require different comparison criteria.
+
+## 2026-09-04 — Add compact type facets to catalog selectors
+
+- Decision: Keep editable combo boxes as the primary selection control and add
+  small metadata filter chips above them for catalogs with useful facets.
+  Items use category labels, troops use combat type, settlements use
+  settlement type, and modifiers use effect direction.
+- Reason: Large catalogs need quick narrowing, but permanent candidate cards or
+  a separate result panel consume space and obscure the relationship between a
+  filter and the command parameter.
+- Alternatives: A separate candidate-card grid was rejected as redundant with
+  the dropdown; free-text-only selection was rejected because it hides valid
+  values and metadata.

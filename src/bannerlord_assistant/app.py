@@ -11,6 +11,7 @@ from PySide6.QtCore import Qt, QTimer, QUrl
 from PySide6.QtGui import QColor, QDesktopServices, QFont, QIcon, QPalette
 from PySide6.QtWidgets import (
     QApplication,
+    QButtonGroup,
     QComboBox,
     QCompleter,
     QFormLayout,
@@ -91,6 +92,11 @@ QPushButton:pressed { background: #213249; }
 QPushButton#primary { background: #2785d8; border-color: #3996e4; color: white; padding: 11px 18px; }
 QPushButton#primary:hover { background: #3195e8; }
 QPushButton:disabled { color: #657287; background: #1b2533; }
+QWidget#filterBar { background: transparent; }
+QLabel#filterLabel { color: #bac7d9; font-size: 11px; padding-right: 4px; }
+QPushButton#filterChip { background: #182130; border: 1px solid #344258; border-radius: 13px; color: #b7c6d7; padding: 4px 10px; font-size: 11px; font-weight: 500; }
+QPushButton#filterChip:hover { background: #202c3d; }
+QPushButton#filterChip:checked { background: #236ca9; border-color: #3d94d4; color: #ffffff; }
 QScrollArea { border: none; background: transparent; }
 QSplitter::handle { background: #111722; width: 7px; }
 QStatusBar { background: #0d131c; color: #91a0b5; border-top: 1px solid #273244; }
@@ -134,12 +140,11 @@ class CatalogComboBox(QComboBox):
     def __init__(self, entries: tuple[CatalogEntry, ...], parent: QWidget | None = None) -> None:
         super().__init__(parent)
         self.entries = tuple(entries)
+        self.visible_entries = self.entries
         self.setEditable(True)
         self.setInsertPolicy(QComboBox.InsertPolicy.NoInsert)
         self.setMaxVisibleItems(14)
-        for entry in self.entries:
-            self.addItem(entry.selector_text, entry.value)
-            self.setItemData(self.count() - 1, entry.detail_text, Qt.ToolTipRole)
+        self._populate(self.entries)
 
         completer = QCompleter(self.model(), self)
         completer.setCaseSensitivity(Qt.CaseInsensitive)
@@ -150,19 +155,50 @@ class CatalogComboBox(QComboBox):
         self.lineEdit().setPlaceholderText("输入 ID、英文名或中文名，可模糊匹配…")
         completer.activated[str].connect(self._select_completion)
 
+    def _populate(self, entries: tuple[CatalogEntry, ...], text: str | None = None) -> None:
+        current_text = self.lineEdit().text() if text is None else text
+        self.visible_entries = tuple(entries)
+        self.blockSignals(True)
+        self.clear()
+        for entry in self.visible_entries:
+            self.addItem(entry.selector_text, entry.value)
+            self.setItemData(self.count() - 1, entry.detail_text, Qt.ToolTipRole)
+        self.setEditText(current_text)
+        self.blockSignals(False)
+
+    def set_metadata_filter(self, key: str, value: str) -> None:
+        """Restrict the drop-down to entries whose metadata matches value."""
+        current_text = self.lineEdit().text()
+        if not value:
+            entries = self.entries
+        else:
+            entries = tuple(
+                entry for entry in self.entries
+                if str(entry.metadata.get(key, "")).strip() == value
+            )
+        self._populate(entries, current_text)
+
     def set_entry_value(self, value: str) -> None:
         needle = value.strip().casefold()
         for index, entry in enumerate(self.entries):
             candidates = (entry.value, entry.label, entry.display_text, *entry.aliases)
             if any(needle == candidate.casefold() for candidate in candidates):
-                self.setCurrentIndex(index)
+                visible_index = next(
+                    (position for position, visible in enumerate(self.visible_entries)
+                     if visible.value == entry.value),
+                    -1,
+                )
+                if visible_index >= 0:
+                    self.setCurrentIndex(visible_index)
+                else:
+                    self.setEditText(entry.display_text)
                 return
         self.setEditText(value)
 
     def raw_value(self) -> str:
         text = self.lineEdit().text().strip()
         index = self.currentIndex()
-        if 0 <= index < len(self.entries) and text == self.itemText(index):
+        if 0 <= index < len(self.visible_entries) and text == self.itemText(index):
             return str(self.itemData(index))
         needle = text.casefold()
         for entry in self.entries:
@@ -175,10 +211,10 @@ class CatalogComboBox(QComboBox):
         """Return the selected catalog record, if the current text matches one."""
         text = self.lineEdit().text().strip()
         index = self.currentIndex()
-        if 0 <= index < len(self.entries):
+        if 0 <= index < len(self.visible_entries):
             item_text = self.itemText(index)
-            if text in (item_text, self.entries[index].display_text, self.entries[index].selector_text):
-                return self.entries[index]
+            if text in (item_text, self.visible_entries[index].display_text, self.visible_entries[index].selector_text):
+                return self.visible_entries[index]
         needle = text.casefold()
         for entry in self.entries:
             candidates = (entry.value, entry.label, entry.display_text, entry.selector_text, *entry.aliases)
@@ -187,11 +223,91 @@ class CatalogComboBox(QComboBox):
         return None
 
     def _select_completion(self, text: str) -> None:
-        for index, entry in enumerate(self.entries):
+        for index, entry in enumerate(self.visible_entries):
             if text in (entry.display_text, entry.selector_text):
                 self.setCurrentIndex(index)
                 return
         self.setEditText(text)
+
+
+CATALOG_FILTER_CONFIG = {
+    "items": (
+        "category", "物品类型",
+        {"坐骑": "动物/坐骑", "商品": "食物/商品", "杂项": "其他"},
+        ("坐骑", "商品", "武器", "护甲", "弹药", "杂项"),
+    ),
+    "troops": ("type", "兵种类型", {}, ("步兵", "骑兵", "远程", "散兵")),
+    "settlements": ("settlement_type", "领地类型", {}, ("城镇", "城堡", "村庄", "其他")),
+    "settlement_ids": ("settlement_type", "领地类型", {}, ("城镇", "城堡", "村庄", "其他")),
+    "modifiers": ("effect", "词缀效果", {}, ("正向", "负向", "特殊")),
+}
+
+
+def catalog_filter_options(
+    catalog_name: str, entries: tuple[CatalogEntry, ...]
+) -> tuple[str, str, tuple[tuple[str, str], ...]] | None:
+    """Return a small metadata facet suitable for a catalog selector."""
+    config = CATALOG_FILTER_CONFIG.get(catalog_name)
+    if not config:
+        return None
+    key, label, display_names, preferred_order = config
+    values = {str(entry.metadata.get(key, "")).strip() for entry in entries}
+    values.discard("")
+    if len(values) < 2:
+        return None
+    ordered = [value for value in preferred_order if value in values]
+    ordered.extend(sorted(values - set(ordered)))
+    options = tuple((value, display_names.get(value, value)) for value in ordered)
+    return key, label, options
+
+
+class CatalogFilterBar(QWidget):
+    """Compact chip row that filters the attached editable catalog combo."""
+
+    def __init__(
+        self,
+        catalog_name: str,
+        entries: tuple[CatalogEntry, ...],
+        combo: CatalogComboBox,
+        parent: QWidget | None = None,
+    ) -> None:
+        super().__init__(parent)
+        self.setObjectName("filterBar")
+        self.combo = combo
+        self.spec = catalog_filter_options(catalog_name, entries)
+        layout = QHBoxLayout(self)
+        layout.setContentsMargins(0, 0, 0, 0)
+        layout.setSpacing(5)
+        if not self.spec:
+            self.hide()
+            return
+        key, label, options = self.spec
+        label_widget = QLabel(label)
+        label_widget.setObjectName("filterLabel")
+        layout.addWidget(label_widget)
+        self.buttons: list[QPushButton] = []
+        self.button_group = QButtonGroup(self)
+        self.button_group.setExclusive(True)
+        all_button = self._add_button(layout, "全部", "")
+        all_button.setChecked(True)
+        for value, display_name in options:
+            self._add_button(layout, display_name, value)
+        layout.addStretch(1)
+        self.filter_key = key
+
+    def _add_button(self, layout: QHBoxLayout, text: str, value: str) -> QPushButton:
+        button = QPushButton(text)
+        button.setObjectName("filterChip")
+        button.setCheckable(True)
+        self.button_group.addButton(button)
+        button.setSizePolicy(QSizePolicy.Maximum, QSizePolicy.Fixed)
+        button.clicked.connect(lambda _checked=False, selected=value: self._apply(selected))
+        self.buttons.append(button)
+        layout.addWidget(button)
+        return button
+
+    def _apply(self, value: str) -> None:
+        self.combo.set_metadata_filter(self.filter_key, value)
 
 
 class MainWindow(QMainWindow):
@@ -437,8 +553,10 @@ class MainWindow(QMainWindow):
                     field_wrapper = QWidget()
                     field_layout = QVBoxLayout(field_wrapper)
                     field_layout.setContentsMargins(0, 0, 0, 0)
-                    field_layout.setSpacing(2)
+                    field_layout.setSpacing(4)
+                    filter_bar = CatalogFilterBar(parameter.catalog, entries, field)
                     field_layout.addWidget(field)
+                    field_layout.addWidget(filter_bar)
                     detail_label = QLabel()
                     detail_label.setObjectName("catalogMeta")
                     detail_label.setWordWrap(True)

@@ -30,6 +30,9 @@ build path for the Bannerlord official-console command assistant.
 - Added selector metadata v2 for troops, items, settlements, buildings, and
   modifiers; catalog-backed fields now show compact metadata and a detail line
   below the input while preserving the original command value.
+- Added compact metadata filter chips to editable catalog selectors. Item,
+  troop, settlement, and modifier selectors now expose only relevant type or
+  effect facets while keeping text input and original command values intact.
 - Added tests covering troop tier/culture metadata, item category, and
   settlement initial-faction metadata.
 - Committed the current source and workflow as `586f5fa` and pushed it to the
@@ -68,16 +71,15 @@ build path for the Bannerlord official-console command assistant.
 - Run GUI smoke tests in an environment with PySide6 when GUI changes are made.
 - Launch and smoke-test the downloaded Windows artifact before distributing a
   new EXE.
-- Push the local metadata-selector commits `4daeffa`, `4fcf6dd`, and `539a891`
-  after GitHub credentials are made available in this environment, then
-  download and launch their Actions artifact on Windows.
+- Download and launch the successful metadata-selector Actions artifact on
+  Windows for final GUI smoke testing.
 
 ## Next step
 
 - Run GUI smoke tests and launch the downloaded artifact in a Windows/PySide6
-  environment before distributing the metadata-selector release. The local
-  commits are ready; GitHub push is currently blocked by missing HTTPS/SSH
-  credentials in Oracle.
+  environment before distributing the metadata-selector release. The commits
+  are pushed; Actions run `33874314140` completed successfully and artifact
+  `9937252801` is available for download. Windows launch smoke testing remains.
 
 ## Risks and notes
 
