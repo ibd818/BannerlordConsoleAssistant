@@ -55,3 +55,18 @@
   existing script keeps local and CI build behavior aligned.
 - Alternatives: Building on Oracle would produce a non-Windows executable;
   duplicating the PyInstaller command in YAML would create a second build path.
+
+## 2026-09-04 — Add metadata-only entity selectors
+
+- Decision: Extend catalog entries with display metadata and show a compact
+  summary plus detail line for catalog-backed inputs, while keeping `value`
+  as the only command-rendered value.
+- Reason: Large flat lists made it difficult to choose the correct troop,
+  item, or settlement even when the ID search was successful. Metadata improves
+  selection without changing official command syntax.
+- Boundaries: Troop tiers without a direct ID field are marked as first-pass
+  estimates; settlement faction is explicitly initial/static faction because
+  current ownership is save-dependent and outside the official-console-only
+  product scope.
+- Alternatives: A single cross-category quality score was rejected because
+  weapons, armor, and trade goods require different comparison criteria.

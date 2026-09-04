@@ -27,6 +27,11 @@ build path for the Bannerlord official-console command assistant.
 - Validated every migrated JSON file and found no credential-pattern matches.
 - Added a GitHub Actions Windows workflow that installs dependencies, runs core
   tests, builds the EXE with `build.ps1`, and uploads a downloadable artifact.
+- Added selector metadata v2 for troops, items, settlements, buildings, and
+  modifiers; catalog-backed fields now show compact metadata and a detail line
+  below the input while preserving the original command value.
+- Added tests covering troop tier/culture metadata, item category, and
+  settlement initial-faction metadata.
 - Committed the current source and workflow as `586f5fa` and pushed it to the
   public GitHub repository `ibd818/BannerlordConsoleAssistant`.
 - GitHub Actions run 1 completed successfully on `windows-latest`; artifact
@@ -54,20 +59,25 @@ build path for the Bannerlord official-console command assistant.
 
 ## Current version
 
-- Python package: 1.0.0
+- Python package: 1.1.0
 - Command target: Bannerlord 1.4.8.119303 / War Sails 1.2.8.119303 (`r3`)
+- Entity catalog: metadata schema v2, catalog revision `r4`
 
 ## Unfinished work
 
 - Run GUI smoke tests in an environment with PySide6 when GUI changes are made.
 - Launch and smoke-test the downloaded Windows artifact before distributing a
   new EXE.
+- Push the local metadata-selector commit `4daeffa` after GitHub credentials
+  are made available in this environment, then download and launch its Actions
+  artifact on Windows.
 
 ## Next step
 
 - Run GUI smoke tests and launch the downloaded artifact in a Windows/PySide6
-  environment before distributing the catalog-enabled release. Future builds
-  can use the GitHub Actions workflow.
+  environment before distributing the metadata-selector release. The local
+  commit is ready; GitHub push is currently blocked by missing HTTPS/SSH
+  credentials in Oracle.
 
 ## Risks and notes
 
