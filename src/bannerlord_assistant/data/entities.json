@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "catalog_version": "bannerlord-1.4.8.119303-warsails-1.2.8.119303-r4",
+  "catalog_version": "bannerlord-1.4.8.119303-warsails-1.2.8.119303-r5",
   "title": "Bannerlord v1.4.8 / War Sails v1.2.8 目标目录",
-  "source_note": "ID 与英文名称依据当前版本模块数据整理；新增元数据用于选择器辅助筛选。兵种中未由 ID 直接提供的等级标为第一版估算，领地阵营标为初始阵营；中文名是界面参考标签，不改变命令输出值。",
+  "source_note": "ID、英文名称与兵种角色等级依据当前版本模块数据整理；兵种 Tier 由模块 level 按游戏等级规则计算。领地阵营标为初始阵营；中文名是界面参考标签，不改变命令输出值。",
   "catalogs": {
     "heroes": [
       {
@@ -15518,18 +15518,20 @@
           "Aserai Archer"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T4",
           "culture": "阿塞莱",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：阿塞莱",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -15543,14 +15545,16 @@
           "culture": "阿塞莱",
           "type": "骑兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T4（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：阿塞莱",
             "战斗定位：骑兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -15560,18 +15564,20 @@
           "Aserai Footman"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "阿塞莱",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：阿塞莱",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -15581,18 +15587,20 @@
           "Aserai Infantry"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "阿塞莱",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：阿塞莱",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -15602,18 +15610,20 @@
           "Aserai Mamluke Axeman"
         ],
         "metadata": {
-          "tier": "T4",
+          "tier": "T3",
           "culture": "阿塞莱",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T4（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：阿塞莱",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -15623,18 +15633,20 @@
           "Aserai Mamluke Cavalry"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "阿塞莱",
           "type": "骑兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：阿塞莱",
             "战斗定位：骑兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -15648,14 +15660,16 @@
           "culture": "阿塞莱",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T4（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：阿塞莱",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -15665,18 +15679,20 @@
           "Aserai Mamluke Heavy Cavalry"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T5",
           "culture": "阿塞莱",
           "type": "骑兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：阿塞莱",
             "战斗定位：骑兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -15686,18 +15702,20 @@
           "Aserai Mamluke Regular"
         ],
         "metadata": {
-          "tier": "T4",
+          "tier": "T3",
           "culture": "阿塞莱",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T4（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：阿塞莱",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -15707,18 +15725,20 @@
           "Aserai Mamluke Soldier"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T2",
           "culture": "阿塞莱",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：阿塞莱",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -15732,14 +15752,16 @@
           "culture": "阿塞莱",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
             "兵种等级：T4",
+            "角色等级：21",
             "文化：阿塞莱",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -15753,14 +15775,16 @@
           "culture": "阿塞莱",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
             "兵种等级：T5",
+            "角色等级：26",
             "文化：阿塞莱",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -15770,18 +15794,20 @@
           "Aserai Master Archer"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T5",
           "culture": "阿塞莱",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：阿塞莱",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -15791,18 +15817,20 @@
           "Aserai Militia Archer"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "阿塞莱",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：阿塞莱",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -15812,18 +15840,20 @@
           "Aserai Militia Spearman"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "阿塞莱",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：阿塞莱",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -15833,18 +15863,20 @@
           "Aserai Militia Veteran Archer"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T3",
           "culture": "阿塞莱",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：阿塞莱",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -15854,18 +15886,20 @@
           "Aserai Militia Veteran Spearman"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T3",
           "culture": "阿塞莱",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：阿塞莱",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -15879,14 +15913,16 @@
           "culture": "阿塞莱",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T1",
+            "角色等级：6",
             "文化：阿塞莱",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 6
         }
       },
       {
@@ -15896,18 +15932,20 @@
           "Aserai Light Archer"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "阿塞莱",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：阿塞莱",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -15921,14 +15959,16 @@
           "culture": "阿塞莱",
           "type": "骑兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：阿塞莱",
             "战斗定位：骑兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -15942,14 +15982,16 @@
           "culture": "阿塞莱",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：阿塞莱",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -15959,18 +16001,20 @@
           "Aserai Vanguard Faris"
         ],
         "metadata": {
-          "tier": "T4",
+          "tier": "T6",
           "culture": "阿塞莱",
           "type": "骑兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T4（估算）",
+            "兵种等级：T6",
+            "角色等级：31",
             "文化：阿塞莱",
             "战斗定位：骑兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 31
         }
       },
       {
@@ -15980,18 +16024,20 @@
           "Aserai Veteran Faris"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T5",
           "culture": "阿塞莱",
           "type": "骑兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：阿塞莱",
             "战斗定位：骑兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -16001,18 +16047,20 @@
           "Aserai Veteran Infantry"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T5",
           "culture": "阿塞莱",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：阿塞莱",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -16022,18 +16070,20 @@
           "Aserai Youth"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "阿塞莱",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：阿塞莱",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -16047,14 +16097,16 @@
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -16064,18 +16116,20 @@
           "Battanian Falxman"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -16089,14 +16143,16 @@
           "culture": "未标注",
           "type": "远程",
           "role": "贵族兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T5（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：未标注",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -16106,18 +16162,20 @@
           "Battanian Fian Champion"
         ],
         "metadata": {
-          "tier": "T5",
+          "tier": "T6",
           "culture": "未标注",
           "type": "远程",
           "role": "贵族兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T5（估算）",
+            "兵种等级：T6",
+            "角色等级：31",
             "文化：未标注",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 31
         }
       },
       {
@@ -16127,18 +16185,20 @@
           "Battanian Hero"
         ],
         "metadata": {
-          "tier": "未知",
+          "tier": "T4",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "未提取",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：未知",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：未提取"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -16148,18 +16208,20 @@
           "Battanian Highborn Warrior"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -16169,18 +16231,20 @@
           "Battanian Highborn Youth"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -16190,18 +16254,20 @@
           "Battanian Horseman"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T5",
           "culture": "未标注",
           "type": "骑兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：未标注",
             "战斗定位：骑兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -16215,14 +16281,16 @@
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
             "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -16236,14 +16304,16 @@
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
             "兵种等级：T5",
+            "角色等级：26",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -16253,18 +16323,20 @@
           "Battanian Militia Archer"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "未标注",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -16274,18 +16346,20 @@
           "Battanian Militia Spearman"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -16295,18 +16369,20 @@
           "Battanian Militia Veteran Archer"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T3",
           "culture": "未标注",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -16316,18 +16392,20 @@
           "Battanian Militia Veteran Spearman"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T3",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -16337,18 +16415,20 @@
           "Battanian Mounted Skirmisher"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T5",
           "culture": "未标注",
           "type": "骑兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：未标注",
             "战斗定位：骑兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -16358,18 +16438,20 @@
           "Battanian Oathsworn"
         ],
         "metadata": {
-          "tier": "T4",
+          "tier": "T5",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T4（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -16379,18 +16461,20 @@
           "Battanian Picked Warrior"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T4",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -16400,18 +16484,20 @@
           "Battanian Raider"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -16421,18 +16507,20 @@
           "Battanian Scout"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T4",
           "culture": "未标注",
           "type": "散兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：散兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -16442,18 +16530,20 @@
           "Battanian Skirmisher"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "未标注",
           "type": "散兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：散兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -16463,18 +16553,20 @@
           "Battanian Trained Warrior"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -16484,18 +16576,20 @@
           "Battanian Veteran Falxman"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T5",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -16505,18 +16599,20 @@
           "Battanian Veteran Skirmisher"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T4",
           "culture": "未标注",
           "type": "散兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：散兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -16530,14 +16626,16 @@
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T1",
+            "角色等级：6",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 6
         }
       },
       {
@@ -16547,18 +16645,20 @@
           "Battanian Wildling"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T5",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -16568,18 +16668,20 @@
           "Battanian Wood Runner"
         ],
         "metadata": {
-          "tier": "未知",
+          "tier": "T2",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "未提取",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：未知",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：未提取"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -16589,18 +16691,20 @@
           "Beni Zilal Recruit"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -16610,18 +16714,20 @@
           "Beni Zilal Soldier"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -16631,18 +16737,20 @@
           "Beni Zilal Royal Guard"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -16652,18 +16760,20 @@
           "Sprout"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -16673,18 +16783,20 @@
           "Sapling"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -16694,18 +16806,20 @@
           "Arboreal"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -16715,18 +16829,20 @@
           "Imperial Bucellarii"
         ],
         "metadata": {
-          "tier": "未知",
+          "tier": "T5",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "未提取",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：未知",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：未提取"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -16736,18 +16852,20 @@
           "Rescued Crewman"
         ],
         "metadata": {
-          "tier": "未知",
+          "tier": "T1",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "未提取",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：未知",
+            "兵种等级：T1",
+            "角色等级：6",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：未提取"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 6
         }
       },
       {
@@ -16757,18 +16875,20 @@
           "Boar Novice"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -16778,18 +16898,20 @@
           "Boar Veteran"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -16799,18 +16921,20 @@
           "Boar Champion"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -16820,18 +16944,20 @@
           "Sturgian Druzhinnik"
         ],
         "metadata": {
-          "tier": "未知",
+          "tier": "T5",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "未提取",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：未知",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：未提取"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -16841,18 +16967,20 @@
           "Sturgian Druzhinnik Champion"
         ],
         "metadata": {
-          "tier": "T5",
+          "tier": "T6",
           "culture": "未标注",
           "type": "步兵",
           "role": "贵族兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T5（估算）",
+            "兵种等级：T6",
+            "角色等级：31",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 31
         }
       },
       {
@@ -16862,18 +16990,20 @@
           "Recruit Eleftheroi"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -16883,18 +17013,20 @@
           "Expert Eleftheroi"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -16904,18 +17036,20 @@
           "Veteran Eleftheroi"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -16925,18 +17059,20 @@
           "Spark"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -16946,18 +17082,20 @@
           "Flame"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -16967,18 +17105,20 @@
           "Blaze"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -16992,14 +17132,16 @@
           "culture": "帝国",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
             "兵种等级：T3",
+            "角色等级：16",
             "文化：帝国",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -17013,14 +17155,16 @@
           "culture": "帝国",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
             "兵种等级：T4",
+            "角色等级：21",
             "文化：帝国",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -17034,14 +17178,16 @@
           "culture": "帝国",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
             "兵种等级：T5",
+            "角色等级：26",
             "文化：帝国",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -17051,18 +17197,20 @@
           "Recruit Forester"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -17072,18 +17220,20 @@
           "Expert Forester"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -17093,18 +17243,20 @@
           "Veteran Forester"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -17114,18 +17266,20 @@
           "Thug"
         ],
         "metadata": {
-          "tier": "未知",
+          "tier": "T1",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "未提取",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：未知",
+            "兵种等级：T1",
+            "角色等级：6",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：未提取"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 6
         }
       },
       {
@@ -17135,18 +17289,20 @@
           "Expert Thug"
         ],
         "metadata": {
-          "tier": "T5",
+          "tier": "T2",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T5（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -17156,18 +17312,20 @@
           "Master Thug"
         ],
         "metadata": {
-          "tier": "未知",
+          "tier": "T3",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "未提取",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：未知",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：未提取"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -17177,18 +17335,20 @@
           "Koleman"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -17198,18 +17358,20 @@
           "Ghilman"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -17219,18 +17381,20 @@
           "Ghulam"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -17240,18 +17404,20 @@
           "Guard"
         ],
         "metadata": {
-          "tier": "T4",
+          "tier": "T0",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T4（估算）",
+            "兵种等级：T0",
+            "角色等级：4",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 4
         }
       },
       {
@@ -17261,18 +17427,20 @@
           "Hidden Pawn"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -17282,18 +17450,20 @@
           "Hidden Soldati"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -17303,18 +17473,20 @@
           "Puppeteer"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -17328,14 +17500,16 @@
           "culture": "帝国",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：帝国",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -17345,18 +17519,20 @@
           "Imperial Cataphract"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T5",
           "culture": "帝国",
           "type": "骑兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：帝国",
             "战斗定位：骑兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -17366,18 +17542,20 @@
           "Imperial Crossbowman"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "帝国",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：帝国",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -17387,18 +17565,20 @@
           "Imperial Elite Cataphract"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T6",
           "culture": "帝国",
           "type": "骑兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T6",
+            "角色等级：31",
             "文化：帝国",
             "战斗定位：骑兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 31
         }
       },
       {
@@ -17412,14 +17592,16 @@
           "culture": "帝国",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T5（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：帝国",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -17433,14 +17615,16 @@
           "culture": "帝国",
           "type": "骑兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：帝国",
             "战斗定位：骑兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -17450,18 +17634,20 @@
           "Imperial Heavy Horseman"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "帝国",
           "type": "骑兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：帝国",
             "战斗定位：骑兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -17471,18 +17657,20 @@
           "Imperial Infantryman"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T2",
           "culture": "帝国",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：帝国",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -17496,14 +17684,16 @@
           "culture": "帝国",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T5（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：帝国",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -17513,18 +17703,20 @@
           "Imperial Menavliaton"
         ],
         "metadata": {
-          "tier": "T5",
+          "tier": "T4",
           "culture": "帝国",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T5（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：帝国",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -17534,18 +17726,20 @@
           "Imperial Militia Archer"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "帝国",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：帝国",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -17555,18 +17749,20 @@
           "Imperial Militia Spearman"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "帝国",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：帝国",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -17576,18 +17772,20 @@
           "Imperial Militia Veteran Archer"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T3",
           "culture": "帝国",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：帝国",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -17597,18 +17795,20 @@
           "Imperial Militia Veteran Spearman"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T3",
           "culture": "帝国",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：帝国",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -17618,18 +17818,20 @@
           "Imperial Palatine Guard"
         ],
         "metadata": {
-          "tier": "T4",
+          "tier": "T5",
           "culture": "帝国",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T4（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：帝国",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -17643,14 +17845,16 @@
           "culture": "帝国",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T1",
+            "角色等级：6",
             "文化：帝国",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 6
         }
       },
       {
@@ -17660,18 +17864,20 @@
           "Imperial Sergeant Crossbowman"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T5",
           "culture": "帝国",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：帝国",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -17681,18 +17887,20 @@
           "Imperial Trained Archer"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "帝国",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：帝国",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -17706,14 +17914,16 @@
           "culture": "帝国",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：帝国",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -17723,18 +17933,20 @@
           "Imperial Veteran Archer"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T4",
           "culture": "帝国",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：帝国",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -17744,18 +17956,20 @@
           "Imperial Veteran Infantryman"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "帝国",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：帝国",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -17765,18 +17979,20 @@
           "Imperial Vigla Recruit"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "帝国",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：帝国",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -17786,18 +18002,20 @@
           "Jawwal Recruit"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -17807,18 +18025,20 @@
           "Jawwal Camel Rider"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "未标注",
           "type": "骑兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：骑兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -17828,18 +18048,20 @@
           "Jawwal Bedouin"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -17849,18 +18071,20 @@
           "Karakhergit Nomad"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -17870,18 +18094,20 @@
           "Karakhergit Rider"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "未标注",
           "type": "骑兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：骑兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -17891,18 +18117,20 @@
           "Karakhergit Elder"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -17912,18 +18140,20 @@
           "Khuzait Archer"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T4",
           "culture": "库赛特",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：库赛特",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -17937,14 +18167,16 @@
           "culture": "库赛特",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T5（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：库赛特",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -17958,14 +18190,16 @@
           "culture": "库赛特",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：库赛特",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -17975,18 +18209,20 @@
           "Khuzait Heavy Horse Archer"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T5",
           "culture": "库赛特",
           "type": "骑兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：库赛特",
             "战斗定位：骑兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -17996,18 +18232,20 @@
           "Khuzait Heavy Lancer"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T5",
           "culture": "库赛特",
           "type": "骑兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：库赛特",
             "战斗定位：骑兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -18017,18 +18255,20 @@
           "Khuzait Horse Archer"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T4",
           "culture": "库赛特",
           "type": "骑兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：库赛特",
             "战斗定位：骑兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -18042,14 +18282,16 @@
           "culture": "库赛特",
           "type": "骑兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：库赛特",
             "战斗定位：骑兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -18063,14 +18305,16 @@
           "culture": "库赛特",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：库赛特",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -18080,18 +18324,20 @@
           "Khuzait Khan's Guard"
         ],
         "metadata": {
-          "tier": "T4",
+          "tier": "T6",
           "culture": "库赛特",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T4（估算）",
+            "兵种等级：T6",
+            "角色等级：31",
             "文化：库赛特",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 31
         }
       },
       {
@@ -18105,14 +18351,16 @@
           "culture": "库赛特",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T5（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：库赛特",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -18122,18 +18370,20 @@
           "Khuzait Lancer"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "库赛特",
           "type": "骑兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：库赛特",
             "战斗定位：骑兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -18143,18 +18393,20 @@
           "Khuzait Marksman"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T5",
           "culture": "库赛特",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：库赛特",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -18164,18 +18416,20 @@
           "Khuzait Militia Archer"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "库赛特",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：库赛特",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -18185,18 +18439,20 @@
           "Khuzait Militia Spearman"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "库赛特",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：库赛特",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -18206,18 +18462,20 @@
           "Khuzait Militia Veteran Archer"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T3",
           "culture": "库赛特",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：库赛特",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -18227,18 +18485,20 @@
           "Khuzait Militia Veteran Spearman"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T3",
           "culture": "库赛特",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：库赛特",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -18248,18 +18508,20 @@
           "Khuzait Noble's Son"
         ],
         "metadata": {
-          "tier": "未知",
+          "tier": "T2",
           "culture": "库赛特",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "未提取",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：未知",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：库赛特",
             "战斗定位：步兵",
-            "等级来源：未提取"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -18269,18 +18531,20 @@
           "Khuzait Nomad"
         ],
         "metadata": {
-          "tier": "未知",
+          "tier": "T1",
           "culture": "库赛特",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "未提取",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：未知",
+            "兵种等级：T1",
+            "角色等级：6",
             "文化：库赛特",
             "战斗定位：步兵",
-            "等级来源：未提取"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 6
         }
       },
       {
@@ -18290,18 +18554,20 @@
           "Khuzait Qanqli"
         ],
         "metadata": {
-          "tier": "未知",
+          "tier": "T3",
           "culture": "库赛特",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "未提取",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：未知",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：库赛特",
             "战斗定位：步兵",
-            "等级来源：未提取"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -18311,18 +18577,20 @@
           "Khuzait Raider"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "库赛特",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：库赛特",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -18332,18 +18600,20 @@
           "Khuzait Spear Infantry"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "库赛特",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：库赛特",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -18353,18 +18623,20 @@
           "Khuzait Spearman"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "库赛特",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：库赛特",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -18374,18 +18646,20 @@
           "Khuzait Torguud"
         ],
         "metadata": {
-          "tier": "T5",
+          "tier": "T4",
           "culture": "库赛特",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T5（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：库赛特",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -18399,14 +18673,16 @@
           "culture": "库赛特",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：库赛特",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -18416,18 +18692,20 @@
           "Lake Rat Recruit"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -18437,18 +18715,20 @@
           "Lake Rat Veteran"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -18458,18 +18738,20 @@
           "Lake Rat Wrecker"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -18479,18 +18761,20 @@
           "Hastati"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -18500,18 +18784,20 @@
           "Principes"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -18521,18 +18807,20 @@
           "Triarii"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -18542,18 +18830,20 @@
           "Aserai Mamluke Palace Guard"
         ],
         "metadata": {
-          "tier": "T4",
+          "tier": "T5",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T4（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -18563,18 +18853,20 @@
           "Nord Axe Warrior"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "诺德",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：诺德",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -18584,18 +18876,20 @@
           "Nord Berserkir"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T5",
           "culture": "诺德",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：诺德",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -18605,18 +18899,20 @@
           "Nord Shield Biters"
         ],
         "metadata": {
-          "tier": "未知",
+          "tier": "T4",
           "culture": "诺德",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "未提取",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：未知",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：诺德",
             "战斗定位：步兵",
-            "等级来源：未提取"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -18630,14 +18926,16 @@
           "culture": "诺德",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：诺德",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -18647,18 +18945,20 @@
           "Nord Freeman Archer"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "诺德",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：诺德",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -18668,18 +18968,20 @@
           "Nord Marauder"
         ],
         "metadata": {
-          "tier": "未知",
+          "tier": "T4",
           "culture": "诺德",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "未提取",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：未知",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：诺德",
             "战斗定位：步兵",
-            "等级来源：未提取"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -18689,18 +18991,20 @@
           "Nord Shield-Companion"
         ],
         "metadata": {
-          "tier": "T4",
+          "tier": "T5",
           "culture": "诺德",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T4（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：诺德",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -18710,18 +19014,20 @@
           "Nord Huntsman"
         ],
         "metadata": {
-          "tier": "未知",
+          "tier": "T2",
           "culture": "诺德",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "未提取",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：未知",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：诺德",
             "战斗定位：步兵",
-            "等级来源：未提取"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -18731,18 +19037,20 @@
           "Nord Huscarl"
         ],
         "metadata": {
-          "tier": "T4",
+          "tier": "T6",
           "culture": "诺德",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T4（估算）",
+            "兵种等级：T6",
+            "角色等级：31",
             "文化：诺德",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 31
         }
       },
       {
@@ -18756,14 +19064,16 @@
           "culture": "诺德",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T4（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：诺德",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -18773,18 +19083,20 @@
           "Nord Marksman"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "诺德",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：诺德",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -18794,18 +19106,20 @@
           "Nord Militia Archer"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "诺德",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：诺德",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -18815,18 +19129,20 @@
           "Nord Militia Spearman"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "诺德",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：诺德",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -18836,18 +19152,20 @@
           "Nord Militia Veteran Archer"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T3",
           "culture": "诺德",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：诺德",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -18857,18 +19175,20 @@
           "Nord Militia Veteran Spearman"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T3",
           "culture": "诺德",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：诺德",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -18878,18 +19198,20 @@
           "Nord Sky-Gods Chosen"
         ],
         "metadata": {
-          "tier": "未知",
+          "tier": "T5",
           "culture": "诺德",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "未提取",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：未知",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：诺德",
             "战斗定位：步兵",
-            "等级来源：未提取"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -18899,18 +19221,20 @@
           "Nord Skjaldbrestir"
         ],
         "metadata": {
-          "tier": "未知",
+          "tier": "T5",
           "culture": "诺德",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "未提取",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：未知",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：诺德",
             "战斗定位：步兵",
-            "等级来源：未提取"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -18920,18 +19244,20 @@
           "Nord Spear Warrior"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "诺德",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：诺德",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -18941,18 +19267,20 @@
           "Nord War-Proven"
         ],
         "metadata": {
-          "tier": "T4",
+          "tier": "T3",
           "culture": "诺德",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T4（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：诺德",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -18962,18 +19290,20 @@
           "Nord Ulfhedinn"
         ],
         "metadata": {
-          "tier": "未知",
+          "tier": "T5",
           "culture": "诺德",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "未提取",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：未知",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：诺德",
             "战斗定位：步兵",
-            "等级来源：未提取"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -18983,18 +19313,20 @@
           "Nord Scion"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "诺德",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：诺德",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -19004,18 +19336,20 @@
           "Nord Warfang"
         ],
         "metadata": {
-          "tier": "未知",
+          "tier": "T4",
           "culture": "诺德",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "未提取",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：未知",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：诺德",
             "战斗定位：步兵",
-            "等级来源：未提取"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -19029,14 +19363,16 @@
           "culture": "诺德",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T1",
+            "角色等级：6",
             "文化：诺德",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 6
         }
       },
       {
@@ -19046,18 +19382,20 @@
           "Sea Hound Marksman"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T2",
           "culture": "未标注",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -19067,18 +19405,20 @@
           "Skolder Recruit"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -19088,18 +19428,20 @@
           "Skolder Warrior Broda"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -19109,18 +19451,20 @@
           "Skolder Veteran Broda"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -19134,14 +19478,16 @@
           "culture": "斯特吉亚",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
             "兵种等级：T3",
+            "角色等级：16",
             "文化：斯特吉亚",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -19155,14 +19501,16 @@
           "culture": "斯特吉亚",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
             "兵种等级：T4",
+            "角色等级：21",
             "文化：斯特吉亚",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -19176,14 +19524,16 @@
           "culture": "斯特吉亚",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
             "兵种等级：T5",
+            "角色等级：26",
             "文化：斯特吉亚",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -19193,18 +19543,20 @@
           "Sturgian Archer"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T4",
           "culture": "未标注",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -19214,18 +19566,20 @@
           "Sturgian Line Breaker"
         ],
         "metadata": {
-          "tier": "T5",
+          "tier": "T4",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T5（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -19235,18 +19589,20 @@
           "Sturgian Brigand"
         ],
         "metadata": {
-          "tier": "未知",
+          "tier": "T3",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "未提取",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：未知",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：未提取"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -19256,18 +19612,20 @@
           "Sturgian Hardened Brigand"
         ],
         "metadata": {
-          "tier": "未知",
+          "tier": "T4",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "未提取",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：未知",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：未提取"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -19277,18 +19635,20 @@
           "Sturgian Horse Raider"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T5",
           "culture": "未标注",
           "type": "骑兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：未标注",
             "战斗定位：骑兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -19302,14 +19662,16 @@
           "culture": "未标注",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -19319,18 +19681,20 @@
           "Sturgian Militia Archer"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "未标注",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -19340,18 +19704,20 @@
           "Sturgian Militia Spearman"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -19361,18 +19727,20 @@
           "Sturgian Militia Veteran Archer"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T3",
           "culture": "未标注",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -19382,18 +19750,20 @@
           "Sturgian Militia Veteran Spearman"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T3",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -19407,14 +19777,16 @@
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T1",
+            "角色等级：6",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 6
         }
       },
       {
@@ -19424,18 +19796,20 @@
           "Sturgian Heavy Spearman"
         ],
         "metadata": {
-          "tier": "未知",
+          "tier": "T5",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "未提取",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：未知",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：未提取"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -19449,14 +19823,16 @@
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -19466,18 +19842,20 @@
           "Sturgian Spearman"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T4",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -19491,14 +19869,16 @@
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T5（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -19508,18 +19888,20 @@
           "Sturgian Veteran Bowman"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T5",
           "culture": "未标注",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：未标注",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -19529,18 +19911,20 @@
           "Sturgian Heavy Axeman"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T5",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -19554,14 +19938,16 @@
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -19571,18 +19957,20 @@
           "Sturgian Otrok"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -19596,14 +19984,16 @@
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -19613,18 +20003,20 @@
           "Varyag"
         ],
         "metadata": {
-          "tier": "未知",
+          "tier": "T3",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "未提取",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：未知",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：未提取"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -19634,18 +20026,20 @@
           "Varyag Veteran"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -19655,18 +20049,20 @@
           "Vlandian Banner Knight"
         ],
         "metadata": {
-          "tier": "T4",
+          "tier": "T6",
           "culture": "未标注",
           "type": "骑兵",
           "role": "贵族兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T4（估算）",
+            "兵种等级：T6",
+            "角色等级：31",
             "文化：未标注",
             "战斗定位：骑兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 31
         }
       },
       {
@@ -19676,18 +20072,20 @@
           "Vlandian Billman"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -19697,18 +20095,20 @@
           "Vlandian Cavalry"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "未标注",
           "type": "骑兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：骑兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -19722,14 +20122,16 @@
           "culture": "未标注",
           "type": "步兵",
           "role": "贵族兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T5（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -19743,14 +20145,16 @@
           "culture": "未标注",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -19764,14 +20168,16 @@
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -19781,18 +20187,20 @@
           "Vlandian Gallant"
         ],
         "metadata": {
-          "tier": "未知",
+          "tier": "T3",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "未提取",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：未知",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：未提取"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -19802,18 +20210,20 @@
           "Vlandian Hardened Crossbowman"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "未标注",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -19827,14 +20237,16 @@
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -19848,14 +20260,16 @@
           "culture": "未标注",
           "type": "骑兵",
           "role": "贵族兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T4（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：骑兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -19865,18 +20279,20 @@
           "Vlandian Levy Crossbowman"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T2",
           "culture": "未标注",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -19890,14 +20306,16 @@
           "culture": "未标注",
           "type": "骑兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：骑兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -19911,14 +20329,16 @@
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
             "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -19932,14 +20352,16 @@
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
             "兵种等级：T5",
+            "角色等级：26",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -19949,18 +20371,20 @@
           "Vlandian Militia Crossbowman"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "未标注",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -19970,18 +20394,20 @@
           "Vlandian Militia Spearman"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -19991,18 +20417,20 @@
           "Vlandian Militia Veteran Crossbowman"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T3",
           "culture": "未标注",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -20012,18 +20440,20 @@
           "Vlandian Militia Veteran Spearman"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T3",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -20033,18 +20463,20 @@
           "Vlandian Pikeman"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T5",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -20058,14 +20490,16 @@
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1（估算）",
+            "兵种等级：T1",
+            "角色等级：6",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 6
         }
       },
       {
@@ -20075,18 +20509,20 @@
           "Vlandian Sergeant"
         ],
         "metadata": {
-          "tier": "T4",
+          "tier": "T5",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T4（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -20100,14 +20536,16 @@
           "culture": "未标注",
           "type": "远程",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T5（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：未标注",
             "战斗定位：远程",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -20117,18 +20555,20 @@
           "Vlandian Spearman"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -20142,14 +20582,16 @@
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2（估算）",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -20159,18 +20601,20 @@
           "Vlandian Swordsman"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3（估算）",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       },
       {
@@ -20180,18 +20624,20 @@
           "Vlandian Vanguard"
         ],
         "metadata": {
-          "tier": "T4",
+          "tier": "T5",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T4（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -20205,14 +20651,16 @@
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "第一版估算",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T5（估算）",
+            "兵种等级：T5",
+            "角色等级：26",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：第一版估算"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 26
         }
       },
       {
@@ -20222,18 +20670,20 @@
           "Young Wolf"
         ],
         "metadata": {
-          "tier": "T1",
+          "tier": "T2",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T1",
+            "兵种等级：T2",
+            "角色等级：11",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 11
         }
       },
       {
@@ -20243,18 +20693,20 @@
           "Seasoned Wolf"
         ],
         "metadata": {
-          "tier": "T2",
+          "tier": "T3",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T2",
+            "兵种等级：T3",
+            "角色等级：16",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 16
         }
       },
       {
@@ -20264,18 +20716,20 @@
           "Chosen Wolf"
         ],
         "metadata": {
-          "tier": "T3",
+          "tier": "T4",
           "culture": "未标注",
           "type": "步兵",
           "role": "正规/特殊兵种",
-          "tier_source": "模块 ID",
+          "tier_source": "模块 level",
           "dynamic_note": "静态模块资料；当前部队数量和升级状态取决于存档。",
           "facts": [
-            "兵种等级：T3",
+            "兵种等级：T4",
+            "角色等级：21",
             "文化：未标注",
             "战斗定位：步兵",
-            "等级来源：模块 ID"
-          ]
+            "等级来源：模块 level"
+          ],
+          "level": 21
         }
       }
     ],

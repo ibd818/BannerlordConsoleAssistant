@@ -94,3 +94,14 @@
   whole detail panel or expose a draggable page bar.
 - Alternative: Removing the scroll container entirely would clip parameters
   on smaller windows and make long commands inaccessible.
+
+## 2026-09-06 — Derive troop tiers from module character levels
+
+- Decision: Store each catalog troop's module `level` and derive Tier with the
+  game's level-to-tier rule, capped at the target version's T6 maximum.
+- Reason: Name and ID keyword estimates missed every T6 troop and misclassified
+  many lower-tier troops when an earlier keyword matched first. All 227 catalog
+  troop IDs are present in the target module character data, so estimates are
+  unnecessary.
+- Alternative: Manually correcting only the known T6 noble troops was rejected
+  because the same heuristic also produced incorrect T1–T5 metadata.

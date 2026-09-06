@@ -1,6 +1,6 @@
 # Project status
 
-Last updated: 2026-09-04 UTC
+Last updated: 2026-09-06 UTC
 
 ## Current goal
 
@@ -38,6 +38,10 @@ build path for the Bannerlord official-console command assistant.
   horizontal drag bar.
 - Added tests covering troop tier/culture metadata, item category, and
   settlement initial-faction metadata.
+- Replaced name-based troop Tier estimates with values derived from the module
+  character `level` for all 227 catalog troops. The corrected catalog contains
+  seven T6 troops and records both level and source; regression tests pin the
+  complete T6 set and the level-to-tier calculation.
 - Committed the current source and workflow as `586f5fa` and pushed it to the
   public GitHub repository `ibd818/BannerlordConsoleAssistant`.
 - GitHub Actions run 1 completed successfully on `windows-latest`; artifact
@@ -67,7 +71,7 @@ build path for the Bannerlord official-console command assistant.
 
 - Python package: 1.1.0
 - Command target: Bannerlord 1.4.8.119303 / War Sails 1.2.8.119303 (`r3`)
-- Entity catalog: metadata schema v2, catalog revision `r4`
+- Entity catalog: metadata schema v2, catalog revision `r5`
 
 ## Unfinished work
 

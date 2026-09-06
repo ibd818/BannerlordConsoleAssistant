@@ -54,10 +54,32 @@ class CoreTests(unittest.TestCase):
         self.assertIn("帝国", troop.label)
         self.assertEqual(troop.display_text, f"imperial_legionary（{troop.label}）")
         self.assertEqual(troop.metadata["tier"], "T5")
+        self.assertEqual(troop.metadata["level"], 26)
+        self.assertEqual(troop.metadata["tier_source"], "模块 level")
         self.assertEqual(troop.metadata["culture"], "帝国")
         self.assertIn("T5", troop.selector_text)
         self.assertIn(troop, filter_catalog(catalogs["troops"], "legionary"))
         self.assertIn(troop, filter_catalog(catalogs["troops"], "帝国"))
+
+        expected_t6 = {
+            "aserai_vanguard_faris",
+            "battanian_fian_champion",
+            "druzhinnik_champion",
+            "imperial_elite_cataphract",
+            "khuzait_khans_guard",
+            "nord_huscarl",
+            "vlandian_banner_knight",
+        }
+        actual_t6 = {
+            entry.value for entry in catalogs["troops"]
+            if entry.metadata["tier"] == "T6"
+        }
+        self.assertEqual(actual_t6, expected_t6)
+        for entry in catalogs["troops"]:
+            self.assertEqual(entry.metadata["tier_source"], "模块 level")
+            expected_tier = max(0, min(6, (entry.metadata["level"] - 1) // 5))
+            self.assertEqual(entry.metadata["tier"], f"T{expected_tier}")
+
         grain = next(entry for entry in catalogs["items"] if entry.value == "grain")
         self.assertEqual(grain.label, "谷物")
         self.assertEqual(grain.metadata["category"], "商品")
