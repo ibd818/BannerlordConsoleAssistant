@@ -42,6 +42,8 @@ build path for the Bannerlord official-console command assistant.
   character `level` for all 227 catalog troops. The corrected catalog contains
   seven T6 troops and records both level and source; regression tests pin the
   complete T6 set and the level-to-tier calculation.
+- Pushed troop-tier fix commit `1645e14`; GitHub Actions Windows run
+  `34044433638` completed successfully and uploaded artifact `9992671993`.
 - Committed the current source and workflow as `586f5fa` and pushed it to the
   public GitHub repository `ibd818/BannerlordConsoleAssistant`.
 - GitHub Actions run 1 completed successfully on `windows-latest`; artifact
@@ -63,7 +65,7 @@ build path for the Bannerlord official-console command assistant.
 - Windows build script: `build.ps1`
 - GitHub Actions workflow: `.github/workflows/windows-build.yml`
 - GitHub repository: `https://github.com/ibd818/BannerlordConsoleAssistant`
-- Latest Actions run: `https://github.com/ibd818/BannerlordConsoleAssistant/actions/runs/33779376933`
+- Latest Actions run: `https://github.com/ibd818/BannerlordConsoleAssistant/actions/runs/34044433638`
 - Current binary: `outputs/BannerlordConsoleAssistant.exe`
 - No server service or network port is used.
 
@@ -83,10 +85,8 @@ build path for the Bannerlord official-console command assistant.
 
 ## Next step
 
-- Run GUI smoke tests and launch the downloaded artifact in a Windows/PySide6
-  environment before distributing the metadata-selector release. The commits
-  are pushed; Actions run `33874314140` completed successfully and artifact
-  `9937252801` is available for download. Windows launch smoke testing remains.
+- Download and launch artifact `9992671993` from Actions run `34044433638` on
+  Windows for final GUI smoke testing before distribution.
 
 ## Risks and notes
 
