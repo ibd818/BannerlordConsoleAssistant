@@ -1,6 +1,6 @@
 # Project status
 
-Last updated: 2026-09-06 UTC
+Last updated: 2026-09-07 UTC
 
 ## Current goal
 
@@ -48,6 +48,13 @@ build path for the Bannerlord official-console command assistant.
   public GitHub repository `ibd818/BannerlordConsoleAssistant`.
 - GitHub Actions run 1 completed successfully on `windows-latest`; artifact
   `BannerlordConsoleAssistant-windows` was uploaded and is not expired.
+- Corrected the language catalog so Chinese labels remain display-only and the
+  generated command uses `zh-CN`/`zh-TW` language codes.
+- Scanned all 166 command templates, defaults, 21 catalogs, and 3,640 catalog
+  entries; no Han characters enter rendered commands. Core tests pass 14/14.
+- Created source package `/tmp/BannerlordConsoleAssistant-source-r3-zhfix.tar.gz`.
+  Windows EXE rebuild remains pending because Oracle has neither PowerShell nor
+  PyInstaller/Windows build support.
 
 ## Current environment
 

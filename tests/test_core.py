@@ -89,6 +89,19 @@ class CoreTests(unittest.TestCase):
         self.assertEqual(settlement.metadata["faction"], "阿塞莱")
         self.assertEqual(next(entry for entry in catalogs["modifiers"] if entry.value == "balanced").label, "均衡")
 
+    def test_catalog_command_values_do_not_use_chinese_labels(self):
+        catalogs = load_entity_catalogs(packaged_entity_catalog_path())
+        chinese_values = [
+            (catalog_name, entry.value)
+            for catalog_name, entries in catalogs.items()
+            for entry in entries
+            if re.search(r"[\u4e00-\u9fff]", entry.value)
+        ]
+        self.assertEqual(chinese_values, [])
+        languages = {entry.value for entry in catalogs["languages"]}
+        self.assertIn("zh-CN", languages)
+        self.assertIn("zh-TW", languages)
+
     def test_object_parameters_reference_catalogs(self):
         troops = next(command for command in self.commands if command.name == "添加士兵")
         self.assertEqual(troops.parameters[0].catalog, "troops")
